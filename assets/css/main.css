@@ -51,6 +51,14 @@ table {
 	border-spacing: 0;
 }
 
+#menu ul {
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
 body {
 	-webkit-text-size-adjust: none;
 }
