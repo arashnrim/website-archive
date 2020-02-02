@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Metropolis";
+    src: url(/assets/webfonts/Metropolis-Medium.woff) format(woff);
+    src: url(/assets/webfonts/Metropolis-Medium.eot) format(eot);
+    src: url(/assets/webfonts/Metropolis-Medium.woff2) format(woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url(/assets/webfonts/Metropolis-Bold.woff) format(woff);
+    src: url(/assets/webfonts/Metropolis-Bold.eot) format(eot);
+    src: url(/assets/webfonts/Metropolis-Bold.woff2) format(woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(/assets/webfonts/JetBrainsMono-Regular.woff) format(woff);
+    src: url(/assets/webfonts/JetBrainsMono-Regular.eot) format(eot);
+    src: url(/assets/webfonts/JetBrainsMono-Regular.woff2) format(woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url(/assets/webfonts/JetBrainsMono-Italic.woff) format(woff);
+    src: url(/assets/webfonts/JetBrainsMono-Italic.eot) format(eot);
+    src: url(/assets/webfonts/JetBrainsMono-Italic.woff2) format(woff2);
+    font-weight: 400;
+    font-style: italic;
+}
