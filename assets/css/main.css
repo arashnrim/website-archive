@@ -80,6 +80,43 @@ input, select, textarea {
 	appearance: none;
 }
 
+.navbar {
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+  
+	.navbar a {
+		float: left;
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family: 'JetBrains Mono';
+	}
+
+	.navbar a.title {
+		float: right;
+		font-family: 'Metropolis';
+		font-weight: bold;
+		font-size: larger;
+	}
+
+	.navbar a:hover {
+		background: #ddd;
+	}
+	
+	.navbar a.selected:hover {
+		background: white;
+	}
+  
+.main {
+	margin-top: 30px; /* Add a top margin to avoid content overlay */
+} 
+
 /* Basic */
 
 	@-ms-viewport {
@@ -5499,7 +5536,6 @@ input, select, textarea {
 			background-color: inherit;
 			border-radius: 0.5rem;
 			margin-bottom: 2rem;
-			z-index: 1;
 		}
 
 		.spotlight.style4 .image {
@@ -5679,7 +5715,6 @@ input, select, textarea {
 			background-color: inherit;
 			border-radius: 0.5rem;
 			margin-bottom: 2rem;
-			z-index: 1;
 		}
 
 		.spotlight.style5 .image {
