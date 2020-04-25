@@ -339,3 +339,9 @@
 						});
 
 })(jQuery);
+
+$('img').mousedown(function (e) {
+	if(e.button == 2) {
+	  return false;
+	}
+  })
