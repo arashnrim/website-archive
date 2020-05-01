@@ -82,7 +82,7 @@ input, select, textarea {
 
 .navbar {
 	overflow: hidden;
-	background-color: white;
+	background-color: black;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -91,7 +91,7 @@ input, select, textarea {
 	.navbar a {
 		float: left;
 		display: block;
-		color: black;
+		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
@@ -106,11 +106,12 @@ input, select, textarea {
 	}
 
 	.navbar a:hover {
-		background: #ddd;
+		color: white;
+		background: #333;
 	}
 	
 	.navbar a.selected:hover {
-		background: white;
+		background: #333;
 	}
   
 .main {
@@ -144,7 +145,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: black;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -197,8 +198,8 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
-		color: #000000;
+		background-color: black;
+		color: white;
 	}
 
 	body, input, select, textarea {
@@ -374,23 +375,23 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #000000;
+		color: white;
 	}
 
 	a {
-		color: #000000;
+		color: white;
 	}
 
 		a:hover {
-			color: #333333;
+			color: white;
 		}
 
 	strong, b {
-		color: #000000;
+		color: white;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: white;
 	}
 
 	blockquote {
