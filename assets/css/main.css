@@ -23,11 +23,13 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -99,7 +101,7 @@ input, select, textarea {
 	}
 
 	.navbar a.title {
-		float: right;
+		float: left;
 		font-family: 'Metropolis';
 		font-weight: bold;
 		font-size: larger;
@@ -115,7 +117,7 @@ input, select, textarea {
 	}
   
 .main {
-	margin-top: 30px; /* Add a top margin to avoid content overlay */
+	margin-top: 30px;
 } 
 
 /* Basic */
@@ -209,6 +211,10 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
+	li {
+		font-family: "Open Sans"
+	}
+
 	img {
 		pointer-events: none;
 	}
@@ -265,6 +271,7 @@ input, select, textarea {
 
 		h2.minor {
 			font-size: 1.5rem;
+			font-family: "Open Sans";
 		}
 
 	h3 {
@@ -2276,7 +2283,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000;
+			background-color: #222;
 			box-shadow: none;
 			color: #FFF !important;
 		}
