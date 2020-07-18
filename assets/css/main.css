@@ -263,6 +263,12 @@ input, select, textarea {
 		font-weight: 700;
 		line-height: 1.2;
 	}
+	
+	h1.appname {
+		font-size: 3.25rem;
+		font-weight: 700;
+		line-height: 1.0;
+	}
 
 	h2 {
 		font-size: 2.25rem;
