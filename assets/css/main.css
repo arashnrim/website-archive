@@ -313,8 +313,8 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px;
-		font-style: italic;
+		border-left: solid 4p;
+		font-style: normal;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
@@ -408,13 +408,17 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: rgba(0, 0, 0, 0.2);
+		border-left-color: rgba(255, 255, 255, 1);
 	}
 
 	code {
-		background: rgba(0, 0, 0, 0.05);
+		background: rgba(255, 255, 255, 0.1);
 		border-color: rgba(0, 0, 0, 0.2);
 	}
+
+		code.app {
+			background: rgba(0, 0, 0, 0);
+		}
 
 	hr {
 		border-bottom-color: rgba(0, 0, 0, 0.2);
@@ -2155,7 +2159,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: rgba(0, 0, 0, 0.2);
+		border-color: rgba(255, 255, 255, 0.5);
 	}
 
 /* Button */
@@ -2548,7 +2552,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #000;
+		color: white;
 	}
 
 	input[type="text"],
@@ -2559,8 +2563,21 @@ input, select, textarea {
 	input[type="url"],
 	select,
 	textarea {
-		border-color: rgba(0, 0, 0, 0.2);
+		font-family: "Open Sans";
+		border-color: rgba(255, 255, 255, 0.5);
 	}
+
+		input[type="text"]:hover,
+		input[type="password"]:hover,
+		input[type="email"]:hover,
+		input[type="tel"]:hover,
+		input[type="search"]:hover,
+		input[type="url"]:hover,
+		select:hover,
+		textarea:hover {
+			border-color: rgba(255, 255, 255, 0.75);
+			box-shadow: 0 0 0 1px #333;
+		}
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
@@ -2568,9 +2585,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		input[type="search"]:focus,
 		input[type="url"]:focus,
-		select:focus,
 		textarea:focus {
-			border-color: #333;
+			border-color: white;
 			box-shadow: 0 0 0 1px #333;
 		}
 
@@ -2579,24 +2595,28 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #000;
+			color: white;
 			background: #FFF;
+		}
+
+		select:focus {
+			font-family: "Open Sans", Arial, Helvetica, sans-serif;
 		}
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #000;
+		color: white;
 	}
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: rgba(0, 0, 0, 0.2);
+			border-color: rgba(255, 255, 255, 0.5);
 		}
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
 		background-color: #000;
-		border-color: #000;
+		border-color: white;
 		color: #FFF;
 	}
 
@@ -2767,7 +2787,7 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: disclosure-closed;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 	}
@@ -3023,6 +3043,7 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75rem 0.75rem;
+			font-family: "Open Sans";
 		}
 
 		table th {
@@ -3083,7 +3104,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #000;
+		color: white;
 	}
 
 	table thead {
