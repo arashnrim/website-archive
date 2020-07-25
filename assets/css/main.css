@@ -2995,7 +2995,7 @@ input, select, textarea {
 	header p {
 		position: relative;
 		margin: -0.65rem 0 1.5rem 0;
-		font-style: italic;
+		font-family: 'Metropolis';
 	}
 
 	header h1 + p {
@@ -3017,7 +3017,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: rgba(0, 0, 0, 0.75);
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 /* Table */
