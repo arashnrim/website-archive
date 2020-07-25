@@ -83,6 +83,8 @@ input, select, textarea {
 }
 
 .navbar {
+	position: absolute;
+	z-index: 1000;
 	overflow: hidden;
 	background-color: black;
 	position: fixed;
