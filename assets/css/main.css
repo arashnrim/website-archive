@@ -6486,7 +6486,13 @@ input, select, textarea {
 		position: relative;
 		width: 100%;
 		background-color: transparent;
+		font-family: "Open Sans";
 	}
+
+		.gallery.style1 h2 {
+			font-family: "Metropolis";
+			font-weight: bold;
+		}
 
 		.gallery.style1 input, .gallery.style1 select, .gallery.style1 textarea {
 			color: #FFF;
