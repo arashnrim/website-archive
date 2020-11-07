@@ -6486,13 +6486,7 @@ input, select, textarea {
 		position: relative;
 		width: 100%;
 		background-color: transparent;
-		font-family: "Open Sans";
 	}
-
-		.gallery.style1 h2 {
-			font-family: "Metropolis";
-			font-weight: bold;
-		}
 
 		.gallery.style1 input, .gallery.style1 select, .gallery.style1 textarea {
 			color: #FFF;
@@ -6816,7 +6810,13 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		position: relative;
 		background-color: transparent;
+		font-family: "Open Sans";
 	}
+
+		.gallery.style2 h2 {
+			font-family: "Metropolis";
+			font-weight: bold;
+		}
 
 		.gallery.style2 input, .gallery.style2 select, .gallery.style2 textarea {
 			color: #FFF;
