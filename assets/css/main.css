@@ -419,7 +419,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.075);
+		background: rgba(0, 0, 0, 0.035);
 		border-color: rgba(0, 0, 0, 0.2);
 	}
 
