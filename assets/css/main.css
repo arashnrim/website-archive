@@ -42,7 +42,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 	font-family: 'Open Sans';
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 5px;
 }
 
@@ -89,7 +89,7 @@ input, select, textarea {
 	position: absolute;
 	z-index: 1000;
 	overflow: hidden;
-	background-color: #222222;
+	background-color: #222;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -153,7 +153,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #fff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -206,8 +206,8 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
-		color: #000000;
+		background-color: #fff;
+		color: #000;
 	}
 
 	body, input, select, textarea {
@@ -394,11 +394,11 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #222222;
+		color: #222;
 	}
 
 	a {
-		color: #222222;
+		color: #222;
 	}
 
 		a:hover {
@@ -406,15 +406,15 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #222222;
+		color: #222;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #222222;
+		color: #222;
 	}
 
 	blockquote {
-		border-left: solid #222222;
+		border-left: solid #222;
 		background-color: rgba(31, 31, 31, 0.010);
 	}
 
@@ -2272,8 +2272,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		background: #222222;
-		color: #ffffff !important;
+		background: #222;
+		color: #fff !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2290,9 +2290,9 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background: #ffffff;
+			background: #fff;
 			box-shadow: inset 5px 5px 10px #d9d9d9, 
-            			inset -5px -5px 10px #ffffff;
+            			inset -5px -5px 10px #fff;
 			color: #333 !important;
 		}
 
@@ -2719,21 +2719,21 @@ input, select, textarea {
 
 	.icon.style2:before {
 		box-shadow:  5px 5px 10px #d9d9d9, 
-					 -5px -5px 10px #ffffff;
+					 -5px -5px 10px #fff;
 		margin-right: 1.5rem;
 	}
 
 	a.icon.style2:hover:before {
-		background: linear-gradient(145deg, #e6e6e6, #ffffff);
+		background: linear-gradient(145deg, #e6e6e6, #fff);
 		box-shadow:  5px 5px 10px #d9d9d9, 
-					-5px -5px 10px #ffffff;
+					-5px -5px 10px #fff;
 	}
 
 	a.icon.style2:active:before {
 		background-color: rgba(71, 211, 229, 0.1);
-		background: #ffffff;
+		background: #fff;
 		box-shadow: inset 5px 5px 7px #d9d9d9, 
-					inset -5px -5px 7px #ffffff;
+					inset -5px -5px 7px #fff;
 		color: #333;
 	}
 
@@ -3977,9 +3977,9 @@ input, select, textarea {
 				width: 100%;
 				height: 100%;
 				border-radius: 100%;
-				background: #ffffff;
+				background: #fff;
 				box-shadow:  5px 5px 10px #d9d9d9, 
-             				-5px -5px 10px #ffffff;
+             				-5px -5px 10px #fff;
 			}
 
 		@media screen and (max-width: 1680px) {
@@ -5188,7 +5188,7 @@ input, select, textarea {
 				height: 100%;
 				border-radius: 100%;
 				box-shadow:  5px 5px 10px #d9d9d9, 
-             				-5px -5px 10px #ffffff;
+             				-5px -5px 10px #fff;
 			}
 
 		@media screen and (max-width: 1680px) {
@@ -7455,7 +7455,7 @@ input, select, textarea {
 		}
 
 	#wrapper > .wrapper.style2.invert:not(.color1):not(.color2):not(.color3):not(.color4):not(.color5):not(.color6):not(.color7) {
-		background-color: #ffffff;
+		background-color: #fff;
 	}
 
 	#wrapper > .wrapper.style2.invert > .inner {
