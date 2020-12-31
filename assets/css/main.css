@@ -191,6 +191,7 @@ textarea {
 	text-decoration: none;
 	font-family: "JetBrains Mono";
 	font-weight: 500;
+	justify-content: center;
 }
 
 .navbar a.title {
@@ -198,7 +199,6 @@ textarea {
 	font-family: "Graphik";
 	font-weight: bold;
 	font-size: normal;
-	pointer-events: none;
 }
 
 .navbar a:hover {
