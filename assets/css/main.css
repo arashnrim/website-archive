@@ -4069,6 +4069,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	height: 100%;
 	border-radius: 100%;
 	background: #fff;
+	box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
 }
 
 @media screen and (max-width: 1680px) {
