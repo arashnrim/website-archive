@@ -1,7 +1,2 @@
-
 # macOS files #
 .DS_Store
-
-# Demo files #
-/index-demo.html
-/assets/js/demo.js
