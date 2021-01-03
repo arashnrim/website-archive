@@ -325,7 +325,7 @@ a:hover {
 
 strong,
 b {
-	font-weight: 400;
+	font-weight: bold;
 }
 
 em,
@@ -502,7 +502,7 @@ a {
 }
 
 a:hover {
-	color: rgba(31, 31, 31, 0.8);
+	color: #888;
 }
 
 strong,
@@ -2380,7 +2380,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-	background: rgba(31, 31, 31, 0.8);
+	background: #888;
 	color: #fafafa !important;
 }
 
@@ -2409,7 +2409,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-	background-color: #333;
+	background-color: #888;
 }
 
 input[type="submit"].primary:active,
@@ -2656,7 +2656,7 @@ input[type="radio"] + label:before {
 }
 
 label {
-	color: white;
+	color: #222;
 }
 
 input[type="text"],
@@ -2668,10 +2668,11 @@ input[type="url"],
 select,
 textarea {
 	font-family: "Inter";
-	border-color: rgba(255, 255, 255, 0.5);
+	border-color: rgba(0, 0, 0, 0.2);
+	transition: border-color 0.5s;
 }
 
-input[type="text"]:hover,
+/* input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="email"]:hover,
 input[type="tel"]:hover,
@@ -2681,7 +2682,7 @@ select:hover,
 textarea:hover {
 	border-color: rgba(255, 255, 255, 0.75);
 	box-shadow: 0 0 0 1px #333;
-}
+} */
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -2690,7 +2691,7 @@ input[type="tel"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-	border-color: white;
+	border-color: rgba(255, 255, 255, 0.55);
 	box-shadow: 0 0 0 1px #333;
 }
 
@@ -2699,7 +2700,7 @@ select {
 }
 
 select option {
-	color: white;
+	color: #222;
 	background: #fff;
 }
 
@@ -2709,18 +2710,18 @@ select:focus {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-	color: white;
+	color: #222;
 }
 
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-	border-color: rgba(255, 255, 255, 0.5);
+	border-color: rgba(0, 0, 0, 0.2);
 }
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
 	background-color: #000;
-	border-color: white;
+	border-color: rgba(255, 255, 255, 0.75);
 	color: #fff;
 }
 
@@ -2790,6 +2791,7 @@ input[type="radio"]:focus + label:before {
 }
 
 .icon.style2:before {
+	box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.25);
 	border-radius: 2.75em;
 	display: inline-block;
 	height: 2.75em;
@@ -2817,20 +2819,9 @@ a.icon.style2:before {
 		color 0.2s ease-in-out;
 }
 
-.icon.style2:before {
-	box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
-	margin-right: 1.5rem;
-}
-
-a.icon.style2:hover:before {
-	background: linear-gradient(145deg, #e6e6e6, #fff);
-	box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
-}
-
 a.icon.style2:active:before {
 	background-color: rgba(71, 211, 229, 0.1);
 	background: #fff;
-	box-shadow: inset 5px 5px 7px #d9d9d9, inset -5px -5px 7px #fff;
 	color: #333;
 }
 
@@ -3132,7 +3123,7 @@ header h6 + p {
 }
 
 header p {
-	color: rgba(255, 255, 255, 0.75);
+	color: #222;
 }
 
 /* Table */
@@ -3221,7 +3212,7 @@ table tbody tr.alt {
 }
 
 table th {
-	color: white;
+	color: #222;
 }
 
 table thead {
@@ -6557,7 +6548,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style1 input[type="button"]:hover,
 .gallery.style1 button:hover,
 .gallery.style1 .button:hover {
-	box-shadow: inset 0 0 0 1px #333;
+	box-shadow: inset 0 0 0 1px #888;
 	color: #333 !important;
 }
 
@@ -6578,7 +6569,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style1 .button.primary {
 	background-color: #fff;
 	box-shadow: none;
-	color: #000 !important;
+	color: #222 !important;
 }
 
 .gallery.style1 input[type="submit"].primary:hover,
@@ -6586,7 +6577,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style1 input[type="button"].primary:hover,
 .gallery.style1 button.primary:hover,
 .gallery.style1 .button.primary:hover {
-	background-color: #333;
+	background-color: #222;
 }
 
 .gallery.style1 input[type="submit"].primary:active,
@@ -6594,7 +6585,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style1 input[type="button"].primary:active,
 .gallery.style1 button.primary:active,
 .gallery.style1 .button.primary:active {
-	background-color: #1ebdd1;
+	background-color: #888;
 }
 
 .gallery.style1 > .forward,
@@ -6882,7 +6873,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style2 input[type="button"]:hover,
 .gallery.style2 button:hover,
 .gallery.style2 .button:hover {
-	box-shadow: inset 0 0 0 1px #333;
+	box-shadow: inset 0 0 0 1px #888;
 	color: #333 !important;
 }
 
