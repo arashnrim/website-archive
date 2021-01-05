@@ -16,6 +16,8 @@ iframe,
 h1,
 h2,
 h3,
+.skills-title,
+.skills-subtitle,
 h4,
 h5,
 h6,
@@ -344,9 +346,15 @@ p.major {
 	font-size: 1.25rem;
 }
 
+.skills-description {
+	margin-top: 1em;
+}
+
 h1,
 h2,
 h3,
+.skills-title,
+.skills-subtitle,
 h4,
 h5,
 h6 {
@@ -386,12 +394,14 @@ h2.minor {
 	font-family: "Inter";
 }
 
-h3 {
+h3,
+.skills-title {
 	font-size: 1.5rem;
 	font-weight: 500;
 }
 
-h4 {
+h4,
+.skills-subtitle {
 	font-size: 1.1rem;
 	font-weight: 500;
 }
@@ -482,11 +492,12 @@ hr.major {
 		font-size: 2rem;
 	}
 
-	h3 {
+	h3 .skills-title {
 		font-size: 1.25rem;
 	}
 
-	h4 {
+	h4,
+	.skills-subtitle {
 		font-size: 1rem;
 	}
 }
@@ -513,6 +524,8 @@ b {
 h1,
 h2,
 h3,
+.skills-title,
+.skills-subtitle,
 h4,
 h5,
 h6 {
@@ -3112,11 +3125,13 @@ header h2 + p {
 	font-size: 1.25rem;
 }
 
-header h3 + p {
+header h3 + p,
+.skills-title + p {
 	font-size: 1.1rem;
 }
 
 header h4 + p,
+.skills-subtitle + p,
 header h5 + p,
 header h6 + p {
 	font-size: 0.9rem;
@@ -6514,6 +6529,8 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style1 h1,
 .gallery.style1 h2,
 .gallery.style1 h3,
+.gallery.style1 .skills-title,
+.gallery.style1 .skills-subtitle,
 .gallery.style1 h4,
 .gallery.style1 h5,
 .gallery.style1 h6 {
@@ -6671,6 +6688,8 @@ body.is-preload .gallery.onload-fade-in article .image img {
 
 .gallery.style1 article .caption h2,
 .gallery.style1 article .caption h3,
+.gallery.style1 article .caption .skills-title,
+.gallery.style1 article .caption .skills-subtitle,
 .gallery.style1 article .caption h4,
 .gallery.style1 article .caption h5,
 .gallery.style1 article .caption h6 {
@@ -6839,6 +6858,8 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style2 h1,
 .gallery.style2 h2,
 .gallery.style2 h3,
+.gallery.style2 .skills-title,
+.gallery.style2 .skills-subtitle,
 .gallery.style2 h4,
 .gallery.style2 h5,
 .gallery.style2 h6 {
@@ -7064,6 +7085,8 @@ body.is-preload .gallery.onload-fade-in article .image img {
 
 .gallery.style2 article .caption h2,
 .gallery.style2 article .caption h3,
+.gallery.style2 article .caption .skills-title,
+.gallery.style2 article .caption .skills-subtitle,
 .gallery.style2 article .caption h4,
 .gallery.style2 article .caption h5,
 .gallery.style2 article .caption h6 {
@@ -8403,6 +8426,8 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert h1,
 #wrapper > .invert h2,
 #wrapper > .invert h3,
+#wrapper > .invert .skills-title,
+#wrapper > .invert .skills-subtitle,
 #wrapper > .invert h4,
 #wrapper > .invert h5,
 #wrapper > .invert h6 {
