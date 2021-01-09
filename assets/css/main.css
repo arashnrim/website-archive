@@ -4078,6 +4078,22 @@ body.is-preload .banner.onload-image-fade-in .image img {
 	box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
 }
 
+.banner.style3 .image picture {
+	-moz-object-fit: cover;
+	-webkit-object-fit: cover;
+	-ms-object-fit: cover;
+	object-fit: cover;
+	-moz-object-position: center;
+	-webkit-object-position: center;
+	-ms-object-position: center;
+	object-position: center;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
+}
+
 @media screen and (max-width: 1680px) {
 	.banner.style3 {
 		padding: 5rem 5rem 3rem 5rem;
