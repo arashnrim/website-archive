@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Graphik";
   src: local("Graphik Regular"), local("Graphik-Regular"),
-    url("Graphik-Regular.woff2") format("woff2"),
-    url("Graphik-Regular.woff") format("woff");
+    url("/assets/webfonts/Graphik-Regular.woff2") format("woff2"),
+    url("/assets/webfonts/Graphik-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
   font-family: "Graphik";
   src: local("Graphik Medium"), local("Graphik-Medium"),
-    url("Graphik-Medium.woff2") format("woff2"),
-    url("Graphik-Medium.woff") format("woff");
+    url("/assets/webfonts/Graphik-Medium.woff2") format("woff2"),
+    url("/assets/webfonts/Graphik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -21,8 +21,8 @@
 @font-face {
   font-family: "Graphik";
   src: local("Graphik Semibold"), local("Graphik-Semibold"),
-    url("Graphik-Semibold.woff2") format("woff2"),
-    url("Graphik-Semibold.woff") format("woff");
+    url("/assets/webfonts/Graphik-Semibold.woff2") format("woff2"),
+    url("/assets/webfonts/Graphik-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
