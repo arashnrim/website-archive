@@ -1,6 +1,4 @@
-# arashnrim.github.io/arashnrim.me
-
-## Table of Contents
+# arashnrim.me
 
 - [Introduction](#introduction)
 - [Contributing](#contributing)
