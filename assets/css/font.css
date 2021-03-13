@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: "Graphik";
+  src: local("Graphik Bold"), local("Graphik-Bold"),
+    url("/assets/webfonts/Graphik-Bold.woff2") format("woff2"),
+    url("/assets/webfonts/Graphik-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Inter";
   src: local("Inter Regular"), local("Inter-Regular"),
     url("/assets/webfonts/Inter-Regular.woff2") format("woff2"),
