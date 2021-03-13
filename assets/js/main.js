@@ -57,10 +57,6 @@
   // Scroll back to top.
   $window.scrollTop(0);
 
-  // Smooth scroll.
-  $(".smooth-scroll").scrolly();
-  $(".smooth-scroll-middle").scrolly({ anchor: "middle" });
-
   // Panels.
   var $panels = $(".panel");
 
@@ -175,27 +171,6 @@
     breakpoints.on(">medium", function () {
       $this.appendTo($parent);
     });
-  });
-
-  // Wrapper.
-  $wrapper.children().scrollex({
-    top: "30vh",
-    bottom: "30vh",
-    initialize: function () {
-      $(this).addClass("is-inactive");
-    },
-    terminate: function () {
-      $(this).removeClass("is-inactive");
-    },
-    enter: function () {
-      $(this).removeClass("is-inactive");
-    },
-    leave: function () {
-      var $this = $(this);
-
-      if ($this.hasClass("onscroll-bidirectional"))
-        $this.addClass("is-inactive");
-    },
   });
 
   // Main.
