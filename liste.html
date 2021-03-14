@@ -11,7 +11,7 @@
       content="A digital portfolio for Arash Nur Iman."
     />
     <link rel="stylesheet" href="/assets/css/project.css" />
-    <link href="/assets/css/font-awesome-all.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome-all.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/assets/images/favicon.jpeg" />
     <noscript
       ><link rel="stylesheet" href="/assets/css/noscript.css"
@@ -35,6 +35,19 @@
             the Swift Accelerator Programme. Despite its simplistic UI, a lot
             went behind the scenes; I learnt a lot from this project.
           </p>
+
+          <div class="menu">
+            <ul>
+              <a class="button small smooth-scroll-middle" href="#history"
+                >History</a
+              >
+              <a class="button small smooth-scroll-middle" href="#team">Team</a>
+              <a class="button small smooth-scroll-middle" href="#tech-stack"
+                >Tech stack</a
+              >
+              <a class="button small smooth-scroll-middle" href="#get">Get</a>
+            </ul>
+          </div>
         </div>
         <div class="image">
           <img
@@ -44,26 +57,8 @@
         </div>
       </section>
 
-      <section class="spotlight style1 content-align-left">
-        <div class="content">
-          <div class="menu">
-            <h2>Look, a menu!</h2>
-            <p>Use this to quickly navigate through the page.</p>
-            <ul>
-              <a class="button small smooth-scroll-middle" href="#history"
-                >History</a
-              >
-              <a class="button small smooth-scroll-middle" href="#team">Team</a>
-              <a class="button small smooth-scroll-middle" href="#tech-stack"
-                >Tech stack</a
-              >
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <section
-        class="spotlight style1 fullscreen content-align-left"
+        class="spotlight style1 fullscreen content-align-left onscroll-content-fade-up"
         id="history"
       >
         <div class="content">
@@ -103,7 +98,10 @@
         </div>
       </section>
 
-      <section class="spotlight style1 content-align-left" id="team">
+      <section
+        class="spotlight style1 fullscreen content-align-left onscroll-content-fade-up"
+        id="team"
+      >
         <div class="content">
           <h1 class="hicon">
             <span role="img" aria-label="Man technologist">👨‍💻</span>
@@ -115,31 +113,33 @@
             it would've been much difficult if it weren't for their assistance!
           </p>
 
-          <h2 style="margin: 0 0 0 0">Shayden Wong</h2>
-          <p style="margin: 0 0 0 0" class="minor">
-            <span role="img" aria-label="Chart with upwards trend">📈</span>
-            Chief Marketing Officer
-          </p>
-          <p class="minor">
-            <span role="img" aria-label="Briefcase">💼</span> Chief Executive
-            Officer
-          </p>
-
-          <h2 style="margin: 0 0 0 0">Kesler Kok</h2>
-          <p class="minor">
-            <span role="img" aria-label="Artist palette">🎨</span> Chief Design
-            Officer
-          </p>
-
-          <h2 style="margin: 0 0 0 0">Arash Nur Iman</h2>
-          <p class="minor">
-            <span role="img" aria-label="Mobile phone">📱</span>Chief Technology
-            Officer
-          </p>
+          <div class="items style3 medium onscroll-fade-in">
+            <section>
+              <span class="gallery-title">Shayden Wong</span><br />
+              <span role="img" aria-label="Chart with upwards trend">📈</span>
+              <span class="gallery-subtitle">Chief Marketing Officer</span
+              ><br />
+              <span role="img" aria-label="Briefcase">💼</span>
+              <span class="gallery-subtitle">Chief Executive Officer</span>
+            </section>
+            <section>
+              <span class="gallery-title">Kesler Kok</span><br />
+              <span role="img" aria-label="Briefcase">💼</span>
+              <span class="gallery-subtitle">Chief Design Officer</span>
+            </section>
+            <section>
+              <span class="gallery-title">Arash Nur Iman</span><br />
+              <span role="img" aria-label="Mobile phone">📱</span>
+              <span class="gallery-subtitle">Chief Technology Officer</span>
+            </section>
+          </div>
         </div>
       </section>
 
-      <section class="spotlight style1 content-align-left" id="tech-stack">
+      <section
+        class="spotlight style1 fullscreen content-align-left onscroll-content-fade-up"
+        id="tech-stack"
+      >
         <div class="content">
           <h1 class="hicon">
             <span role="img" aria-label="Toolbox">🧰</span>
@@ -158,8 +158,8 @@
                 role="img"
                 aria-label="Swift logo"
               /><br />
-              <span class="skills-title">Swift</span><br />
-              <p class="skills-description">
+              <span class="gallery-title">Swift</span><br />
+              <p class="gallery-description">
                 I created this app using the Apple-created programming language
                 of
                 <a href="https://swift.org/" target="_blank" rel="noopener"
@@ -187,8 +187,8 @@
                 role="img"
                 aria-label="Google logo"
               /><br />
-              <span class="skills-title">Firebase</span><br />
-              <p class="skills-description">
+              <span class="gallery-title">Firebase</span><br />
+              <p class="gallery-description">
                 For authentication and data storage, I used the
                 <a
                   href="https://firebase.google.com/"
@@ -205,6 +205,46 @@
               </p>
             </section>
           </div>
+        </div>
+      </section>
+
+      <section
+        class="spotlight style1 fullscreen content-align-left onscroll-content-fade-up"
+        id="get"
+      >
+        <div class="content">
+          <h1 class="hicon">
+            <span role="img" aria-label="Rocket">🚀</span>
+          </h1>
+          <h2>Ready for all.</h2>
+          <p>
+            In 2020, I made the executive decision to make the app's source code
+            open-source. My intention was to allow those who were new to
+            programming to explore what it was like to create a to-do list app;
+            my app was one of the thousands out there, notwithstanding the many
+            tutorial videos that may also already exist.
+          </p>
+          <p style="margin: 0 0 1rem 0">
+            Listé is now an open-sourced app; its source code can be found over
+            at GitHub.
+          </p>
+          <a
+            href="https://github.com/arashnrim/Liste/"
+            target="_blank"
+            rel="noopener"
+            class="button small icon brands fa-github"
+            >View on GitHub</a
+          >
+          <p style="margin: 1rem 0 1rem 0">
+            Listé is also now released on the App Store; check it out and give
+            it a download if you'd like.
+          </p>
+          <a
+            href="https://apps.apple.com/us/app/list%C3%A9-productive-to-do/id1486116734"
+            target="_blank"
+            rel="noopener"
+            ><img width="150" src="/assets/images/download-on-app-store.svg"
+          /></a>
         </div>
       </section>
 
