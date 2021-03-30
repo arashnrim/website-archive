@@ -5077,7 +5077,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 }
 
 .spotlight.style1 .content {
-  padding: 7rem 7rem 5rem 7rem;
+  padding: 7rem 7rem 7rem 7rem;
   -moz-align-self: center;
   -webkit-align-self: center;
   -ms-align-self: center;
@@ -5133,19 +5133,19 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 @media screen and (max-width: 1680px) {
   .spotlight.style1 .content {
-    padding: 5rem 5rem 3rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
   }
 }
 
 @media screen and (max-width: 1280px) {
   .spotlight.style1 .content {
-    padding: 4rem 4rem 2rem 4rem;
+    padding: 4rem 4rem 4rem 4rem;
   }
 }
 
 @media screen and (max-width: 980px) {
   .spotlight.style1 .content {
-    padding: 3.75rem 3rem 1.75rem 3rem;
+    padding: 3.75rem 3rem 3rem 3rem;
     width: 50%;
     min-width: 0;
   }
@@ -5158,7 +5158,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 @media screen and (max-width: 736px) {
   .spotlight.style1 .content {
-    padding: 2.5rem 2rem 0.5rem 2rem;
+    padding: 2.5rem 2rem 2rem 2rem;
   }
 }
 
