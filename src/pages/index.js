@@ -15,10 +15,10 @@ const Introduction = () => (
         placeholder="dominantColor"
       />
       <div className="flex-row text-center lg:text-left">
-        <p className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold">
+        <p className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-heading font-semibold">
           Hello, world!
         </p>
-        <h1 className="pt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-bold">
+        <h1 className="pt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-extrabold">
           I'm Arash Nur Iman.
         </h1>
         <p className="pt-5 text-xl">
