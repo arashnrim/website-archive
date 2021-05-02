@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'heading': ['Inter']
-      }
+        heading: ['"Clash Display"'],
+        sans: ["Inter"],
+      },
     },
   },
   variants: {

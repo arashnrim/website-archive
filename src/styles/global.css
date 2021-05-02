@@ -1,16 +1,21 @@
-@layer base {
-    @font-face {
-        font-family: 'Inter';
-        font-weight: 800;
-        src: url('../fonts/Inter-ExtraBold.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'Inter';
-        font-weight: 600;
-        src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
-    }
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Clash Display";
+    font-weight: 400;
+    src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Clash Display";
+    font-weight: 600;
+    src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  }
+}
