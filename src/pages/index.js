@@ -24,7 +24,7 @@ const Introduction = () => (
         <h1 className="pt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-semibold">
           I'm Arash Nur Iman.
         </h1>
-        <p className="pt-5 text-xl">
+        <p className="pt-5 text-xl sm:text-2xl">
           I'm a student with a passion for making a change through technology.
         </p>
 
