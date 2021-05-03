@@ -15,7 +15,7 @@ const Introduction = () => (
         placeholder="dominantColor"
       />
       <div className="flex-row text-center lg:text-left">
-        <p className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-heading">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading">
           <span role="img" aria-label="Waving hand">
             👋
           </span>{" "}
