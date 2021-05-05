@@ -21,14 +21,14 @@ const Introduction = () => (
           </span>{" "}
           Hello, world!
         </p>
-        <h1 className="pt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-semibold">
+        <h1 className="mt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-semibold">
           I'm Arash Nur Iman.
         </h1>
-        <p className="pt-5 text-xl sm:text-2xl">
+        <p className="mt-5 text-xl sm:text-2xl">
           I'm a student with a passion for making a change through technology.
         </p>
 
-        <div className="pt-5 space-x-6">
+        <div className="mt-5 space-x-6">
           <a
             href="https://github.com/arashnrim"
             target="_blank"
