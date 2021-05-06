@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         heading: ['"Clash Display"'],
         sans: ["Inter"],
+        mono: ["'JetBrains Mono'"],
       },
     },
   },
