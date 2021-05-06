@@ -2,7 +2,7 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faDev } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faUser, faTools } from "@fortawesome/free-solid-svg-icons";
 
 const Introduction = () => (
   <main>
@@ -73,6 +73,38 @@ const Introduction = () => (
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
           <button className="h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faUser} color="white" /> About
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Skills */}
+    <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
+      <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        A <span className="text-red-500">learner</span>, a{" "}
+        <span className="text-red-500">developer</span>, and an{" "}
+        <span className="text-red-500">aspiring student</span>.
+      </h1>
+      <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        Every opportunity brings something to learn.
+      </p>
+      <div className="mt-10 mb-10 flex flex-col lg:flex-row lg:space-x-5">
+        <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+          As I continue to develop myself as an individual, I also pick up
+          valuable skills that help be become more of a developer as I go on.
+          <br />
+          <br />
+          Starting in 2018 when I picked up Swift, my first programming
+          language, without any prior introduction to the world of code, my
+          passion for technology further fueled as I got to grasp more concepts,
+          participate in more events, and expand my knowledge. Thus far, the
+          skills of Swift and Python sit comfortably in my toolbox, with Java
+          and Kotlin still a work-in-progress.
+        </p>
+
+        <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
+          <button className="h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
+            <FontAwesomeIcon icon={faTools} color="white" /> Skills
           </button>
         </div>
       </div>
