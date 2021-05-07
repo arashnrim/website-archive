@@ -2,7 +2,12 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faDev } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faUser, faTools } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faUser,
+  faTools,
+  faLaptopCode,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Introduction = () => (
   <main>
@@ -105,6 +110,37 @@ const Introduction = () => (
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
           <button className="h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faTools} color="white" /> Skills
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* Skills */}
+    <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
+      <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        A <span className="text-indigo-500">tinkerer</span>, an{" "}
+        <span className="text-indigo-500">experimenter</span>, and a{" "}
+        <span className="text-indigo-500">developer</span>.
+      </h1>
+      <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        Who knew playing around is a good thing?
+      </p>
+      <div className="mt-10 mb-10 flex flex-col lg:flex-row lg:space-x-5">
+        <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+          To build up on my skills, test out what I know, and to learn new
+          things, playing around is a good thing.
+          <br />
+          <br />
+          The result of the tinkering I’ve done is the several projects that I
+          have been a part of. No matter a school project or a personal project,
+          I make it an effort to give everything that I do my best shot. Doing
+          so allows me to learn what I do best and showcase the quality of work
+          I give at the same time.
+        </p>
+
+        <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
+          <button className="h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
+            <FontAwesomeIcon icon={faLaptopCode} color="white" /> Works
           </button>
         </div>
       </div>
