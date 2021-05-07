@@ -99,12 +99,55 @@ const Introduction = () => (
           valuable skills that help be become more of a developer as I go on.
           <br />
           <br />
-          Starting in 2018 when I picked up Swift, my first programming
-          language, without any prior introduction to the world of code, my
-          passion for technology further fueled as I got to grasp more concepts,
-          participate in more events, and expand my knowledge. Thus far, the
-          skills of Swift and Python sit comfortably in my toolbox, with Java
-          and Kotlin still a work-in-progress.
+          Starting in 2018 when I picked up{" "}
+          <a
+            href="https://swift.org"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#f05138" }}
+          >
+            Swift
+          </a>
+          , my first programming language, without any prior introduction to the
+          world of code, my passion for technology further fueled as I got to
+          grasp more concepts, participate in more events, and expand my
+          knowledge. Thus far, the skills of{" "}
+          <a
+            href="https://swift.org"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#f05138" }}
+          >
+            Swift
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://python.org"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#4b8bbe" }}
+          >
+            Python
+          </a>{" "}
+          sit comfortably in my toolbox, with{" "}
+          <a
+            href="https://oracle.com/java/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#e6892e" }}
+          >
+            Java
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://kotlinlang.org/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#7f52ff" }}
+          >
+            Kotlin
+          </a>{" "}
+          still a work-in-progress.
         </p>
 
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
