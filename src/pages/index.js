@@ -158,7 +158,7 @@ const Introduction = () => (
       </div>
     </div>
 
-    {/* Skills */}
+    {/* Works */}
     <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
       <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
         A <span className="text-indigo-500">tinkerer</span>, an{" "}
