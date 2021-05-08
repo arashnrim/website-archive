@@ -7,6 +7,7 @@ import {
   faUser,
   faTools,
   faLaptopCode,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Introduction = () => (
@@ -187,6 +188,32 @@ const Introduction = () => (
           </button>
         </div>
       </div>
+    </div>
+
+    {/* Footer */}
+    <div className="justify-center items-center flex flex-col space-y-5 h-screen-1/3 min-w-screen bg-gray-50 text-center rounded-t-3xl">
+      <p>Made with <FontAwesomeIcon icon={faHeart} /> by Arash Nur Iman.</p>
+      <ul className="space-x-5 font-mono">
+        <li className="inline text-sm">intro</li>
+        <li className="inline text-sm"><a className="underline hover:no-underline">about</a></li>
+        <li className="inline text-sm"><a className="underline hover:no-underline">skills</a></li>
+        <li className="inline text-sm"><a className="underline hover:no-underline">works</a></li>
+      </ul>
+      <div className="mt-5 space-x-6">
+          <a
+            href="https://github.com/arashnrim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://dev.to/arashnrim" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faDev} />
+          </a>
+          <a href="mailto:hello@arashnrim.me">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </div>
     </div>
   </main>
 );

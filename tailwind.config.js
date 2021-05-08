@@ -8,6 +8,9 @@ module.exports = {
         sans: ["Inter"],
         mono: ["'JetBrains Mono'"],
       },
+      height: {
+        "screen-1/3": "33vh",
+      },
     },
   },
   variants: {
