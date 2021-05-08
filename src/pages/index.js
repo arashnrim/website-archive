@@ -15,7 +15,7 @@ const Introduction = () => (
     {/* Hero */}
     <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-50 rounded-b-3xl">
       <StaticImage
-        className="pointer-events-none w-1/2 max-w-xs shadow-2xl rounded-full"
+        className="pointer-events-none w-1/2 max-w-xs shadow-2xl rounded-full bg-gray-50"
         src="../images/arash.jpg"
         alt="Arash Nur Iman"
         placeholder="dominantColor"
