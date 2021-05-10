@@ -19,6 +19,11 @@
     src: url("../fonts/Inter-Regular.woff2") format("woff2");
   }
   @font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  }
+  @font-face {
     font-family: "JetBrains Mono";
     font-weight: 400;
     src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");

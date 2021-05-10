@@ -105,7 +105,7 @@ const Introduction = () => (
             href="https://swift.org"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#f05138" }}
+            className="transition text-red-500 hover:text-red-400 font-bold"
           >
             Swift
           </a>
@@ -117,7 +117,7 @@ const Introduction = () => (
             href="https://swift.org"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#f05138" }}
+            className="transition text-red-500 hover:text-red-400 font-bold"
           >
             Swift
           </a>{" "}
@@ -126,7 +126,7 @@ const Introduction = () => (
             href="https://python.org"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#4b8bbe" }}
+            className="transition text-blue-500 hover:text-blue-400 font-bold"
           >
             Python
           </a>{" "}
@@ -135,7 +135,7 @@ const Introduction = () => (
             href="https://oracle.com/java/"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#e6892e" }}
+            className="transition text-yellow-600 hover:text-yellow-500 font-bold"
           >
             Java
           </a>{" "}
@@ -144,7 +144,7 @@ const Introduction = () => (
             href="https://kotlinlang.org/"
             target="_blank"
             rel="noreferrer"
-            style={{ color: "#7f52ff" }}
+            className="transition text-indigo-500 hover:text-indigo-400 font-bold"
           >
             Kotlin
           </a>{" "}
