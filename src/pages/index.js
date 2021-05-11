@@ -1,7 +1,14 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faDev } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faDev,
+  faSwift,
+  faJava,
+  faAndroid,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faUser,
@@ -94,7 +101,7 @@ const Introduction = () => (
       <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
         Every opportunity brings something to learn.
       </p>
-      <div className="mt-10 mb-10 flex flex-col lg:flex-row lg:space-x-5">
+      <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
         <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
           As I continue to develop myself as an individual, I also pick up
           valuable skills that help be become more of a developer as I go on.
@@ -155,6 +162,42 @@ const Introduction = () => (
           <button className="transition h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faTools} color="white" /> Skills
           </button>
+        </div>
+      </div>
+
+      <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
+        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-500 to-yellow-500">
+          <FontAwesomeIcon icon={faSwift} size="3x" />
+          <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
+          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl-sm">
+            A programming language created by Apple for developing native
+            applications for its platforms of iOS, macOS, iPadOS, tvOS, and
+            watchOS.
+          </p>
+        </div>
+        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-500">
+          <FontAwesomeIcon icon={faJava} size="3x" />
+          <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
+          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+            A programming language created by Oracle for a variety of purposes;
+            mostly used for developing Android applications.
+          </p>
+        </div>
+        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-500 to-indigo-500">
+          <FontAwesomeIcon icon={faAndroid} size="3x" />
+          <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
+          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+            A programming language created by JetBrains for a variety of
+            purposes; mostly used for developing Android applications.
+          </p>
+        </div>
+        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-500">
+          <FontAwesomeIcon icon={faPython} size="3x" />
+          <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
+          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+            A programming language powerful to have a wide variety of purposes;
+            mostly used in academic learning and program development.
+          </p>
         </div>
       </div>
     </div>
