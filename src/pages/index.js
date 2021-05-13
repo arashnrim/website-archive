@@ -84,7 +84,7 @@ const Introduction = () => (
         </p>
 
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-          <button className="transition h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
+          <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faUser} color="white" /> About
           </button>
         </div>
@@ -112,7 +112,7 @@ const Introduction = () => (
             href="https://swift.org"
             target="_blank"
             rel="noreferrer"
-            className="transition text-red-500 hover:text-red-400 font-bold"
+            className="transition-all text-red-500 hover:text-red-400 font-bold"
           >
             Swift
           </a>
@@ -124,7 +124,7 @@ const Introduction = () => (
             href="https://swift.org"
             target="_blank"
             rel="noreferrer"
-            className="transition text-red-500 hover:text-red-400 font-bold"
+            className="transition-all text-red-500 hover:text-red-400 font-bold"
           >
             Swift
           </a>{" "}
@@ -133,7 +133,7 @@ const Introduction = () => (
             href="https://python.org"
             target="_blank"
             rel="noreferrer"
-            className="transition text-blue-500 hover:text-blue-400 font-bold"
+            className="transition-all text-blue-500 hover:text-blue-400 font-bold"
           >
             Python
           </a>{" "}
@@ -142,7 +142,7 @@ const Introduction = () => (
             href="https://oracle.com/java/"
             target="_blank"
             rel="noreferrer"
-            className="transition text-yellow-600 hover:text-yellow-500 font-bold"
+            className="transition-all text-yellow-600 hover:text-yellow-500 font-bold"
           >
             Java
           </a>{" "}
@@ -151,7 +151,7 @@ const Introduction = () => (
             href="https://kotlinlang.org/"
             target="_blank"
             rel="noreferrer"
-            className="transition text-indigo-500 hover:text-indigo-400 font-bold"
+            className="transition-all text-indigo-500 hover:text-indigo-400 font-bold"
           >
             Kotlin
           </a>{" "}
@@ -159,7 +159,7 @@ const Introduction = () => (
         </p>
 
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-          <button className="transition h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
+          <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faTools} color="white" /> Skills
           </button>
         </div>
