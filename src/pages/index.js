@@ -166,7 +166,7 @@ const Introduction = () => (
       </div>
 
       <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
-        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-500 to-yellow-500">
+        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-500 to-yellow-500 shadow-lg">
           <FontAwesomeIcon icon={faSwift} size="3x" />
           <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
           <p className="mt-2 text-sm sm:text-lg 2xl:text-xl-sm">
@@ -175,7 +175,7 @@ const Introduction = () => (
             watchOS.
           </p>
         </div>
-        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-500">
+        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-500 shadow-lg">
           <FontAwesomeIcon icon={faJava} size="3x" />
           <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
           <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -183,7 +183,7 @@ const Introduction = () => (
             mostly used for developing Android applications.
           </p>
         </div>
-        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-500 to-indigo-500">
+        <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-500 to-indigo-500 shadow-lg">
           <FontAwesomeIcon icon={faAndroid} size="3x" />
           <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
           <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -191,7 +191,7 @@ const Introduction = () => (
             purposes; mostly used for developing Android applications.
           </p>
         </div>
-        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-500">
+        <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-500 shadow-lg">
           <FontAwesomeIcon icon={faPython} size="3x" />
           <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
           <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
