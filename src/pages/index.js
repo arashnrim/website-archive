@@ -226,7 +226,7 @@ const Introduction = () => (
         </p>
 
         <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-          <button className="transition h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
+          <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
             <FontAwesomeIcon icon={faLaptopCode} color="white" /> Works
           </button>
         </div>
