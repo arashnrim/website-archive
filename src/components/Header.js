@@ -3,8 +3,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => (
-  <div className="fixed flex z-50 p-5 items-center w-screen h-20 bg-gray-50 shadow-sm">
-    <div className="flex flex-grow items-center space-x-5">
+  <div id="header" className="fixed flex z-50 p-5 items-center w-screen h-max lg:h-20 bg-black bg-opacity-1">
+    <div className="flex w-1/2 md:flex-grow items-center space-x-6">
       <span>
         <span className="font-mono font-bold text-2xl">#</span>
         <span className="font-sans font-bold text-2xl">A</span>

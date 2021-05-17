@@ -11,6 +11,9 @@ module.exports = {
       height: {
         "screen-1/3": "33vh",
       },
+      backgroundOpacity: {
+        "1": "0.01",
+      },
     },
   },
   variants: {
