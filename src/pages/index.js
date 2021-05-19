@@ -73,16 +73,17 @@ const Introduction = () => (
         </p>
         <div className="mt-10 mb-10 flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
-            I wish to develop myself into someone who contributes back to society,
-            influences the life of many, and be there for those I’m close with.
+            I wish to develop myself into someone who contributes back to
+            society, influences the life of many, and be there for those I’m
+            close with.
             <br />
             <br />
-            In a way, I’m already working my way towards that idealistic goal — I
-            like to think that the many relationships I’ve forged over 16 years of
-            my life have allowed me to learn from others as much as others have
-            learned from me. I’ve been known by many to be someone friendly,
-            trusted, and responsible, and I hope to continue developing myself on
-            the right track.
+            In a way, I’m already working my way towards that idealistic goal —
+            I like to think that the many relationships I’ve forged over 16
+            years of my life have allowed me to learn from others as much as
+            others have learned from me. I’ve been known by many to be someone
+            friendly, trusted, and responsible, and I hope to continue
+            developing myself on the right track.
           </p>
 
           <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
@@ -118,9 +119,9 @@ const Introduction = () => (
             >
               Swift
             </a>
-            , my first programming language, without any prior introduction to the
-            world of code, my passion for technology further fueled as I got to
-            grasp more concepts, participate in more events, and expand my
+            , my first programming language, without any prior introduction to
+            the world of code, my passion for technology further fueled as I got
+            to grasp more concepts, participate in more events, and expand my
             knowledge. Thus far, the skills of{" "}
             <a
               href="https://swift.org"
@@ -181,8 +182,8 @@ const Introduction = () => (
             <FontAwesomeIcon icon={faJava} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              A programming language created by Oracle for a variety of purposes;
-              mostly used for developing Android applications.
+              A programming language created by Oracle for a variety of
+              purposes; mostly used for developing Android applications.
             </p>
           </div>
           <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-500 to-indigo-500 shadow-lg">
@@ -197,8 +198,9 @@ const Introduction = () => (
             <FontAwesomeIcon icon={faPython} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              A programming language powerful to have a wide variety of purposes;
-              mostly used in academic learning and program development.
+              A programming language powerful to have a wide variety of
+              purposes; mostly used in academic learning and program
+              development.
             </p>
           </div>
         </div>
@@ -221,10 +223,10 @@ const Introduction = () => (
             <br />
             <br />
             The result of the tinkering I’ve done is the several projects that I
-            have been a part of. No matter a school project or a personal project,
-            I make it an effort to give everything that I do my best shot. Doing
-            so allows me to learn what I do best and showcase the quality of work
-            I give at the same time.
+            have been a part of. No matter a school project or a personal
+            project, I make it an effort to give everything that I do my best
+            shot. Doing so allows me to learn what I do best and showcase the
+            quality of work I give at the same time.
           </p>
 
           <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
