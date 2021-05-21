@@ -12,7 +12,7 @@ module.exports = {
         "screen-1/3": "33vh",
       },
       backgroundOpacity: {
-        "1": "0.01",
+        "2-5": "0.025",
       },
     },
   },
