@@ -14,6 +14,12 @@ module.exports = {
       backgroundOpacity: {
         "2-5": "0.025",
       },
+      colors: {
+        gray: {
+          800: "#181818",
+          900: "#121212",
+        },
+      },
     },
   },
   variants: {
