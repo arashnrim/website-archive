@@ -19,12 +19,12 @@ import {
 import Layout from "../components/Layout";
 
 const Introduction = () => (
-  <main>
+  <main className="bg-gray-800 text-white">
     <Layout>
       {/* Hero */}
-      <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-50 rounded-b-3xl">
+      <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-900 rounded-b-3xl">
         <StaticImage
-          className="pointer-events-none w-1/2 max-w-xs shadow-2xl rounded-full bg-gray-50"
+          className="pointer-events-none w-1/2 max-w-xs ring-8 ring-white ring-opacity-10 rounded-full bg-gray-900"
           src="../images/arash.jpg"
           alt="Arash Nur Iman"
           placeholder="dominantColor"
@@ -64,9 +64,9 @@ const Introduction = () => (
       {/* About */}
       <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
         <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          An <span className="text-blue-500">active contributor</span>, a{" "}
-          <span className="text-blue-500">life-changer</span>, and a{" "}
-          <span className="text-blue-500">friend</span> to all.
+          An <span className="text-blue-400">active contributor</span>, a{" "}
+          <span className="text-blue-400">life-changer</span>, and a{" "}
+          <span className="text-blue-400">friend</span> to all.
         </h1>
         <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Bold dreams for an individual, but a goal for me.
@@ -97,9 +97,9 @@ const Introduction = () => (
       {/* Skills */}
       <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
         <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          A <span className="text-red-500">learner</span>, a{" "}
-          <span className="text-red-500">developer</span>, and an{" "}
-          <span className="text-red-500">aspiring student</span>.
+          A <span className="text-red-400">learner</span>, a{" "}
+          <span className="text-red-400">developer</span>, and an{" "}
+          <span className="text-red-400">aspiring student</span>.
         </h1>
         <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Every opportunity brings something to learn.
@@ -115,7 +115,7 @@ const Introduction = () => (
               href="https://swift.org"
               target="_blank"
               rel="noreferrer"
-              className="transition-all text-red-500 hover:text-red-400 font-bold"
+              className="transition-all text-red-400 hover:text-red-300 font-bold"
             >
               Swift
             </a>
@@ -127,7 +127,7 @@ const Introduction = () => (
               href="https://swift.org"
               target="_blank"
               rel="noreferrer"
-              className="transition-all text-red-500 hover:text-red-400 font-bold"
+              className="transition-all text-red-400 hover:text-red-300 font-bold"
             >
               Swift
             </a>{" "}
@@ -136,7 +136,7 @@ const Introduction = () => (
               href="https://python.org"
               target="_blank"
               rel="noreferrer"
-              className="transition-all text-blue-500 hover:text-blue-400 font-bold"
+              className="transition-all text-blue-400 hover:text-blue-300 font-bold"
             >
               Python
             </a>{" "}
@@ -145,7 +145,7 @@ const Introduction = () => (
               href="https://oracle.com/java/"
               target="_blank"
               rel="noreferrer"
-              className="transition-all text-yellow-600 hover:text-yellow-500 font-bold"
+              className="transition-all text-yellow-500 hover:text-yellow-400 font-bold"
             >
               Java
             </a>{" "}
@@ -154,7 +154,7 @@ const Introduction = () => (
               href="https://kotlinlang.org/"
               target="_blank"
               rel="noreferrer"
-              className="transition-all text-indigo-500 hover:text-indigo-400 font-bold"
+              className="transition-all text-indigo-400 hover:text-indigo-300 font-bold"
             >
               Kotlin
             </a>{" "}
@@ -169,7 +169,7 @@ const Introduction = () => (
         </div>
 
         <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
-          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-500 to-yellow-500 shadow-lg">
+          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
             <FontAwesomeIcon icon={faSwift} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl-sm">
@@ -178,7 +178,7 @@ const Introduction = () => (
               watchOS.
             </p>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-500 shadow-lg">
+          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-600 shadow-lg">
             <FontAwesomeIcon icon={faJava} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -186,7 +186,7 @@ const Introduction = () => (
               purposes; mostly used for developing Android applications.
             </p>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-500 to-indigo-500 shadow-lg">
+          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg">
             <FontAwesomeIcon icon={faAndroid} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -194,7 +194,7 @@ const Introduction = () => (
               purposes; mostly used for developing Android applications.
             </p>
           </div>
-          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-500 shadow-lg">
+          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg">
             <FontAwesomeIcon icon={faPython} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -209,9 +209,9 @@ const Introduction = () => (
       {/* Works */}
       <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
         <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          A <span className="text-indigo-500">tinkerer</span>, an{" "}
-          <span className="text-indigo-500">experimenter</span>, and a{" "}
-          <span className="text-indigo-500">developer</span>.
+          A <span className="text-indigo-400">tinkerer</span>, an{" "}
+          <span className="text-indigo-400">experimenter</span>, and a{" "}
+          <span className="text-indigo-400">developer</span>.
         </h1>
         <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Who knew playing around is a good thing?
