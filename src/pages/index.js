@@ -9,12 +9,7 @@ import {
   faAndroid,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faUser,
-  faTools,
-  faLaptopCode,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/Layout";
 
@@ -85,11 +80,6 @@ const Introduction = () => (
             friendly, trusted, and responsible, and I hope to continue
             developing myself on the right track.
           </p>
-
-          <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-            <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
-              <FontAwesomeIcon icon={faUser} color="white" /> About
-            </button>
           </div>
         </div>
       </div>
@@ -160,12 +150,6 @@ const Introduction = () => (
             </a>{" "}
             still a work-in-progress.
           </p>
-
-          <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-            <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
-              <FontAwesomeIcon icon={faTools} color="white" /> Skills
-            </button>
-          </div>
         </div>
 
         <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
@@ -228,12 +212,6 @@ const Introduction = () => (
             shot. Doing so allows me to learn what I do best and showcase the
             quality of work I give at the same time.
           </p>
-
-          <div className="mt-10 lg:mt-0 lg:mb-0 lg:justify-center lg:items-center lg:flex lg:w-1/3">
-            <button className="transition-all h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg bg-black text-white font-medium font-mono shadow-xl hover:shadow-lg focus:shadow-none">
-              <FontAwesomeIcon icon={faLaptopCode} color="white" /> Works
-            </button>
-          </div>
         </div>
       </div>
     </Layout>
