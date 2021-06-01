@@ -66,7 +66,7 @@ const Introduction = () => (
         <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Bold dreams for an individual, but a goal for me.
         </p>
-        <div className="mt-10 mb-10 flex flex-col lg:flex-row lg:space-x-5">
+        <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             I wish to develop myself into someone who contributes back to
             society, influences the life of many, and be there for those I’m
@@ -80,6 +80,47 @@ const Introduction = () => (
             friendly, trusted, and responsible, and I hope to continue
             developing myself on the right track.
           </p>
+        </div>
+        <div className="mt-10 mb-10 flex lg:flex-col min-h-screen-1/2 h-auto w-screen p-10 text-left lg:text-center">
+          <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-4 lg:w-auto">
+            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-gradient-to-r from-blue-700 to-blue-600"></div>
+            <div className="row-span-1 lg:col-span-1 bg-gradient-to-r from-blue-600 to-blue-500"></div>
+            <div className="row-span-1 lg:col-span-1 rounded-b-full lg:rounded-b-none lg:rounded-r-full bg-gradient-to-r from-blue-500 to-blue-400"></div>
+          </div>
+          <div className="ml-5 lg:ml-0 lg:mt-5 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3">
+            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+              <h2 className="text-2xl font-heading font-bold">Pre-education</h2>
+              <p className="w-10/12">
+                As a young child, I've always been interested in computers. From
+                exploring the computer laptop to spending free time in
+                kindergarten at the computer station, I was always fascinated
+                and inclined towards computers and seeing how they work in our
+                daily lives.
+              </p>
+            </div>
+            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+              <h2 className="text-2xl font-heading font-bold">
+                Primary school
+              </h2>
+              <p className="w-10/12">
+                My passion fuelled further when I joined the school's ICT Club.
+                As someone quick to grasp knowledge of technology, I managed to
+                pick up basic skills — like using the Office suite of apps and
+                media creation — and put them to use.
+              </p>
+            </div>
+            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+              <h2 className="text-2xl font-heading font-bold">
+                Secondary school
+              </h2>
+              <p className="w-10/12">
+                Secondary school was where I gained my first-hand experience
+                with code, and it certainly was the most impactful in terms of
+                exposing me to the world of technology. I gained the skill of
+                code, UI design, algorithmic thinking, and much more over my
+                four years in secondary school.
+              </p>
+            </div>
           </div>
         </div>
       </div>

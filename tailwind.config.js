@@ -9,6 +9,7 @@ module.exports = {
         mono: ["'JetBrains Mono'"],
       },
       height: {
+        "screen-1/2": "50vh",
         "screen-1/3": "33vh",
       },
       backgroundOpacity: {
