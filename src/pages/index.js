@@ -9,7 +9,13 @@ import {
   faAndroid,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPencilRuler,
+  faUsers,
+  faGuitar,
+  faBullhorn,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/Layout";
 
@@ -58,7 +64,7 @@ const Introduction = () => (
 
       {/* About */}
       <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
-        <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        <h1 className="mt-20 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
           An <span className="text-blue-400">active contributor</span>, a{" "}
           <span className="text-blue-400">life-changer</span>, and a{" "}
           <span className="text-blue-400">friend</span> to all.
@@ -227,6 +233,38 @@ const Introduction = () => (
               purposes; mostly used in academic learning and program
               development.
             </p>
+          </div>
+        </div>
+
+        <p className="self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+          Not to mention, I've gained some other useful skills beyond the scope
+          of programming as well.
+        </p>
+
+        <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-4 mt-10 mb-10 gap-10">
+          <div className="flex gap-y-2 items-center flex-col">
+            <FontAwesomeIcon icon={faUsers} size="lg" />
+            <h2 className="text-center text-2xl font-heading font-bold">
+              Leadership
+            </h2>
+          </div>
+          <div className="flex gap-y-2 items-center flex-col">
+            <FontAwesomeIcon icon={faGuitar} size="lg" />
+            <h2 className="text-center text-2xl font-heading font-bold">
+              Guitar Playing
+            </h2>
+          </div>
+          <div className="flex gap-y-2 items-center flex-col">
+            <FontAwesomeIcon icon={faBullhorn} size="lg" />
+            <h2 className="text-center text-2xl font-heading font-bold">
+              Presenting
+            </h2>
+          </div>
+          <div className="flex gap-y-2 items-center flex-col">
+            <FontAwesomeIcon icon={faPencilRuler} size="lg" />
+            <h2 className="text-center text-2xl font-heading font-bold">
+              UI Design
+            </h2>
           </div>
         </div>
       </div>
