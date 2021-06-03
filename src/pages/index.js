@@ -242,7 +242,7 @@ const Introduction = () => (
           of programming as well.
         </p>
 
-        <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-4 mt-10 mb-10 gap-10">
+        <div className="mt-10 mb-10 w-full h-1/2 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="flex gap-y-2 items-center flex-col">
             <FontAwesomeIcon icon={faUsers} size="lg" />
             <h2 className="text-center text-2xl font-heading font-bold">
