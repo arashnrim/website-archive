@@ -10,6 +10,8 @@ module.exports = {
       },
       height: {
         "screen-1/2": "50vh",
+      },
+      minHeight: {
         "screen-1/3": "33vh",
       },
       backgroundOpacity: {
