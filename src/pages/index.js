@@ -201,7 +201,7 @@ const Introduction = () => (
         </div>
 
         <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
-          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
+          <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
             <FontAwesomeIcon icon={faSwift} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl-sm">
@@ -210,7 +210,7 @@ const Introduction = () => (
               watchOS.
             </p>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-600 shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-600 shadow-lg">
             <FontAwesomeIcon icon={faJava} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -218,7 +218,7 @@ const Introduction = () => (
               purposes; mostly used for developing Android applications.
             </p>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg">
             <FontAwesomeIcon icon={faAndroid} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -226,7 +226,7 @@ const Introduction = () => (
               purposes; mostly used for developing Android applications.
             </p>
           </div>
-          <div className="col-span-1 md:col-span-2 p-10 lg:h-screen-1/3 rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg">
+          <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg">
             <FontAwesomeIcon icon={faPython} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -295,7 +295,7 @@ const Introduction = () => (
         </div>
 
         <div className="mt-10 mb-20 w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white">
             <h1 className="mt-2 text-4xl font-bold font-heading">Listé</h1>
             <p className="font-mono">Swift (iOS) | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -323,7 +323,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Upgrade</h1>
             <p className="font-mono">Swift (iOS) | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -341,7 +341,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">pyweather</h1>
             <p className="font-mono">Python | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -359,7 +359,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">ArashNrIm</h1>
             <p className="font-mono">JavaScript, HTML | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -368,7 +368,7 @@ const Introduction = () => (
               current iteration uses Gatsby and code made from scratch.
             </p>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Dashboard</h1>
             <p className="font-mono">Python | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -386,7 +386,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Sandbox</h1>
             <p className="font-mono">Various | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -404,7 +404,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 lg:h-screen-1/3 rounded-2xl text-white border-2 border-opacity-50 border-white border-dashed shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-50 border-white border-dashed shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Storm</h1>
             <p className="font-mono">
               Kotlin (Android), Swift (iOS) | Individual
