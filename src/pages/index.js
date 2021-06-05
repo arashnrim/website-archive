@@ -304,7 +304,7 @@ const Introduction = () => (
         </div>
 
         <div className="mt-10 mb-20 w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Listé</h1>
             <p className="font-mono">Swift (iOS) | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -334,7 +334,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Upgrade</h1>
             <p className="font-mono">Swift (iOS) | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -353,7 +353,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">pyweather</h1>
             <p className="font-mono">Python | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -372,7 +372,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">ArashNrIm</h1>
             <p className="font-mono">JavaScript, HTML | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -381,7 +381,7 @@ const Introduction = () => (
               current iteration uses Gatsby and code made from scratch.
             </p>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Dashboard</h1>
             <p className="font-mono">Python | Team</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -400,7 +400,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-75 border-white shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Sandbox</h1>
             <p className="font-mono">Various | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -419,7 +419,7 @@ const Introduction = () => (
               </a>
             </div>
           </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-50 border-white border-dashed shadow-lg">
+          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-80 border-indigo-400 border-dashed shadow-lg">
             <h1 className="mt-2 text-4xl font-bold font-heading">Storm</h1>
             <p className="font-mono">
               Kotlin (Android), Swift (iOS) | Individual
