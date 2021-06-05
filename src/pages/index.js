@@ -47,16 +47,25 @@ const Introduction = () => (
 
           <div className="mt-5 space-x-6">
             <a
+              className="transition-all hover:opacity-75"
               href="https://github.com/arashnrim"
               target="_blank"
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
-            <a href="https://dev.to/arashnrim" target="_blank" rel="noreferrer">
+            <a
+              className="transition-all hover:opacity-75"
+              href="https://dev.to/arashnrim"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faDev} size="2x" />
             </a>
-            <a href="mailto:hello@arashnrim.me">
+            <a
+              className="transition-all hover:opacity-75"
+              href="mailto:hello@arashnrim.me"
+            >
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
           </div>
@@ -308,6 +317,7 @@ const Introduction = () => (
             </p>
             <div className="mt-5 space-x-2">
               <a
+                className="transition-all hover:opacity-75"
                 href="https://github.com/arashnrim/Liste"
                 target="_blank"
                 rel="noreferrer"
@@ -315,6 +325,7 @@ const Introduction = () => (
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
+                className="transition-all hover:opacity-75"
                 href="https://apps.apple.com/my/app/list%C3%A9/id1486116734"
                 target="_blank"
                 rel="noreferrer"
@@ -333,6 +344,7 @@ const Introduction = () => (
             </p>
             <div className="mt-5 space-x-2">
               <a
+                className="transition-all hover:opacity-75"
                 href="https://github.com/arashnrim/Upgrade"
                 target="_blank"
                 rel="noreferrer"
@@ -351,6 +363,7 @@ const Introduction = () => (
             </p>
             <div className="mt-5 space-x-2">
               <a
+                className="transition-all hover:opacity-75"
                 href="https://github.com/arashnrim/sandbox/tree/pyweather/pyweather"
                 target="_blank"
                 rel="noreferrer"
@@ -378,6 +391,7 @@ const Introduction = () => (
             </p>
             <div className="mt-5 space-x-2">
               <a
+                className="transition-all hover:opacity-75"
                 href="https://github.com/arashnrim/Dashboard"
                 target="_blank"
                 rel="noreferrer"
@@ -396,6 +410,7 @@ const Introduction = () => (
             </p>
             <div className="mt-5 space-x-2">
               <a
+                className="transition-all hover:opacity-75"
                 href="https://github.com/arashnrim/Sandbox"
                 target="_blank"
                 rel="noreferrer"
