@@ -16,6 +16,7 @@ import {
   faUsers,
   faGuitar,
   faBullhorn,
+  faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/Layout";
@@ -402,6 +403,14 @@ const Introduction = () => (
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
+              </a>
+              <a
+                className="transition-all hover:opacity-75"
+                href="https://sites.google.com/sst.edu.sg/cp-coursework-gallery/2021/dashboard"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGlobe} size="lg" />
               </a>
             </div>
           </div>
