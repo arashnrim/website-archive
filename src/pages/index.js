@@ -310,10 +310,15 @@ const Introduction = () => (
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               Listé is a productivity to-do app created by me and two other
               teammates for the{" "}
-              <a href="https://swiftinsg.org" target="_blank" rel="noreferrer">
-                Swift Accelerator Programme in 2019. A rewrite was completed in
-                2020 to improve the app.
-              </a>
+              <a
+                className="transition-all hover:opacity-75 font-bold"
+                href="https://swiftinsg.org"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Swift Accelerator Programme
+              </a>{" "}
+              in 2019. A rewrite was completed in 2020 to improve the app.
             </p>
             <div className="mt-5 space-x-2">
               <a
