@@ -98,7 +98,7 @@ const Introduction = () => (
             developing myself on the right track.
           </p>
         </div>
-        <div className="mt-10 mb-10 flex lg:flex-col min-h-screen-1/2 h-auto w-screen p-10 text-left lg:text-center">
+        <div className="mt-10 flex lg:flex-col min-h-screen-1/2 h-auto w-screen p-10 text-left lg:text-center">
           <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-4 lg:w-auto">
             <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-gradient-to-r from-blue-700 to-blue-600"></div>
             <div className="row-span-1 lg:col-span-1 bg-gradient-to-r from-blue-600 to-blue-500"></div>
@@ -138,6 +138,56 @@ const Introduction = () => (
                 four years in secondary school.
               </p>
             </div>
+          </div>
+        </div>
+        <p className="mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto">
+          As I grew up, I realised the importance of have core values I can hold
+          on to for guidance. While they may subtly change as I gain better
+          insight to them, I try my best to ensure the core meaning of a value
+          is upheld.
+        </p>
+        <div className="mt-10 mb-10 w-full grid justify-center grid-rows-5 lg:grid-rows-2 lg:grid-cols-6 gap-10">
+          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+            <h1 className="mt-2 text-4xl font-bold font-heading">Care</h1>
+            <p className="font-mono">Personal | Interpersonal</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              Having serious attention or consideration applied to doing
+              something; feeling concern or interest.
+            </p>
+          </div>
+          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+            <h1 className="mt-2 text-4xl font-bold font-heading">Respect</h1>
+            <p className="font-mono">Personal | Interpersonal</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              Having due regard for (someone's feelings, wishes, or rights).
+            </p>
+          </div>
+          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+            <h1 className="mt-2 text-4xl font-bold font-heading">
+              Responsibility
+            </h1>
+            <p className="font-mono">Personal</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              Being accountable for something where accountability is due and
+              appropriate.
+            </p>
+          </div>
+          <div className="p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+            <h1 className="mt-2 text-4xl font-bold font-heading">Integrity</h1>
+            <p className="font-mono">Personal</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              Being honest and having strong moral principles.
+            </p>
+          </div>
+          <div className="p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+            <h1 className="mt-2 text-4xl font-bold font-heading">
+              Perseverance
+            </h1>
+            <p className="font-mono">Personal</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              Persistent in doing something despite difficulty or delay in
+              achieving success.
+            </p>
           </div>
         </div>
       </div>
