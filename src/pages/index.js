@@ -264,7 +264,7 @@ const Introduction = () => (
           <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
             <FontAwesomeIcon icon={faSwift} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl-sm">
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               A programming language created by Apple for developing native
               applications for its platforms of iOS, macOS, iPadOS, tvOS, and
               watchOS.
