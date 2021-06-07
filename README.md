@@ -1,3 +1,5 @@
+> **Deprecated**: This is the previous iteration of my portfolio, and a new one has been released. Check it out [here](https://github.com/arashnrim/portfolio)!
+
 # projects.arashnrim.me
 
 ## Introduction
