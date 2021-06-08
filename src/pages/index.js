@@ -220,9 +220,9 @@ const Introduction = () => (
               Swift
             </a>
             , my first programming language, without any prior introduction to
-            the world of code, my passion for technology further fuelled as I got
-            to grasp more concepts, participate in more events, and expand my
-            knowledge. Thus far, the skills of{" "}
+            the world of code, my passion for technology further fuelled as I
+            got to grasp more concepts, participate in more events, and expand
+            my knowledge. Thus far, the skills of{" "}
             <a
               href="https://swift.org"
               target="_blank"
