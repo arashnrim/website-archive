@@ -18,11 +18,13 @@ import {
   faBullhorn,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
+import SEO from "../components/SEO";
 
 import Layout from "../components/Layout";
 
 const Introduction = () => (
   <main className="bg-gray-800 text-white">
+    <SEO pageName="Portfolio" />
     <Layout>
       {/* Hero */}
       <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-900 rounded-b-3xl">
@@ -218,9 +220,9 @@ const Introduction = () => (
               Swift
             </a>
             , my first programming language, without any prior introduction to
-            the world of code, my passion for technology further fuelled as I got
-            to grasp more concepts, participate in more events, and expand my
-            knowledge. Thus far, the skills of{" "}
+            the world of code, my passion for technology further fuelled as I
+            got to grasp more concepts, participate in more events, and expand
+            my knowledge. Thus far, the skills of{" "}
             <a
               href="https://swift.org"
               target="_blank"
