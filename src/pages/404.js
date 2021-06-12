@@ -1,54 +1,34 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
+import SEO from "../components/SEO";
+import Layout from "../components/Layout";
 
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
+const NotFound = ({ location }) => {
+  const link = location.pathname;
 
-// markup
-const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main className="bg-gray-800 text-white">
+      <SEO pageName="💀" />
+      <Layout>
+        <div className="justify-center items-center flex flex-col min-h-screen min-w-screen px-7 bg-gray-900">
+          <p className="text-xl sm:text-2xl">Woah oh.</p>
+          <h1 className="text-9xl font-heading font-bold">404</h1>
+          <p className="lg:w-2/3 mt-5 text-xl sm:text-2xl text-center">
+            Nothing was found at <span className="font-mono">{link}</span>. For
+            a single-page portfolio, anyway, there shouldn't be anything else
+            accessible but the root page!
+          </p>
+          <Link
+            to="/"
+            className="transition-all mt-5 font-bold underline hover:no-underline"
+          >
+            Need help going to the root page?
+          </Link>
+        </div>
+      </Layout>
     </main>
   );
 };
 
-export default NotFoundPage;
+export default NotFound;
