@@ -148,8 +148,8 @@ const Introduction = () => (
           insight to them, I try my best to ensure the core meaning of a value
           is upheld.
         </p>
-        <div className="mt-10 mb-10 w-full grid justify-center grid-rows-5 lg:grid-rows-2 lg:grid-cols-6 gap-10">
-          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+        <div className="mt-10 mb-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
+          <div className="p-10 gap-y-2 col-span-1 md:col-span-2 md:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Care</h1>
             <p className="font-mono">Personal | Interpersonal</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -262,7 +262,7 @@ const Introduction = () => (
           </p>
         </div>
 
-        <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 mt-10 mb-10 gap-10">
+        <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 mb-10 gap-10">
           <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
             <FontAwesomeIcon icon={faSwift} size="3x" />
             <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
