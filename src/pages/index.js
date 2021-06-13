@@ -24,7 +24,7 @@ import Layout from "../components/Layout";
 
 const Introduction = () => (
   <main className="bg-gray-800 text-white">
-    <SEO pageName="👋" />
+    <SEO pageName="👋" /> {/* eslint-disable-line */}
     <Layout>
       {/* Hero */}
       <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-900 rounded-b-3xl">
