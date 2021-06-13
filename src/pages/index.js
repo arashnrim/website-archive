@@ -102,9 +102,9 @@ const Introduction = () => (
         </div>
         <div className="mt-10 flex lg:flex-col min-h-screen-1/2 h-auto w-screen p-10 text-left lg:text-center">
           <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-4 lg:w-auto">
-            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-gradient-to-r from-blue-700 to-blue-600"></div>
-            <div className="row-span-1 lg:col-span-1 bg-gradient-to-r from-blue-600 to-blue-500"></div>
-            <div className="row-span-1 lg:col-span-1 rounded-b-full lg:rounded-b-none lg:rounded-r-full bg-gradient-to-r from-blue-500 to-blue-400"></div>
+            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-gradient-to-b lg:bg-gradient-to-r from-blue-700 to-blue-600"></div>
+            <div className="row-span-1 lg:col-span-1 bg-gradient-to-b lg:bg-gradient-to-r from-blue-600 to-blue-500"></div>
+            <div className="row-span-1 lg:col-span-1 rounded-b-full lg:rounded-b-none lg:rounded-r-full bg-gradient-to-b lg:bg-gradient-to-r from-blue-500 to-blue-400"></div>
           </div>
           <div className="ml-5 lg:ml-0 lg:mt-5 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3">
             <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
