@@ -16,7 +16,7 @@ const NotFound = ({ location }) => {
           <h1 className="text-9xl font-heading font-bold">404</h1>
           <p className="lg:w-2/3 mt-5 text-xl sm:text-2xl text-center">
             Nothing was found at <span className="font-mono">{link}</span>. For
-            a single-page portfolio, anyway, there shouldn't be anything else
+            a single-page website, anyway, there shouldn't be anything else
             accessible but the root page!
           </p>
           <Link

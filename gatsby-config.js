@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "ArashNrIm",
-    description: "A digital portfolio for Arash Nur Iman.",
+    description: "The digital website for Arash Nur Iman.",
   },
   plugins: [
     `gatsby-plugin-image`,

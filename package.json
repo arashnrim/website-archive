@@ -1,12 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "arashnrim",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio",
-  "author": "Arash",
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "ArashNrIm",
+  "author": "Arash Nur Iman",
   "scripts": {
     "develop": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop -H 0.0.0.0",

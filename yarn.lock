@@ -3402,6 +3402,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"arashnrim@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "arashnrim@workspace:."
+  dependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.35
+    "@fortawesome/free-brands-svg-icons": ^5.15.3
+    "@fortawesome/free-solid-svg-icons": ^5.15.3
+    "@fortawesome/react-fontawesome": ^0.1.14
+    autoprefixer: ^10.2.5
+    gatsby: ^3.2.1
+    gatsby-plugin-image: ^1.4.0
+    gatsby-plugin-manifest: ^3.6.0
+    gatsby-plugin-postcss: ^4.2.0
+    gatsby-plugin-react-helmet: ^4.5.0
+    gatsby-plugin-sharp: ^3.4.0
+    gatsby-source-filesystem: ^3.4.0
+    gatsby-transformer-sharp: ^3.4.0
+    postcss: ^8.2.9
+    prettier: 2.3.0
+    prop-types: ^15.7.2
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    react-helmet: ^6.1.0
+    tailwindcss: ^2.1.1
+  languageName: unknown
+  linkType: soft
+
 "arch@npm:^2.1.0, arch@npm:^2.1.1":
   version: 2.2.0
   resolution: "arch@npm:2.2.0"
@@ -13047,33 +13074,6 @@ fsevents@~2.3.1:
   checksum: 906dc51482ef9336a812df0b2960119e4464c7d14b69e489bf88bbeea317175a5700712688e953b9b2a2a2de0dc28824f0cb01206c56dd8350f3798e212b5bb8
   languageName: node
   linkType: hard
-
-"portfolio@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "portfolio@workspace:."
-  dependencies:
-    "@fortawesome/fontawesome-svg-core": ^1.2.35
-    "@fortawesome/free-brands-svg-icons": ^5.15.3
-    "@fortawesome/free-solid-svg-icons": ^5.15.3
-    "@fortawesome/react-fontawesome": ^0.1.14
-    autoprefixer: ^10.2.5
-    gatsby: ^3.2.1
-    gatsby-plugin-image: ^1.4.0
-    gatsby-plugin-manifest: ^3.6.0
-    gatsby-plugin-postcss: ^4.2.0
-    gatsby-plugin-react-helmet: ^4.5.0
-    gatsby-plugin-sharp: ^3.4.0
-    gatsby-source-filesystem: ^3.4.0
-    gatsby-transformer-sharp: ^3.4.0
-    postcss: ^8.2.9
-    prettier: 2.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.1
-    react-dom: ^17.0.1
-    react-helmet: ^6.1.0
-    tailwindcss: ^2.1.1
-  languageName: unknown
-  linkType: soft
 
 "posix-character-classes@npm:^0.1.0":
   version: 0.1.1

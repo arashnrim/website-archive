@@ -434,7 +434,7 @@ const Introduction = () => (
             <h1 className="mt-2 text-4xl font-bold font-heading">ArashNrIm</h1>
             <p className="font-mono">JavaScript, HTML | Individual</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              An online portfolio which has gone through three major iterations.
+              An online website which has gone through three major iterations.
               This has been a live project since its initiation in 2020. The
               current iteration uses Gatsby and code made from scratch.
             </p>
