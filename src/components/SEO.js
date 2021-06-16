@@ -21,7 +21,6 @@ const SEO = ({ pageName }) => {
         {seo.name} — {seo.title}
       </title>
       <meta name="description" content={seo.description} />
-      <meta name="robots" content="index, nofollow" />
       <meta name="canonical" content="https://arashnrim.me" />
     </Helmet>
   );
