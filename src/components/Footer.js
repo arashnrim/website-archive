@@ -14,6 +14,7 @@ const Footer = () => (
         href="https://github.com/arashnrim"
         target="_blank"
         rel="noreferrer"
+        aria-label="GitHub profile"
       >
         <FontAwesomeIcon icon={faGithub} size="lg" />
       </a>
@@ -22,12 +23,14 @@ const Footer = () => (
         href="https://dev.to/arashnrim"
         target="_blank"
         rel="noreferrer"
+        aria-label="Dev.to profile"
       >
         <FontAwesomeIcon icon={faDev} size="lg" />
       </a>
       <a
         className="transition-all hover:opacity-75"
         href="mailto:hello@arashnrim.me"
+        aria-label="Email"
       >
         <FontAwesomeIcon icon={faEnvelope} size="lg" />
       </a>

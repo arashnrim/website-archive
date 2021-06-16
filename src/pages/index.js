@@ -54,6 +54,7 @@ const Introduction = () => (
               href="https://github.com/arashnrim"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub profile"
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
@@ -62,12 +63,14 @@ const Introduction = () => (
               href="https://dev.to/arashnrim"
               target="_blank"
               rel="noreferrer"
+              aria-label="Dev.to profile"
             >
               <FontAwesomeIcon icon={faDev} size="2x" />
             </a>
             <a
               className="transition-all hover:opacity-75"
               href="mailto:hello@arashnrim.me"
+              aria-label="Email"
             >
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
@@ -379,6 +382,7 @@ const Introduction = () => (
                 href="https://github.com/arashnrim/Liste"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Listé project repository"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
@@ -387,6 +391,7 @@ const Introduction = () => (
                 href="https://apps.apple.com/my/app/list%C3%A9/id1486116734"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Listé App Store page"
               >
                 <FontAwesomeIcon icon={faAppStoreIos} size="lg" />
               </a>
@@ -406,6 +411,7 @@ const Introduction = () => (
                 href="https://github.com/arashnrim/Upgrade"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Upgrade project repository"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
@@ -425,6 +431,7 @@ const Introduction = () => (
                 href="https://github.com/arashnrim/sandbox/tree/pyweather/pyweather"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="pyweather project repository"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
@@ -453,6 +460,7 @@ const Introduction = () => (
                 href="https://github.com/arashnrim/Dashboard"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Dashboard project repository"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
@@ -461,6 +469,7 @@ const Introduction = () => (
                 href="https://sites.google.com/sst.edu.sg/cp-coursework-gallery/2021/dashboard"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Dashboard project page"
               >
                 <FontAwesomeIcon icon={faGlobe} size="lg" />
               </a>
@@ -480,6 +489,7 @@ const Introduction = () => (
                 href="https://github.com/arashnrim/Sandbox"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Sandbox project repository"
               >
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>

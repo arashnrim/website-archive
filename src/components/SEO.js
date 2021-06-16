@@ -16,7 +16,7 @@ const SEO = ({ pageName }) => {
   };
 
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "en" }}>
       <title>
         {seo.name} — {seo.title}
       </title>
