@@ -5,26 +5,31 @@
 @layer base {
   @font-face {
     font-family: "Clash Display";
+    font-display: "swap";
     font-weight: 400;
     src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2");
   }
   @font-face {
     font-family: "Clash Display";
+    font-display: "swap";
     font-weight: 600;
     src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2");
   }
   @font-face {
     font-family: "Inter";
+    font-display: "swap";
     font-weight: 400;
     src: url("../fonts/Inter-Regular.woff2") format("woff2");
   }
   @font-face {
     font-family: "Inter";
+    font-display: "swap";
     font-weight: 700;
     src: url("../fonts/Inter-Bold.woff2") format("woff2");
   }
   @font-face {
     font-family: "JetBrains Mono";
+    font-display: "swap";
     font-weight: 400;
     src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
   }
