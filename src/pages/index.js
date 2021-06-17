@@ -152,7 +152,7 @@ const Introduction = () => (
           is upheld.
         </p>
         <div className="mt-10 mb-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
-          <div className="p-10 gap-y-2 col-span-1 md:col-span-2 md:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+          <div className="break-words p-10 gap-y-2 col-span-1 md:col-span-2 md:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Care</h1>
             <p className="font-mono">Personal | Interpersonal</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
@@ -160,14 +160,14 @@ const Introduction = () => (
               something; feeling concern or interest.
             </p>
           </div>
-          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+          <div className="break-words p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Respect</h1>
             <p className="font-mono">Personal | Interpersonal</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               Having due regard for (someone's feelings, wishes, or rights).
             </p>
           </div>
-          <div className="p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+          <div className="break-words p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">
               Responsibility
             </h1>
@@ -177,14 +177,14 @@ const Introduction = () => (
               appropriate.
             </p>
           </div>
-          <div className="p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+          <div className="break-words p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Integrity</h1>
             <p className="font-mono">Personal</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               Being honest and having strong moral principles.
             </p>
           </div>
-          <div className="p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
+          <div className="break-words p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">
               Perseverance
             </h1>
