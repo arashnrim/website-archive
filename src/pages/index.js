@@ -19,7 +19,7 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
-import SEO from "../components/SEO"
+import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import profilePicture from "../../public/arash.jpg";
 
