@@ -1,11 +1,13 @@
 import * as React from "react";
 import Link from "next/link";
 
+import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 
 const NotFound = () => {
   return (
     <main className="bg-gray-800 text-white">
+      <SEO page="💀" />
       <Layout>
         <div className="justify-center items-center flex flex-col min-h-screen min-w-screen px-7 bg-gray-900">
           <p className="text-xl sm:text-2xl">Woah oh.</p>
