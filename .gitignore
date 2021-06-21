@@ -1,7 +1,7 @@
 node_modules/
 .vercel/
 .next/
-
+.vscode/
 .yarn/*
 !.yarn/patches
 !.yarn/plugins

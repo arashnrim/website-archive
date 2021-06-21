@@ -20,9 +20,13 @@
     "react-helmet": "latest"
   },
   "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@yarnpkg/pnpify": "^3.0.0-rc.6",
     "autoprefixer": "latest",
     "postcss": "latest",
     "prettier": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "^4.3.4"
   }
 }
