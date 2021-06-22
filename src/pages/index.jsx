@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -21,19 +21,22 @@ import {
 
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
+import profilePicture from "../../public/arash.jpg";
 
 const Introduction = () => (
   <main className="bg-gray-800 text-white">
-    <SEO pageName="👋" /> {/* eslint-disable-line */}
+    <SEO page="👋" />
     <Layout>
       {/* Hero */}
       <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-900 rounded-b-3xl">
-        <StaticImage
-          className="pointer-events-none w-1/2 max-w-xs ring-8 ring-white ring-opacity-10 rounded-full bg-gray-900"
-          src="../images/arash.jpg"
-          alt="Arash Nur Iman"
-          placeholder="dominantColor"
-        />
+        <div className="w-1/2 max-w-sm">
+          <Image
+            className="pointer-events-none object-contain rounded-full bg-gray-900"
+            src={profilePicture}
+            alt="Arash Nur Iman"
+            placeholder="blur"
+          />
+        </div>
         <div className="flex-row text-center lg:text-left">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading">
             <span role="img" aria-label="Waving hand">
