@@ -1,4 +1,4 @@
 .cache
 .next/
-.yarn/
-.pnp.js
+.pnp/
+.pnp.*

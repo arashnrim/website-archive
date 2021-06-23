@@ -2,9 +2,5 @@ node_modules/
 .vercel/
 .next/
 .vscode/
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+.pnp/
 .pnp.*

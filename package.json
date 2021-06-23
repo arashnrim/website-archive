@@ -23,5 +23,8 @@
     "postcss": "latest",
     "prettier": "latest",
     "tailwindcss": "latest"
+  },
+  "installConfig": {
+    "pnp": true
   }
 }
