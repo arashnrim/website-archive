@@ -8,7 +8,6 @@ import {
   faJava,
   faAndroid,
   faPython,
-  faAppStoreIos,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -23,7 +22,15 @@ import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import profilePicture from "../../public/arash.jpg";
 
-const Introduction = () => (
+export const getStaticProps = async () => {
+  const data = await fetch("https://api.github.com/users/arashnrim/repos");
+  const repos = await data.json();
+  return {
+    props: { repos },
+  };
+};
+
+const Introduction = ({ repos }) => (
   <main className="bg-gray-800 text-white">
     <SEO page="👋" />
     <Layout>
@@ -363,152 +370,50 @@ const Introduction = () => (
         </div>
 
         <div className="mt-10 mb-20 w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400">
-            <h1 className="mt-2 text-4xl font-bold font-heading">Listé</h1>
-            <p className="font-mono">Swift (iOS) | Team</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              Listé is a productivity to-do app created by me and two other
-              teammates for the{" "}
-              <a
-                className="transition-all hover:opacity-75 font-bold"
-                href="https://swiftinsg.org"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Swift Accelerator Programme
-              </a>{" "}
-              in 2019. A rewrite was completed in 2020 to improve the app.
-            </p>
-            <div className="mt-5 space-x-2">
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://github.com/arashnrim/Liste"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Listé project repository"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://apps.apple.com/my/app/list%C3%A9/id1486116734"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Listé App Store page"
-              >
-                <FontAwesomeIcon icon={faAppStoreIos} size="lg" />
-              </a>
-            </div>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">Upgrade</h1>
-            <p className="font-mono">Swift (iOS) | Team</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              Upgrade is an app designed for students to understand their
-              academic achievements better. This app was made for Project
-              Decimus, a school project, in 2019.
-            </p>
-            <div className="mt-5 space-x-2">
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://github.com/arashnrim/Upgrade"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Upgrade project repository"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-            </div>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">pyweather</h1>
-            <p className="font-mono">Python | Individual</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              pyweather is a personal project part of the Sandbox family of
-              experimental projects. It was completed and made in mid-2020, with
-              all aspects done individually.
-            </p>
-            <div className="mt-5 space-x-2">
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://github.com/arashnrim/sandbox/tree/pyweather/pyweather"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="pyweather project repository"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-            </div>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">ArashNrIm</h1>
-            <p className="font-mono">JavaScript, HTML | Individual</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              An online website which has gone through three major iterations.
-              This has been a live project since its initiation in 2020. The
-              current iteration uses Gatsby and code made from scratch.
-            </p>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">Dashboard</h1>
-            <p className="font-mono">Python | Team</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              Dashboard is a project which aims to make the experience of using
-              a computer simpler. Created as a group project, the project ran
-              its course from 2020 to 2021.
-            </p>
-            <div className="mt-5 space-x-2">
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://github.com/arashnrim/Dashboard"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Dashboard project repository"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://sites.google.com/sst.edu.sg/cp-coursework-gallery/2021/dashboard"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Dashboard project page"
-              >
-                <FontAwesomeIcon icon={faGlobe} size="lg" />
-              </a>
-            </div>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">Sandbox</h1>
-            <p className="font-mono">Various | Individual</p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              The Sandbox serves as a collection of experimental projects for me
-              to embark on something new in a safe space. While documenting what
-              I learn, it's a good way to share what I'm working on too.
-            </p>
-            <div className="mt-5 space-x-2">
-              <a
-                className="transition-all hover:opacity-75"
-                href="https://github.com/arashnrim/Sandbox"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Sandbox project repository"
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
-            </div>
-          </div>
-          <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-opacity-80 border-indigo-400 border-dashed shadow-lg">
-            <h1 className="mt-2 text-4xl font-bold font-heading">Storm</h1>
-            <p className="font-mono">
-              Kotlin (Android), Swift (iOS) | Individual
-            </p>
-            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              Storm is an upcoming weather app created to show you what you need
-              to know about the weather, focusing on a minimalistic design with
-              clutter-free and precise information.
-            </p>
-          </div>
+          {repos
+            .filter(
+              (repo) =>
+                !repo.name.includes("archive") && !(repo.language == null)
+            )
+            .map((repo) => (
+              <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400">
+                <h1 className="mt-2 text-4xl font-bold font-heading capitalize">
+                  {repo.name.replace(/-/g, " ")}
+                </h1>
+                <p className="font-mono">
+                  {repo.language}
+                  {repo.license ? " | " + repo.license.name : ""}
+                </p>
+                <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+                  {repo.description}
+                </p>
+
+                <div className="mt-5 space-x-2">
+                  <a
+                    className="transition-all hover:opacity-75"
+                    href={repo.html_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={repo.name + " project repository"}
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
+                  </a>
+                  {repo.homepage ? (
+                    <a
+                      className="transition-all hover:opacity-75"
+                      href={repo.homepage}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={repo.name + " project repository"}
+                    >
+                      <FontAwesomeIcon icon={faGlobe} size="lg" />
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </Layout>
