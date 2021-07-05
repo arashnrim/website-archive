@@ -14,15 +14,15 @@
     "@fortawesome/free-brands-svg-icons": "latest",
     "@fortawesome/free-solid-svg-icons": "latest",
     "@fortawesome/react-fontawesome": "latest",
-    "next": "latest",
+    "next": "^11.0.1",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
     "postcss": "latest",
-    "prettier": "latest",
-    "tailwindcss": "latest"
+    "prettier": "2.3.2",
+    "tailwindcss": "2.2.4"
   },
   "installConfig": {
     "pnp": true
