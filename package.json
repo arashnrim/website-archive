@@ -23,8 +23,5 @@
     "postcss": "latest",
     "prettier": "2.3.2",
     "tailwindcss": "2.2.4"
-  },
-  "installConfig": {
-    "pnp": true
   }
 }
