@@ -377,7 +377,7 @@ const Introduction = ({ repos }) => (
             )
             .map((repo) => (
               <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400">
-                <h1 className="mt-2 text-4xl font-bold font-heading capitalize">
+                <h1 className="mt-2 text-4xl font-bold font-heading capitalize break-words">
                   {repo.name.replace(/-/g, " ")}
                 </h1>
                 <p className="font-mono">
