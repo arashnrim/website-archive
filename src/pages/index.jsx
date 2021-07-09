@@ -23,7 +23,7 @@ import Layout from "../components/Layout";
 import profilePicture from "../../public/arash.jpg";
 
 export const getStaticProps = async () => {
-  const data = await fetch("https://api.github.com/users/arashnrim/repos");
+  const data = await fetch("https://api.github.com/users/arashnrim/repos?sort=updated");
   const repos = await data.json();
   return {
     props: { repos },
