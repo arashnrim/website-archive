@@ -376,7 +376,12 @@ const Introduction = ({ repos }) => (
                 !repo.name.includes("archive") && !(repo.language == null)
             )
             .map((repo) => (
-              <div className="col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400">
+              <div
+                className={`col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
+                  repo.archived ? "border-opacity-50" : "border-opacity-100"
+                }`}
+                key={repo.id}
+              >
                 <h1 className="mt-2 text-4xl font-bold font-heading capitalize break-words">
                   {repo.name.replace(/-/g, " ")}
                 </h1>
