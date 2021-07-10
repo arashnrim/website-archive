@@ -26,7 +26,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      ringWidth: ["hover"],
+    },
   },
   plugins: ["gatsby-plugin-postcss"],
 };
