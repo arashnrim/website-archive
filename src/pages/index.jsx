@@ -222,7 +222,7 @@ const Introduction = ({ repos }) => (
         <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             As I continue to develop myself as an individual, I also pick up
-            valuable skills that help be become more of a developer as I go on.
+            valuable skills that help me become more of a developer as I go on.
             <br />
             <br />
             Starting in 2018 when I picked up{" "}
