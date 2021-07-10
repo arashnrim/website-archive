@@ -4,7 +4,7 @@ const Header = () => (
   <>
     <div
       id="header"
-      className="fixed flex z-50 p-5 items-center w-screen h-max lg:h-20 bg-black bg-opacity-2-5"
+      className="fixed flex z-50 p-5 items-center w-screen h-max lg:h-20 bg-black bg-opacity-2-5 backdrop-filter backdrop-blur-sm"
     >
       <div className="flex flex-grow items-center space-x-6">
         <span className="select-none">
