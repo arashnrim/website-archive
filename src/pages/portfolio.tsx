@@ -47,6 +47,15 @@ const Portfolio = ({ downloadLink, portfolioLink }: PortfolioProps) => (
               Download
             </button>
           </a>
+            <a
+              href="https://timeline.arashnrim.me"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="transition-all mt-10 h-12 lg:h-16 w-40 lg:w-56 lg:text-xl rounded-lg text-white font-medium font-mono ring-white ring-opacity-5 hover:ring-50 ring-2 hover:ring-4">
+                Polywork
+              </button>
+            </a>
         </div>
       </div>
 
