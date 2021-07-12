@@ -3,10 +3,14 @@ import * as React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Layout = (props) => (
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <>
     <Header />
-    {props.children}
+    {children}
     <Footer />
   </>
 );

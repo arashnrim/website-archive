@@ -1,4 +1,5 @@
 import * as React from "react";
+import { GetStaticProps } from "next";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -22,7 +23,26 @@ import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import profilePicture from "../../public/arash.jpg";
 
-export const getStaticProps = async () => {
+interface License {
+  name: string;
+}
+
+interface Repository {
+  id: number;
+  name: string;
+  description: string;
+  language?: string;
+  license?: License;
+  html_url?: string;
+  homepage: string;
+  archived: boolean;
+}
+
+interface IntroductionProps {
+  repos: Repository[];
+}
+
+export const getStaticProps: GetStaticProps = async () => {
   const data = await fetch(
     "https://api.github.com/users/arashnrim/repos?sort=updated"
   );
@@ -32,7 +52,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const Introduction = ({ repos }) => (
+const Introduction = ({ repos }: IntroductionProps) => (
   <main className="bg-gray-800 text-white">
     <SEO page="👋" />
     <Layout>

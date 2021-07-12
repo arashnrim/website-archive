@@ -2,7 +2,11 @@ import Head from "next/head";
 
 import config from "../config";
 
-const SEO = ({ page }) => (
+interface SEOProps {
+  page: string
+}
+
+const SEO = ({ page }: SEOProps) => (
   <Head>
     <title>
       {page} — {config.title}
