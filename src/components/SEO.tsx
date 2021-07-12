@@ -3,7 +3,7 @@ import Head from "next/head";
 import config from "../config";
 
 interface SEOProps {
-  page: string
+  page: string;
 }
 
 const SEO = ({ page }: SEOProps) => (
