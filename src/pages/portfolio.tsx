@@ -1,9 +1,15 @@
 import * as React from "react";
+import { GetStaticProps } from "next";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 
-export const getStaticProps = () => {
+interface PortfolioProps {
+  downloadLink: string;
+  portfolioLink: string;
+}
+
+export const getStaticProps: GetStaticProps = () => {
   const downloadLink = process.env.DOWNLOAD_LINK;
   const portfolioLink = process.env.PORTFOLIO_LINK;
 
@@ -15,7 +21,7 @@ export const getStaticProps = () => {
   };
 };
 
-const Portfolio = ({ downloadLink, portfolioLink }) => (
+const Portfolio = ({ downloadLink, portfolioLink }: PortfolioProps) => (
   <main className="bg-gray-800 text-white">
     <SEO page="📄" />
     <Layout>
