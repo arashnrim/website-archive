@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "lint": "prettier -w .; next lint --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "latest",
@@ -21,6 +22,9 @@
   "devDependencies": {
     "@types/react": "^17.0.14",
     "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
     "postcss": "latest",
     "prettier": "2.3.2",
     "tailwindcss": "2.2.4",
