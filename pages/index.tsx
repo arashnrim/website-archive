@@ -21,7 +21,7 @@ import {
 
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
-import profilePicture from "../../public/arash.jpg";
+import profilePicture from "../public/arash.jpg";
 
 interface License {
   name: string;

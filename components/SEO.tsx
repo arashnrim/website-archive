@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import config from "../config";
+import config from "./config";
 
 interface SEOProps {
   page: string;
