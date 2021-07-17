@@ -15,19 +15,19 @@
     "@fortawesome/free-brands-svg-icons": "latest",
     "@fortawesome/free-solid-svg-icons": "latest",
     "@fortawesome/react-fontawesome": "latest",
-    "next": "^11.0.1",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/react": "^17.0.14",
+    "@types/react": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "eslint-config-prettier": "latest",
     "postcss": "latest",
-    "prettier": "2.3.2",
-    "tailwindcss": "2.2.4",
-    "typescript": "^4.3.5"
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }
