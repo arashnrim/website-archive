@@ -57,7 +57,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
     <SEO page="👋" />
     <Layout>
       {/* Hero */}
-      <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen px-7 bg-gray-900 rounded-b-3xl">
+      <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen bg-gray-900 rounded-b-3xl">
         <div className="w-1/2 max-w-sm">
           <Image
             className="pointer-events-none object-contain rounded-full bg-gray-900"
@@ -111,17 +111,19 @@ const Introduction = ({ repos }: IntroductionProps) => (
       </div>
 
       {/* About */}
-      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
-        <h1 className="mt-20 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          An <span className="text-blue-400">active contributor</span>, a{" "}
-          <span className="text-blue-400">life-changer</span>, and a{" "}
-          <span className="text-blue-400">friend</span> to all.
-        </h1>
-        <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
-          Bold dreams for an individual, but a goal for me.
-        </p>
-        <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
-          <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24 pt-24 space-y-10">
+        <div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+            An <span className="text-blue-400">active contributor</span>, a{" "}
+            <span className="text-blue-400">life-changer</span>, and a{" "}
+            <span className="text-blue-400">friend</span> to all.
+          </h1>
+          <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+            Bold dreams for an individual, but a goal for me.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:space-x-5">
+          <p className="lg:w-2/3 text-sm sm:text-lg 2xl:text-xl">
             I wish to develop myself into someone who contributes back to
             society, influences the life of many, and be there for those I’m
             close with.
@@ -135,16 +137,16 @@ const Introduction = ({ repos }: IntroductionProps) => (
             developing myself on the right track.
           </p>
         </div>
-        <div className="mt-10 flex lg:flex-col min-h-screen-1/2 h-auto w-screen p-10 text-left lg:text-center">
-          <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-4 lg:w-auto">
-            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-gradient-to-b lg:bg-gradient-to-r from-blue-700 to-blue-600"></div>
-            <div className="row-span-1 lg:col-span-1 bg-gradient-to-b lg:bg-gradient-to-r from-blue-600 to-blue-500"></div>
-            <div className="row-span-1 lg:col-span-1 rounded-b-full lg:rounded-b-none lg:rounded-r-full bg-gradient-to-b lg:bg-gradient-to-r from-blue-500 to-blue-400"></div>
+        <div className="flex lg:flex-col min-h-screen-1/2 h-auto w-full text-left lg:text-center">
+          <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-10 sm:w-5 lg:w-full">
+            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-blue-400 opacity-60"></div>
+            <div className="row-span-1 lg:col-span-1 bg-blue-400 opacity-75"></div>
+            <div className="row-span-1 lg:col-span-1 bg-blue-400"></div>
           </div>
           <div className="ml-5 lg:ml-0 lg:mt-5 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3">
-            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+            <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
               <h2 className="text-2xl font-heading font-bold">Pre-education</h2>
-              <p className="w-10/12">
+              <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
                 As a young child, I've always been interested in computers. From
                 exploring the computer laptop to spending free time in
                 kindergarten at the computer station, I was always fascinated
@@ -152,22 +154,22 @@ const Introduction = ({ repos }: IntroductionProps) => (
                 daily lives.
               </p>
             </div>
-            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+            <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
               <h2 className="text-2xl font-heading font-bold">
                 Primary school
               </h2>
-              <p className="w-10/12">
+              <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
                 My passion fuelled further when I joined the school's ICT Club.
                 As someone quick to grasp knowledge of technology, I managed to
                 pick up basic skills — like using the Office suite of apps and
                 media creation — and put them to use.
               </p>
             </div>
-            <div className="p-5 flex flex-col lg:justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1">
+            <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
               <h2 className="text-2xl font-heading font-bold">
                 Secondary school
               </h2>
-              <p className="w-10/12">
+              <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
                 Secondary school was where I gained my first-hand experience
                 with code, and it certainly was the most impactful in terms of
                 exposing me to the world of technology. I gained the skill of
@@ -183,7 +185,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
           insight to them, I try my best to ensure the core meaning of a value
           is upheld.
         </p>
-        <div className="mt-10 mb-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
+        <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
           <div className="break-words p-10 gap-y-2 col-span-1 md:col-span-2 md:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
             <h1 className="mt-2 text-4xl font-bold font-heading">Care</h1>
             <p className="font-mono">Personal | Interpersonal</p>
@@ -230,16 +232,18 @@ const Introduction = ({ repos }: IntroductionProps) => (
       </div>
 
       {/* Skills */}
-      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
-        <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          A <span className="text-red-400">learner</span>, a{" "}
-          <span className="text-red-400">developer</span>, and an{" "}
-          <span className="text-red-400">aspiring student</span>.
-        </h1>
-        <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
-          Every opportunity brings something to learn.
-        </p>
-        <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
+      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24 pt-24 space-y-10">
+        <div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+            A <span className="text-red-400">learner</span>, a{" "}
+            <span className="text-red-400">developer</span>, and an{" "}
+            <span className="text-red-400">aspiring student</span>.
+          </h1>
+          <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+            Every opportunity brings something to learn.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             As I continue to develop myself as an individual, I also pick up
             valuable skills that help me become more of a developer as I go on.
@@ -368,16 +372,18 @@ const Introduction = ({ repos }: IntroductionProps) => (
       </div>
 
       {/* Works */}
-      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24">
-        <h1 className="mt-10 text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
-          A <span className="text-indigo-400">tinkerer</span>, an{" "}
-          <span className="text-indigo-400">experimenter</span>, and a{" "}
-          <span className="text-indigo-400">developer</span>.
-        </h1>
-        <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
-          Who knew playing around is a good thing?
-        </p>
-        <div className="mt-10 flex flex-col lg:flex-row lg:space-x-5">
+      <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24 py-24 space-y-10">
+        <div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+            A <span className="text-indigo-400">tinkerer</span>, an{" "}
+            <span className="text-indigo-400">experimenter</span>, and a{" "}
+            <span className="text-indigo-400">developer</span>.
+          </h1>
+          <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+            Who knew playing around is a good thing?
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             To build up on my skills, test out what I know, and to learn new
             things, playing around is a good thing.
@@ -391,7 +397,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
           </p>
         </div>
 
-        <div className="mt-10 mb-20 w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
           {repos
             .filter(
               (repo) =>
