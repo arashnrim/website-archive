@@ -180,7 +180,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
           </div>
         </div>
         <p className="mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto">
-          As I grew up, I realised the importance of have core values I can hold
+          As I grew up, I realised the importance of having core values I can hold
           on to for guidance. While they may subtly change as I gain better
           insight to them, I try my best to ensure the core meaning of a value
           is upheld.
