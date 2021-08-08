@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faDev,
   faSwift,
   faJava,
   faAndroid,
@@ -89,15 +88,6 @@ const Introduction = ({ repos }: IntroductionProps) => (
               aria-label="GitHub profile"
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a
-              className="transition-all hover:opacity-75"
-              href="https://dev.to/arashnrim"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Dev.to profile"
-            >
-              <FontAwesomeIcon icon={faDev} size="2x" />
             </a>
             <a
               className="transition-all hover:opacity-75"
