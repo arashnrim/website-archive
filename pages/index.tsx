@@ -115,16 +115,16 @@ const Introduction = ({ repos }: IntroductionProps) => (
         <div className="flex flex-col lg:flex-row lg:space-x-5">
           <p className="lg:w-2/3 text-sm sm:text-lg 2xl:text-xl">
             I wish to develop myself into someone who contributes back to
-            society, influences the life of many, and be there for those I’m
+            society, influences the lives of many, and be there for those I’m
             close with.
             <br />
             <br />
-            In a way, I’m already working my way towards that idealistic goal —
-            I like to think that the many relationships I’ve forged over 16
-            years of my life have allowed me to learn from others as much as
-            others have learned from me. I’ve been known by many to be someone
-            friendly, trusted, and responsible, and I hope to continue
-            developing myself on the right track.
+            In a way, I’m already working towards that idealistic goal. I like
+            to think that the many relationships I’ve forged over 16 years of my
+            life have allowed me to learn from others as much as others have
+            learned from me. Many have known me to be someone friendly, trusted,
+            and responsible, and while its certainty remains uncertain, I hope
+            to continue developing myself on the right track.
           </p>
         </div>
         <div className="flex lg:flex-col min-h-screen-1/2 h-auto w-full text-left lg:text-center">
@@ -137,7 +137,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
               <h2 className="text-2xl font-heading font-bold">Pre-education</h2>
               <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
-                As a young child, I've always been interested in computers. From
+                As a young child, I’ve always been interested in computers. From
                 exploring the computer laptop to spending free time in
                 kindergarten at the computer station, I was always fascinated
                 and inclined towards computers and seeing how they work in our
@@ -149,10 +149,10 @@ const Introduction = ({ repos }: IntroductionProps) => (
                 Primary school
               </h2>
               <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
-                My passion fuelled further when I joined the school's ICT Club.
-                As someone quick to grasp knowledge of technology, I managed to
-                pick up basic skills — like using the Office suite of apps and
-                media creation — and put them to use.
+                My passion was fuelled further when I joined the school's ICT
+                Club. As someone quick to grasp technology, I managed to pick up
+                essential skills — like using the Office suite of apps and media
+                creation — and put them to use.
               </p>
             </div>
             <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
@@ -170,8 +170,8 @@ const Introduction = ({ repos }: IntroductionProps) => (
           </div>
         </div>
         <p className="mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto">
-          As I grew up, I realised the importance of having core values I can hold
-          on to for guidance. While they may subtly change as I gain better
+          As I grew up, I realised the importance of having core values I can
+          hold on to for guidance. While they may subtly change as I gain better
           insight to them, I try my best to ensure the core meaning of a value
           is upheld.
         </p>
@@ -239,7 +239,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             valuable skills that help me become more of a developer as I go on.
             <br />
             <br />
-            Starting in 2018 when I picked up{" "}
+            It started in 2018 when I picked up{" "}
             <a
               href="https://swift.org"
               target="_blank"
@@ -248,10 +248,10 @@ const Introduction = ({ repos }: IntroductionProps) => (
             >
               Swift
             </a>
-            , my first programming language, without any prior introduction to
-            the world of code, my passion for technology further fuelled as I
-            got to grasp more concepts, participate in more events, and expand
-            my knowledge. Thus far, the skills of{" "}
+            , my first programming language. I had no prior introduction to the
+            world of code, but my passion for technology further fuelled as I
+            grasped more concepts, participated in more events, and expanded my
+            knowledge. Thus far, the skills of{" "}
             <a
               href="https://swift.org"
               target="_blank"
@@ -306,7 +306,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               A programming language created by Oracle for a variety of
-              purposes; mostly used for developing Android applications.
+              purposes; mostly used by me for developing Android applications.
             </p>
           </div>
           <div className="col-span-1 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg">
@@ -314,7 +314,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               A programming language created by JetBrains for a variety of
-              purposes; mostly used for developing Android applications.
+              purposes; mostly used by me for developing Android applications.
             </p>
           </div>
           <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg">
@@ -322,7 +322,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               A programming language powerful to have a wide variety of
-              purposes; mostly used in academic learning and program
+              purposes; mostly used by me in academic learning and program
               development.
             </p>
           </div>
@@ -375,15 +375,15 @@ const Introduction = ({ repos }: IntroductionProps) => (
         </div>
         <div className="flex flex-col lg:flex-row lg:space-x-5">
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
-            To build up on my skills, test out what I know, and to learn new
-            things, playing around is a good thing.
+            Playing around is a good thing to build up my skills, test out what
+            I know, and learn new things.
             <br />
             <br />
-            The result of the tinkering I’ve done is the several projects that I
+            The result of the tinkering I've done is the several projects that I
             have been a part of. No matter a school project or a personal
-            project, I make it an effort to give everything that I do my best
-            shot. Doing so allows me to learn what I do best and showcase the
-            quality of work I give at the same time.
+            project, I make it an effort to give everything I do my best shot.
+            Doing so allows me to learn what I do best and showcase the quality
+            of work I offer at the same time.
           </p>
         </div>
 
