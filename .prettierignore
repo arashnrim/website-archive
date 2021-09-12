@@ -34,3 +34,6 @@ yarn-error.log*
 
 # cache
 /.cache/
+
+# editor/IDE files
+/.idea/

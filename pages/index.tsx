@@ -48,6 +48,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const repos = await data.json();
   return {
     props: { repos },
+    revalidate: 86400,
   };
 };
 
