@@ -14,7 +14,7 @@ const NotFound = () => {
           <h1 className="text-9xl font-heading font-bold">404</h1>
           <p className="lg:w-2/3 mt-5 text-xl sm:text-2xl text-center">
             Nothing was found at the requested page. For a single-page website,
-            anyway, there shouldn't be anything else accessible but the root
+            anyway, there shouldn&#39;t be anything else accessible but the root
             page!
           </p>
           <Link href="/">

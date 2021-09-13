@@ -1,22 +1,9 @@
 import * as React from "react";
-import { GetStaticProps } from "next";
+import {GetStaticProps} from "next";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faSwift,
-  faJava,
-  faAndroid,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faPencilRuler,
-  faUsers,
-  faGuitar,
-  faBullhorn,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faAndroid, faGithub, faJava, faPython, faSwift,} from "@fortawesome/free-brands-svg-icons";
+import {faBullhorn, faEnvelope, faGlobe, faGuitar, faPencilRuler, faUsers,} from "@fortawesome/free-solid-svg-icons";
 
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
@@ -74,10 +61,11 @@ const Introduction = ({ repos }: IntroductionProps) => (
             Hello, world!
           </p>
           <h1 className="mt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-semibold">
-            I'm Arash Nur Iman.
+            I&#39;m Arash Nur Iman.
           </h1>
           <p className="mt-5 text-xl sm:text-2xl">
-            I'm a student with a passion for making a change through technology.
+            I&#39;m a student with a passion for making a change through
+            technology.
           </p>
 
           <div className="mt-5 space-x-6">
@@ -130,9 +118,10 @@ const Introduction = ({ repos }: IntroductionProps) => (
         </div>
         <div className="flex lg:flex-col min-h-screen-1/2 h-auto w-full text-left lg:text-center">
           <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-10 sm:w-5 lg:w-full">
-            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-blue-400 opacity-60"></div>
-            <div className="row-span-1 lg:col-span-1 bg-blue-400 opacity-75"></div>
-            <div className="row-span-1 lg:col-span-1 bg-blue-400"></div>
+            <div
+                className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-blue-400 opacity-60"/>
+            <div className="row-span-1 lg:col-span-1 bg-blue-400 opacity-75"/>
+            <div className="row-span-1 lg:col-span-1 bg-blue-400"/>
           </div>
           <div className="ml-5 lg:ml-0 lg:mt-5 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3">
             <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
@@ -150,10 +139,10 @@ const Introduction = ({ repos }: IntroductionProps) => (
                 Primary school
               </h2>
               <p className="w-10/12 text-sm sm:text-lg 2xl:text-xl">
-                My passion was fuelled further when I joined the school's ICT
-                Club. As someone quick to grasp technology, I managed to pick up
-                essential skills — like using the Office suite of apps and media
-                creation — and put them to use.
+                My passion was fuelled further when I joined the school&#39;s
+                ICT Club. As someone quick to grasp technology, I managed to
+                pick up essential skills — like using the Office suite of apps
+                and media creation — and put them to use.
               </p>
             </div>
             <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
@@ -189,7 +178,7 @@ const Introduction = ({ repos }: IntroductionProps) => (
             <h1 className="mt-2 text-4xl font-bold font-heading">Respect</h1>
             <p className="font-mono">Personal | Interpersonal</p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-              Having due regard for (someone's feelings, wishes, or rights).
+              Having due regard for (someone&#39;s feelings, wishes, or rights).
             </p>
           </div>
           <div className="break-words p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400">
@@ -330,8 +319,8 @@ const Introduction = ({ repos }: IntroductionProps) => (
         </div>
 
         <p className="self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
-          Not to mention, I've gained some other useful skills beyond the scope
-          of programming as well.
+          Not to mention, I&#39;ve gained some other useful skills beyond the
+          scope of programming as well.
         </p>
 
         <div className="mt-10 mb-10 w-full h-1/2 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -378,10 +367,10 @@ const Introduction = ({ repos }: IntroductionProps) => (
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             Playing around is a good thing to build up my skills, test out what
             I know, and learn new things.
-            <br />
-            <br />
-            The result of the tinkering I've done is the several projects that I
-            have been a part of. No matter a school project or a personal
+            <br/>
+            <br/>
+            The result of the tinkering I&#39;ve done is the several projects
+            that I have been a part of. No matter a school project or a personal
             project, I make it an effort to give everything I do my best shot.
             Doing so allows me to learn what I do best and showcase the quality
             of work I offer at the same time.
