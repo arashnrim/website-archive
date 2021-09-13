@@ -1,6 +1,6 @@
 {
   "name": "arashnrim",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
   "description": "ArashNrIm",
   "author": "Arash Nur Iman",
@@ -8,7 +8,8 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "lint": "prettier -w .; next lint --fix"
+    "lint": "next lint",
+    "lint:fix": "next lint -- --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -25,6 +26,7 @@
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "latest",
+    "eslint-plugin-prettier": "^4.0.0",
     "postcss": "^8.3.6",
     "prettier": "latest",
     "tailwindcss": "^2.2.9",
