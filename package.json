@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "yarn lint:fix"
+    "*.{js, jsx, ts, tsx}": "yarn lint:fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
