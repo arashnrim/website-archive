@@ -8,9 +8,12 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "lint": "next lint",
-    "lint:fix": "next lint -- --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": "yarn lint:fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -28,10 +31,11 @@
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "latest",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
     "prettier": "latest",
     "tailwindcss": "^2.2.9",
-    "typescript": "^4.4.2",
-    "husky": "^7.0.0"
+    "typescript": "^4.4.2"
   }
 }
