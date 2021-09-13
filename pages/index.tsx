@@ -1,9 +1,22 @@
 import * as React from "react";
-import {GetStaticProps} from "next";
+import { GetStaticProps } from "next";
 import Image from "next/image";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAndroid, faGithub, faJava, faPython, faSwift,} from "@fortawesome/free-brands-svg-icons";
-import {faBullhorn, faEnvelope, faGlobe, faGuitar, faPencilRuler, faUsers,} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAndroid,
+  faGithub,
+  faJava,
+  faPython,
+  faSwift,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBullhorn,
+  faEnvelope,
+  faGlobe,
+  faGuitar,
+  faPencilRuler,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
 
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
@@ -118,10 +131,9 @@ const Introduction = ({ repos }: IntroductionProps) => (
         </div>
         <div className="flex lg:flex-col min-h-screen-1/2 h-auto w-full text-left lg:text-center">
           <div className="grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-2 lg:h-2 w-10 sm:w-5 lg:w-full">
-            <div
-                className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-blue-400 opacity-60"/>
-            <div className="row-span-1 lg:col-span-1 bg-blue-400 opacity-75"/>
-            <div className="row-span-1 lg:col-span-1 bg-blue-400"/>
+            <div className="row-span-1 lg:col-span-1 rounded-t-full lg:rounded-t-none lg:rounded-l-full bg-blue-400 opacity-60" />
+            <div className="row-span-1 lg:col-span-1 bg-blue-400 opacity-75" />
+            <div className="row-span-1 lg:col-span-1 bg-blue-400" />
           </div>
           <div className="ml-5 lg:ml-0 lg:mt-5 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3">
             <div className="p-5 flex flex-col justify-content lg:items-center gap-y-2 col-span-1 lg:row-span-1 h-auto">
@@ -367,8 +379,8 @@ const Introduction = ({ repos }: IntroductionProps) => (
           <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
             Playing around is a good thing to build up my skills, test out what
             I know, and learn new things.
-            <br/>
-            <br/>
+            <br />
+            <br />
             The result of the tinkering I&#39;ve done is the several projects
             that I have been a part of. No matter a school project or a personal
             project, I make it an effort to give everything I do my best shot.
