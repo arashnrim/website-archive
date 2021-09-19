@@ -14,10 +14,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={"en"}>
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
+        <Head/>
+        <body className={"bg-gray-800 text-white"}>
+        <Main/>
+        <NextScript/>
         </body>
       </Html>
     );
