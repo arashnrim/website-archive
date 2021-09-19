@@ -54,17 +54,18 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const Introduction = ({ repos }: IntroductionProps) => (
   <main className="bg-gray-800 text-white">
-    <SEO page="👋" />
+    <SEO emoji="👋"/>
     <Layout>
       {/* Hero */}
-      <div className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen bg-gray-900 rounded-b-3xl">
+      <div
+          className="justify-center items-center flex flex-col lg:flex-row space-y-6 md:space-y-6 lg:space-y-0 lg:space-x-16 min-h-screen min-w-screen bg-gray-900 rounded-b-3xl">
         <div className="w-1/2 max-w-sm bg-gray-900 ">
           <Image
-            className="pointer-events-none rounded-full"
-            src={profilePicture}
-            alt={"Arash Nur Iman"}
-            layout={"responsive"}
-            priority={true}
+              className="pointer-events-none rounded-full"
+              src={profilePicture}
+              alt={"Arash Nur Iman"}
+              layout={"responsive"}
+              priority={true}
             quality={60}
           />
         </div>
