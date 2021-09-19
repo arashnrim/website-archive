@@ -2,7 +2,7 @@ import * as React from "react";
 import { GetStaticProps } from "next";
 
 import { Repository } from "../utils/Repository";
-import SEO from "../components/SEO";
+import Meta from "../components/Meta";
 import Layout from "../components/Layout";
 import Hero from "../components/Index/Hero";
 import About from "../components/Index/About";
@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const Index = ({ repos }: IndexProps) => (
   <>
-    <SEO emoji="👋" />
+    <Meta />
     <Layout>
       <Hero />
       <About />
