@@ -1,7 +1,7 @@
 import * as React from "react";
-import {GetStaticProps} from "next";
+import { GetStaticProps } from "next";
 
-import {Repository} from "../utils/Repository";
+import { Repository } from "../utils/Repository";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import Hero from "../components/Index/Hero";
@@ -15,7 +15,7 @@ interface IndexProps {
 
 export const getStaticProps: GetStaticProps = async () => {
   const data = await fetch(
-      "https://api.github.com/users/arashnrim/repos?sort=updated"
+    "https://api.github.com/users/arashnrim/repos?sort=updated"
   );
   const repos = await data.json();
   return {
@@ -24,16 +24,16 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Index = ({repos}: IndexProps) => (
-    <>
-      <SEO emoji="👋"/>
-      <Layout>
-        <Hero/>
-        <About/>
-        <Skills/>
-        <Works repos={repos}/>
-      </Layout>
-    </>
+const Index = ({ repos }: IndexProps) => (
+  <>
+    <SEO emoji="👋" />
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Works repos={repos} />
+    </Layout>
+  </>
 );
 
 export default Index;

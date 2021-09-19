@@ -13,4 +13,4 @@ interface Repository {
   archived: boolean;
 }
 
-export type {Repository};
+export type { Repository };
