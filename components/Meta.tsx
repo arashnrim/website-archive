@@ -3,7 +3,7 @@ import Head from "next/head";
 const Meta = ({
   title = "Arash Nur Iman",
   name = "Arash Nur Iman",
-  description = "I'm Arash Nur Iman, a student developer from Singapore passionate about delivering simplicity, efficiency, and the ease of use of technology.",
+  description = "I'm Arash Nur Iman, a student developer from Singapore passionate about delivering simple, efficient, and easy-to-use creations of technology.",
   url = "https://arashnrim.me",
   image = "https://arashnrim.me/seo.jpg",
 }) => (

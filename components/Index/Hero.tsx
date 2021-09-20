@@ -33,7 +33,7 @@ const Hero = () => (
       </h1>
       <p className="mt-5 text-xl sm:text-2xl max-w-3xl">
         I&#39;m a student developer from Singapore passionate about delivering
-        simplicity, efficiency, and the ease of use of technology.
+        simple, efficient, and easy-to-use creations of technology.
       </p>
 
       <div className="mt-5 space-x-6">
