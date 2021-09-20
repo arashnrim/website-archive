@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profilePicture from "../../public/arash.jpeg";
+import profilePicture from "../../public/arash.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -31,8 +31,9 @@ const Hero = () => (
       <h1 className="mt-2.5 text-4xl sm:text-6xl md:text-6xl 2xl:text-7xl font-heading font-semibold">
         I&#39;m Arash Nur Iman.
       </h1>
-      <p className="mt-5 text-xl sm:text-2xl">
-        I&#39;m a student with a passion for making a change through technology.
+      <p className="mt-5 text-xl sm:text-2xl max-w-3xl">
+        I&#39;m a student developer from Singapore passionate about delivering
+        simplicity, efficiency, and the ease of use of technology.
       </p>
 
       <div className="mt-5 space-x-6">
