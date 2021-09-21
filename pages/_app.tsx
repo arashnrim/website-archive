@@ -1,11 +1,10 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import type { AppProps } from "next/app";
+config.autoAddCss = false;
 
 import "../styles/globals.css";
-
 import { config } from "@fortawesome/fontawesome-svg-core";
 
-config.autoAddCss = false;
+import type { AppProps } from "next/app";
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
