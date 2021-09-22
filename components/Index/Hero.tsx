@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => (
   <section
     className={
-      "flex flex-col lg:flex-row justify-center items-center min-h-screen min-w-screen px-10 lg:px-20 space-y-10 lg:space-y-0 lg:space-x-16 bg-black rounded-b-3xl"
+      "flex flex-col lg:flex-row justify-center items-center min-h-screen min-w-screen px-10 md:px-12 lg:px-20 space-y-10 lg:space-y-0 lg:space-x-16 bg-black rounded-b-3xl"
     }
   >
     <div className={"w-1/2 max-w-sm"}>
