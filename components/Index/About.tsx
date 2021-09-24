@@ -1,4 +1,5 @@
 import React from "react";
+
 import Section from "../Section";
 
 const stages = [
@@ -16,6 +17,38 @@ const stages = [
     name: "Secondary school",
     description:
       "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of code, UI design, algorithmic thinking, and much more over my four years in secondary school.",
+  },
+];
+
+const values = [
+  {
+    name: "Care",
+    category: "Personal | Interpersonal",
+    definition:
+      "Having serious attention or consideration applied to doing something; feeling concern or interest.",
+  },
+  {
+    name: "Respect",
+    category: "Personal | Interpersonal",
+    definition:
+      "Having due regard for (someone's feelings, wishes, or rights).",
+  },
+  {
+    name: "Responsibility",
+    category: "Personal | Interpersonal",
+    definition:
+      "Being accountable for something where accountability is due and appropriate.",
+  },
+  {
+    name: "Perseverance",
+    category: "Personal",
+    definition:
+      "Persistent in doing something despite difficulty or delay in achieving success.",
+  },
+  {
+    name: "Integrity",
+    category: "Personal",
+    definition: "Being honest and having strong moral principles.",
   },
 ];
 
@@ -61,7 +94,7 @@ const About = () => (
       {stages.map((stage, index) => (
         <div
           className={
-            "flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-10 lg:space-y-10"
+            "flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-10 lg:space-x-0 lg:space-y-10"
           }
           key={stage.name}
         >
@@ -99,66 +132,22 @@ const About = () => (
         "mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10"
       }
     >
-      <div
-        className={
-          "break-words p-10 gap-y-2 col-span-1 md:col-span-2 md:row-span-1 h-auto rounded-2xl border-2 border-blue-400"
-        }
-      >
-        <h1 className={"mt-2 text-4xl font-bold font-heading"}>Care</h1>
-        <p className={"font-mono"}>Personal | Interpersonal</p>
-        <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
-          Having serious attention or consideration applied to doing something;
-          feeling concern or interest.
-        </p>
-      </div>
-      <div
-        className={
-          "break-words p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400"
-        }
-      >
-        <h1 className={"mt-2 text-4xl font-bold font-heading"}>Respect</h1>
-        <p className={"font-mono"}>Personal | Interpersonal</p>
-        <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
-          Having due regard for (someone&#39;s feelings, wishes, or rights).
-        </p>
-      </div>
-      <div
-        className={
-          "break-words p-10 gap-y-2 col-span-1 lg:col-span-2 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400"
-        }
-      >
-        <h1 className={"mt-2 text-4xl font-bold font-heading"}>
-          Responsibility
-        </h1>
-        <p className={"font-mono"}>Personal</p>
-        <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
-          Being accountable for something where accountability is due and
-          appropriate.
-        </p>
-      </div>
-      <div
-        className={
-          "break-words p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400"
-        }
-      >
-        <h1 className={"mt-2 text-4xl font-bold font-heading"}>Integrity</h1>
-        <p className={"font-mono"}>Personal</p>
-        <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
-          Being honest and having strong moral principles.
-        </p>
-      </div>
-      <div
-        className={
-          "break-words p-10 gap-y-2 col-span-1 lg:col-span-3 lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400"
-        }
-      >
-        <h1 className={"mt-2 text-4xl font-bold font-heading"}>Perseverance</h1>
-        <p className={"font-mono"}>Personal</p>
-        <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
-          Persistent in doing something despite difficulty or delay in achieving
-          success.
-        </p>
-      </div>
+      {values.map((value, index) => (
+        <div
+          className={`break-words p-10 gap-y-2 col-span-1 md:col-span-${
+            index > 2 ? "3" : "2" // Manually altering the size of the last two values to even out the spacing
+          } md:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
+          key={value.name}
+        >
+          <h1 className={"mt-2 text-4xl font-bold font-heading"}>
+            {value.name}
+          </h1>
+          <p className={"font-mono"}>{value.category}</p>
+          <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
+            {value.definition}
+          </p>
+        </div>
+      ))}
     </div>
   </Section>
 );
