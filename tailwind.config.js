@@ -13,6 +13,7 @@ module.exports = {
       "border-blue-400",
     ],
   },
+  mode: "jit",
   darkMode: false,
   theme: {
     extend: {
