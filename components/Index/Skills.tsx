@@ -128,29 +128,29 @@ const Skills = () => (
         <br />
         <br />
         It started in 2018 when I picked up{" "}
-        <InlineLink link={"https://swift.org"} redirect={true} color={"red"}>
+        <InlineLink link="https://swift.org" redirect={true} color="red">
           Swift
         </InlineLink>
         , my first programming language. I had no prior introduction to the
         world of code, but my passion for technology further fuelled as I
         grasped more concepts, participated in more events, and expanded my
         knowledge. Thus far, the skills of Swift and{" "}
-        <InlineLink link={"https://python.org"} redirect={true} color={"blue"}>
+        <InlineLink link="https://python.org" redirect={true} color="blue">
           Python
         </InlineLink>{" "}
         sit comfortably in my toolbox, with{" "}
         <InlineLink
-          link={"https://oracle.com/java"}
+          link="https://oracle.com/java"
           redirect={true}
-          color={"yellow"}
+          color="yellow"
         >
           Java
         </InlineLink>{" "}
         and{" "}
         <InlineLink
-          link={"https://kotlinlang.org"}
+          link="https://kotlinlang.org"
           redirect={true}
-          color={"purple"}
+          color="purple"
         >
           Kotlin
         </InlineLink>{" "}

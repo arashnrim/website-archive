@@ -55,25 +55,17 @@ const values = [
 const About = () => (
   <Section>
     <div>
-      <h1
-        className={
-          "text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading"
-        }
-      >
-        An <span className={"text-blue-400"}>active contributor</span>, a{" "}
-        <span className={"text-blue-400"}>life-changer</span>, and a{" "}
-        <span className={"text-blue-400"}>friend</span> to all.
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        An <span className="text-blue-400">active contributor</span>, a{" "}
+        <span className="text-blue-400">life-changer</span>, and a{" "}
+        <span className="text-blue-400">friend</span> to all.
       </h1>
-      <p
-        className={
-          "w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading"
-        }
-      >
+      <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
         Bold dreams for an individual, but a goal for me.
       </p>
     </div>
-    <div className={"flex flex-col lg:flex-row lg:space-x-5"}>
-      <p className={"lg:w-2/3 text-sm sm:text-lg 2xl:text-xl"}>
+    <div className="flex flex-col lg:flex-row lg:space-x-5">
+      <p className="lg:w-2/3 text-sm sm:text-lg 2xl:text-xl">
         I wish to develop myself into someone who contributes back to society,
         influences the lives of many, and be there for those I’m close with.
         <br />
@@ -86,16 +78,10 @@ const About = () => (
         myself on the right track.
       </p>
     </div>
-    <div
-      className={
-        "flex flex-col lg:flex-row min-h-screen-1/2 h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0"
-      }
-    >
+    <div className="flex flex-col lg:flex-row min-h-screen-1/2 h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0">
       {stages.map((stage, index) => (
         <div
-          className={
-            "flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-10 lg:space-x-0 lg:space-y-10"
-          }
+          className="flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-10 lg:space-x-0 lg:space-y-10"
           key={stage.name}
         >
           <div
@@ -105,33 +91,21 @@ const About = () => (
                 : ""
             }`}
           />
-          <div
-            className={
-              "lg:flex lg:flex-col h-full pl-10 lg:pl-0 lg:items-center"
-            }
-          >
-            <h2 className={"text-2xl font-heading font-bold"}>{stage.name}</h2>
-            <p className={"text-sm sm:text-lg 2xl:text-xl"}>
+          <div className="lg:flex lg:flex-col h-full pl-10 lg:pl-0 lg:items-center">
+            <h2 className="text-2xl font-heading font-bold">{stage.name}</h2>
+            <p className="text-sm sm:text-lg 2xl:text-xl">
               {stage.description}
             </p>
           </div>
         </div>
       ))}
     </div>
-    <p
-      className={
-        "mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto"
-      }
-    >
+    <p className="mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto">
       As I grew up, I realised the importance of having core values I can hold
       on to for guidance. While they may subtly change as I gain better insight
       to them, I try my best to ensure the core meaning of a value is upheld.
     </p>
-    <div
-      className={
-        "mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10"
-      }
-    >
+    <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
       {values.map((value, index) => (
         <div
           className={`break-words p-10 gap-y-2 col-span-1 md:col-span-${
@@ -139,11 +113,9 @@ const About = () => (
           } md:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
           key={value.name}
         >
-          <h1 className={"mt-2 text-4xl font-bold font-heading"}>
-            {value.name}
-          </h1>
-          <p className={"font-mono"}>{value.category}</p>
-          <p className={"mt-2 text-sm sm:text-lg 2xl:text-xl"}>
+          <h1 className="mt-2 text-4xl font-bold font-heading">{value.name}</h1>
+          <p className="font-mono">{value.category}</p>
+          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
             {value.definition}
           </p>
         </div>
