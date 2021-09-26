@@ -4,13 +4,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 interface LayoutProps {
+  className?: string;
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ className = "", children }: LayoutProps) => (
   <>
     <Header />
-    {children}
+    <main className={className}>{children}</main>
     <Footer />
   </>
 );

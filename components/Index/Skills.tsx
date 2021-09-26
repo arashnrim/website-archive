@@ -5,6 +5,7 @@ import {
   faJava,
   faPython,
   faSwift,
+  IconDefinition,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBullhorn,
@@ -13,8 +14,103 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Section from "../Section";
+import InlineLink from "../InlineLink";
+
+const languages = [
+  {
+    extended: true,
+    color: "red",
+    icon: faSwift,
+    title: "Swift",
+    description:
+      "A programming language created by Apple for developing native applications for its platforms of iOS, macOS, iPadOS, tvOS, and watchOS.",
+  },
+  {
+    extended: false,
+    color: "yellow",
+    icon: faJava,
+    title: "Java",
+    description:
+      "A programming language created by Oracle for a variety of purposes; mostly used by me for developing Android applications.",
+  },
+  {
+    extended: false,
+    color: "purple",
+    icon: faAndroid,
+    title: "Kotlin",
+    description:
+      "A programming language creaed by JetBrains for a variety of purposes; mostly used by me for developing Android applications.",
+  },
+  {
+    extended: true,
+    color: "blue",
+    icon: faPython,
+    title: "Python",
+    description:
+      "A programming language powerful to have and has a wide variety of purposes; mostly used by me in academic learning and program development.",
+  },
+];
+
+const skills = [
+  {
+    icon: faUsers,
+    name: "Leadership",
+  },
+  {
+    icon: faGuitar,
+    name: "Guitar Playing",
+  },
+  {
+    icon: faBullhorn,
+    name: "Presenting",
+  },
+  {
+    icon: faPencilRuler,
+    name: "UI Design",
+  },
+];
+
+interface LanguageProps {
+  extended: boolean;
+  color: string;
+  icon: IconDefinition;
+  title: string;
+  description: string;
+}
+
+interface SkillProps {
+  icon: IconDefinition;
+  name: string;
+}
+
+const Language = ({
+  extended,
+  icon,
+  color,
+  title,
+  description,
+}: LanguageProps) => (
+  <div
+    className={`col-span-1 ${
+      extended ? "md:col-span-2" : ""
+    } p-10 h-auto rounded-2xl text-white border-2 border-${color}-400`}
+  >
+    <FontAwesomeIcon icon={icon} size="3x" />
+    <h1 className="mt-2 text-4xl font-bold font-heading">{title}</h1>
+    <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">{description}</p>
+  </div>
+);
+
+const Skill = ({ icon, name }: SkillProps) => (
+  <div className="flex gap-y-2 items-center flex-col">
+    <FontAwesomeIcon icon={icon} size="lg" />
+    <h2 className="text-center text-2xl font-heading font-bold">{name}</h2>
+  </div>
+);
+
 const Skills = () => (
-  <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24 pt-24 space-y-10">
+  <Section>
     <div>
       <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
         A <span className="text-red-400">learner</span>, a{" "}
@@ -32,91 +128,47 @@ const Skills = () => (
         <br />
         <br />
         It started in 2018 when I picked up{" "}
-        <a
-          href="https://swift.org"
-          target="_blank"
-          rel="noreferrer"
-          className="transition-all text-red-400 hover:text-red-300 font-bold"
-        >
+        <InlineLink link="https://swift.org" redirect={true} color="red">
           Swift
-        </a>
+        </InlineLink>
         , my first programming language. I had no prior introduction to the
         world of code, but my passion for technology further fuelled as I
         grasped more concepts, participated in more events, and expanded my
-        knowledge. Thus far, the skills of{" "}
-        <a
-          href="https://swift.org"
-          target="_blank"
-          rel="noreferrer"
-          className="transition-all text-red-400 hover:text-red-300 font-bold"
-        >
-          Swift
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://python.org"
-          target="_blank"
-          rel="noreferrer"
-          className="transition-all text-blue-400 hover:text-blue-300 font-bold"
-        >
+        knowledge. Thus far, the skills of Swift and{" "}
+        <InlineLink link="https://python.org" redirect={true} color="blue">
           Python
-        </a>{" "}
+        </InlineLink>{" "}
         sit comfortably in my toolbox, with{" "}
-        <a
-          href="https://oracle.com/java/"
-          target="_blank"
-          rel="noreferrer"
-          className="transition-all text-yellow-500 hover:text-yellow-400 font-bold"
+        <InlineLink
+          link="https://oracle.com/java"
+          redirect={true}
+          color="yellow"
         >
           Java
-        </a>{" "}
+        </InlineLink>{" "}
         and{" "}
-        <a
-          href="https://kotlinlang.org/"
-          target="_blank"
-          rel="noreferrer"
-          className="transition-all text-indigo-400 hover:text-indigo-300 font-bold"
+        <InlineLink
+          link="https://kotlinlang.org"
+          redirect={true}
+          color="purple"
         >
           Kotlin
-        </a>{" "}
+        </InlineLink>{" "}
         still a work-in-progress.
       </p>
     </div>
 
     <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 mb-10 gap-10">
-      <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-red-600 to-yellow-600">
-        <FontAwesomeIcon icon={faSwift} size="3x" />
-        <h1 className="mt-2 text-4xl font-bold font-heading">Swift</h1>
-        <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-          A programming language created by Apple for developing native
-          applications for its platforms of iOS, macOS, iPadOS, tvOS, and
-          watchOS.
-        </p>
-      </div>
-      <div className="col-span-1 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-yellow-600 to-yellow-600 shadow-lg">
-        <FontAwesomeIcon icon={faJava} size="3x" />
-        <h1 className="mt-2 text-4xl font-bold font-heading">Java</h1>
-        <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-          A programming language created by Oracle for a variety of purposes;
-          mostly used by me for developing Android applications.
-        </p>
-      </div>
-      <div className="col-span-1 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-purple-600 to-indigo-600 shadow-lg">
-        <FontAwesomeIcon icon={faAndroid} size="3x" />
-        <h1 className="mt-2 text-4xl font-bold font-heading">Kotlin</h1>
-        <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-          A programming language created by JetBrains for a variety of purposes;
-          mostly used by me for developing Android applications.
-        </p>
-      </div>
-      <div className="col-span-1 md:col-span-2 p-10 h-auto rounded-2xl text-white bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg">
-        <FontAwesomeIcon icon={faPython} size="3x" />
-        <h1 className="mt-2 text-4xl font-bold font-heading">Python</h1>
-        <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-          A programming language powerful to have a wide variety of purposes;
-          mostly used by me in academic learning and program development.
-        </p>
-      </div>
+      {languages.map((language) => (
+        <Language
+          color={language.color}
+          extended={language.extended}
+          icon={language.icon}
+          title={language.title}
+          description={language.description}
+          key={language.title}
+        />
+      ))}
     </div>
 
     <p className="self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
@@ -125,32 +177,11 @@ const Skills = () => (
     </p>
 
     <div className="mt-10 mb-10 w-full h-1/2 grid grid-cols-1 md:grid-cols-4 gap-10">
-      <div className="flex gap-y-2 items-center flex-col">
-        <FontAwesomeIcon icon={faUsers} size="lg" />
-        <h2 className="text-center text-2xl font-heading font-bold">
-          Leadership
-        </h2>
-      </div>
-      <div className="flex gap-y-2 items-center flex-col">
-        <FontAwesomeIcon icon={faGuitar} size="lg" />
-        <h2 className="text-center text-2xl font-heading font-bold">
-          Guitar Playing
-        </h2>
-      </div>
-      <div className="flex gap-y-2 items-center flex-col">
-        <FontAwesomeIcon icon={faBullhorn} size="lg" />
-        <h2 className="text-center text-2xl font-heading font-bold">
-          Presenting
-        </h2>
-      </div>
-      <div className="flex gap-y-2 items-center flex-col">
-        <FontAwesomeIcon icon={faPencilRuler} size="lg" />
-        <h2 className="text-center text-2xl font-heading font-bold">
-          UI Design
-        </h2>
-      </div>
+      {skills.map((skill) => (
+        <Skill icon={skill.icon} name={skill.name} key={skill.name} />
+      ))}
     </div>
-  </div>
+  </Section>
 );
 
 export default Skills;

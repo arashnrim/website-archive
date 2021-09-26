@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   darkMode: false,
@@ -18,17 +20,8 @@ module.exports = {
         "2-5": "0.025",
       },
       colors: {
-        gray: {
-          800: "#181818",
-          900: "#121212",
-        },
+        gray: colors.trueGray,
       },
     },
   },
-  variants: {
-    extend: {
-      ringWidth: ["hover"],
-    },
-  },
-  plugins: ["gatsby-plugin-postcss"],
 };
