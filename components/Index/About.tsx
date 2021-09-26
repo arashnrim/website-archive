@@ -106,20 +106,24 @@ const About = () => (
       to them, I try my best to ensure the core meaning of a value is upheld.
     </p>
     <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
-      {values.map((value, index) => (
-        <div
-          className={`break-words p-10 gap-y-2 col-span-1 md:col-span-${
-            index > 2 ? "3" : "2" // Manually altering the size of the last two values to even out the spacing
-          } md:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
-          key={value.name}
-        >
-          <h1 className="mt-2 text-4xl font-bold font-heading">{value.name}</h1>
-          <p className="font-mono">{value.category}</p>
-          <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-            {value.definition}
-          </p>
-        </div>
-      ))}
+      {values.map((value, index) => {
+        return (
+          <div
+            className={`break-words p-10 gap-y-2 col-span-1 ${
+              index > 2 ? "md:col-span-3" : "md:col-span-2" // Manually altering the size of the last two values to even out the spacing
+            } lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
+            key={value.name}
+          >
+            <h1 className="mt-2 text-4xl font-bold font-heading">
+              {value.name}
+            </h1>
+            <p className="font-mono">{value.category}</p>
+            <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+              {value.definition}
+            </p>
+          </div>
+        );
+      })}
     </div>
   </Section>
 );

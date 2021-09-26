@@ -1,7 +1,18 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  purge: {
+    content: [
+      "./pages/**/*.{js,jsx,ts,tsx}",
+      "./components/**/*.{js,jsx,ts,tsx}",
+    ],
+    safelist: [
+      "border-red-400",
+      "border-yellow-400",
+      "border-purple-400",
+      "border-blue-400",
+    ],
+  },
   darkMode: false,
   theme: {
     extend: {
