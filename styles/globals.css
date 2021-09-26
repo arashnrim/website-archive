@@ -46,3 +46,10 @@
         src: url("../public/fonts/JetBrainsMono-Medium.woff") format("woff");
     }
 }
+
+@layer utilities {
+
+    .dotted {
+        text-decoration: underline dotted;
+    }
+}
