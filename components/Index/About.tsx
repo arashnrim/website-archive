@@ -81,7 +81,7 @@ const About = () => (
     <div className="flex flex-col lg:flex-row min-h-screen-1/2 h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0">
       {stages.map((stage, index) => (
         <div
-          className="flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-10 lg:space-x-0 lg:space-y-10"
+          className="flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-5 lg:space-x-0 lg:space-y-10"
           key={stage.name}
         >
           <div
@@ -105,11 +105,11 @@ const About = () => (
       on to for guidance. While they may subtly change as I gain better insight
       to them, I try my best to ensure the core meaning of a value is upheld.
     </p>
-    <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 gap-10">
+    <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:space-x-10 space-y-10 lg:space-y-0">
       {values.map((value, index) => {
         return (
           <div
-            className={`break-words p-10 gap-y-2 col-span-1 ${
+            className={`break-words p-10 col-span-1 ${
               index > 2 ? "md:col-span-3" : "md:col-span-2" // Manually altering the size of the last two values to even out the spacing
             } lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
             key={value.name}

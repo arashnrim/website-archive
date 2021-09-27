@@ -163,7 +163,7 @@ const Skills = () => (
       ))}
     </div>
 
-    <p className="self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+    <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
       Not to mention, I&#39;ve gained some other useful skills beyond the scope
       of programming as well.
     </p>
