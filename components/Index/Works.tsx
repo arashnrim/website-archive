@@ -4,13 +4,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 import { Repository } from "../../utils/Repository";
+import Section from "../Section";
 
 interface WorksProps {
   repos: Repository[];
 }
 
 const Works = ({ repos }: WorksProps) => (
-  <div className="justify-center items-center flex flex-col min-h-screen h-auto min-w-screen text-center lg:text-left px-7 md:px-12 lg:px-24 py-24 space-y-10">
+  <Section>
     <div>
       <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
         A <span className="text-indigo-400">tinkerer</span>, an{" "}
@@ -85,7 +86,7 @@ const Works = ({ repos }: WorksProps) => (
           </div>
         ))}
     </div>
-  </div>
+  </Section>
 );
 
 export default Works;

@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => (
   <section className="flex flex-col lg:flex-row justify-center items-center min-h-screen min-w-screen px-10 md:px-12 lg:px-20 space-y-10 lg:space-y-0 lg:space-x-16 bg-black rounded-b-3xl">
-    <div className="w-1/2 max-w-sm">
+    <object className="w-1/2 max-w-sm">
       <Image
         className="pointer-events-none rounded-full"
         src={profilePicture}
@@ -16,7 +16,7 @@ const Hero = () => (
         priority
         quality={60}
       />
-    </div>
+    </object>
     <div className="flex-row text-center lg:text-left">
       <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading">
         <span role="img" aria-label="Waving hand">
