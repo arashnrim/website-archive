@@ -105,7 +105,7 @@ const About = () => (
       on to for guidance. While they may subtly change as I gain better insight
       to them, I try my best to ensure the core meaning of a value is upheld.
     </p>
-    <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:space-x-10 space-y-10 lg:space-y-0">
+    <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10">
       {values.map((value, index) => {
         return (
           <div
