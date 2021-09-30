@@ -10,6 +10,16 @@ interface WorksProps {
   repos: Repository[];
 }
 
+/**
+ * Use this dictionary to override any project names where necessary. The key values should be a string of what is
+ * returned from GitHub's API and the value a string of what should be displayed on the website.
+ */
+const projectOverrides: { [key: string]: string } = {
+  Liste: "Listé",
+  "balloon-satellite": "Balloon Satellite",
+  website: "Website",
+};
+
 const Works = ({ repos }: WorksProps) => (
   <Section>
     <div>
@@ -39,27 +49,29 @@ const Works = ({ repos }: WorksProps) => (
     <div className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10">
       {repos
         .filter(
-          (repo) => !repo.name.includes("archive") && !(repo.language == null)
+          (repo) => !repo.name.includes("archive") && !(repo.language == null) // Filtering for non-code and archive repositories
         )
         .map((repo) => (
           <div
-            className={`col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
+            className={`flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
               repo.archived ? "border-opacity-50" : "border-opacity-100"
             }`}
             key={repo.id}
           >
-            <h1 className="mt-2 text-4xl font-bold font-heading capitalize break-words">
-              {repo.name.replace(/-/g, " ")}
+            <h1 className="mt-2 text-4xl font-bold font-heading break-words">
+              {repo.name in projectOverrides
+                ? projectOverrides[repo.name]
+                : repo.name}
             </h1>
             <p className="font-mono">
               {repo.language}
-              {repo.license ? " | " + repo.license.name : ""}
+              {repo.created_at ? " | " + repo.created_at.substr(0, 4) : ""}
             </p>
             <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
               {repo.description}
             </p>
 
-            <div className="mt-5 space-x-2">
+            <div className="place-self-end mt-5 space-x-5">
               <a
                 className="transition-all hover:opacity-75"
                 href={repo.html_url}
@@ -67,7 +79,7 @@ const Works = ({ repos }: WorksProps) => (
                 rel="noreferrer"
                 aria-label={repo.name + " project repository"}
               >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
               {repo.homepage ? (
                 <a
@@ -77,7 +89,7 @@ const Works = ({ repos }: WorksProps) => (
                   rel="noreferrer"
                   aria-label={repo.name + " project repository"}
                 >
-                  <FontAwesomeIcon icon={faGlobe} size="lg" />
+                  <FontAwesomeIcon icon={faGlobe} size="2x" />
                 </a>
               ) : (
                 ""

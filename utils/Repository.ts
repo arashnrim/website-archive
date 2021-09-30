@@ -1,13 +1,9 @@
-interface License {
-  name: string;
-}
-
 interface Repository {
   id: number;
   name: string;
   description: string;
   language?: string;
-  license?: License;
+  created_at: string;
   html_url?: string;
   homepage: string;
   archived: boolean;
