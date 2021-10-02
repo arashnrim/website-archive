@@ -48,8 +48,8 @@
 }
 
 @layer utilities {
-
     .dotted {
         text-decoration: underline dotted;
+        text-underline-offset: 5px;
     }
 }
