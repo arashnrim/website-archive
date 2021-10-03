@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./website.svg" />
-</p>
+![Project banner](./website.svg)
 
 # Introduction
 

@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import profilePicture from "../../public/arash.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Socials from "../Socials";
 
 const Hero = () => (
