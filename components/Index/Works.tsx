@@ -5,18 +5,8 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+import Repository from "../../utils/Repository";
 import Section from "../Section";
-
-interface Repository {
-  id: number;
-  name: string;
-  description: string;
-  language?: string;
-  created_at: string;
-  html_url?: string;
-  homepage: string;
-  archived: boolean;
-}
 
 interface WorksProps {
   repos: Repository[];
