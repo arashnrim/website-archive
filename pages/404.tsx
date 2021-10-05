@@ -19,28 +19,30 @@ const NotFound = () => {
     <>
       <Meta />
       <Layout>
-        <motion.section
-          className="justify-center items-center flex flex-col min-h-screen min-w-screen px-7 text-center text-xl sm:text-2xl bg-black"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 0.5 }}
-        >
-          <p>{teasers[Math.floor(Math.random() * teasers.length)]}</p>
-          <span className="my-10">
-            <h1 className="text-9xl font-heading font-bold">404</h1>
-            <p className="font-mono">Not Found</p>
-          </span>
-          <p className="lg:w-2/3">
-            Nothing was found at the requested page. For a single-page website,
-            anyway, there shouldn&#39;t be anything else accessible but the root
-            page!
-          </p>
-          <Link href="/" passHref={true}>
-            <span className="mt-5 transition dotted hover:opacity-75 cursor-pointer">
-              Need help going to the root page?
+        <section className="bg-black">
+          <motion.div
+            className="justify-center items-center flex flex-col min-h-screen min-w-screen px-7 text-center text-xl sm:text-2xl "
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.5 }}
+          >
+            <p>{teasers[Math.floor(Math.random() * teasers.length)]}</p>
+            <span className="my-10">
+              <h1 className="text-9xl font-heading font-bold">404</h1>
+              <p className="font-mono">Not Found</p>
             </span>
-          </Link>
-        </motion.section>
+            <p className="lg:w-2/3">
+              Nothing was found at the requested page. For a single-page
+              website, anyway, there shouldn&#39;t be anything else accessible
+              but the root page!
+            </p>
+            <Link href="/" passHref={true}>
+              <span className="mt-5 transition dotted hover:opacity-75 cursor-pointer">
+                Need help going to the root page?
+              </span>
+            </Link>
+          </motion.div>
+        </section>
       </Layout>
     </>
   );
