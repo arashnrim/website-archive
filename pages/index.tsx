@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
 
-import { Repository } from "../utils/Repository";
+import Repository from "../utils/Repository";
 import Meta from "../components/Meta";
 import Layout from "../components/Layout";
 import Hero from "../components/Index/Hero";
