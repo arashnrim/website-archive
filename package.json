@@ -16,14 +16,11 @@
     "*.{js, jsx, ts, tsx}": "yarn lint:fix"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
     "framer-motion": "^4.1.17",
     "next": "^11.1.2",
     "react": "latest",
     "react-dom": "latest",
+    "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.32.1"
   },
   "devDependencies": {

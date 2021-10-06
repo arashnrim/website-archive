@@ -1,18 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAndroid,
-  faJava,
-  faPython,
-  faSwift,
-  IconDefinition,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faBullhorn,
-  faGuitar,
-  faPencilRuler,
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
+import React, { ReactElement } from "react";
+import { SiSwift, SiJava, SiKotlin, SiPython } from "react-icons/si";
+import { FaBullhorn, FaGuitar, FaPencilRuler, FaUsers } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -23,7 +11,7 @@ const languages = [
   {
     extended: true,
     color: "red",
-    icon: faSwift,
+    icon: <SiSwift />,
     title: "Swift",
     description:
       "A programming language created by Apple for developing native applications for its platforms of iOS, macOS, iPadOS, tvOS, and watchOS.",
@@ -31,7 +19,7 @@ const languages = [
   {
     extended: false,
     color: "yellow",
-    icon: faJava,
+    icon: <SiJava />,
     title: "Java",
     description:
       "A programming language created by Oracle for a variety of purposes; mostly used by me for developing Android applications.",
@@ -39,7 +27,7 @@ const languages = [
   {
     extended: false,
     color: "purple",
-    icon: faAndroid,
+    icon: <SiKotlin />,
     title: "Kotlin",
     description:
       "A programming language creaed by JetBrains for a variety of purposes; mostly used by me for developing Android applications.",
@@ -47,7 +35,7 @@ const languages = [
   {
     extended: true,
     color: "blue",
-    icon: faPython,
+    icon: <SiPython />,
     title: "Python",
     description:
       "A programming language powerful to have and has a wide variety of purposes; mostly used by me in academic learning and program development.",
@@ -56,19 +44,19 @@ const languages = [
 
 const skills = [
   {
-    icon: faUsers,
+    icon: <FaUsers />,
     name: "Leadership",
   },
   {
-    icon: faGuitar,
+    icon: <FaGuitar />,
     name: "Guitar Playing",
   },
   {
-    icon: faBullhorn,
+    icon: <FaBullhorn />,
     name: "Presenting",
   },
   {
-    icon: faPencilRuler,
+    icon: <FaPencilRuler />,
     name: "UI Design",
   },
 ];
@@ -76,7 +64,7 @@ const skills = [
 interface LanguageProps {
   extended: boolean;
   color: string;
-  icon: IconDefinition;
+  icon: ReactElement;
   title: string;
   description: string;
   inView: boolean;
@@ -84,7 +72,7 @@ interface LanguageProps {
 }
 
 interface SkillProps {
-  icon: IconDefinition;
+  icon: ReactElement;
   name: string;
   inView: boolean;
   index: number;
@@ -107,7 +95,9 @@ const Language = ({
     animate={inView ? { opacity: 1 } : { opacity: 0 }}
     transition={{ delay: index * 0.2 }}
   >
-    <FontAwesomeIcon icon={icon} size="3x" />
+    <span className="flex justify-center lg:justify-start text-4xl">
+      {icon}
+    </span>
     <h1 className="mt-2 text-4xl font-bold font-heading">{title}</h1>
     <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">{description}</p>
   </motion.div>
@@ -120,7 +110,7 @@ const Skill = ({ icon, name, inView, index }: SkillProps) => (
     animate={inView ? { opacity: 1 } : { opacity: 0 }}
     transition={{ delay: index * 0.25 }}
   >
-    <FontAwesomeIcon icon={icon} size="lg" />
+    <span className="text-2xl">{icon}</span>
     <h2 className="text-center text-2xl font-heading font-bold">{name}</h2>
   </motion.div>
 );

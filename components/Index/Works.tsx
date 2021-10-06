@@ -1,7 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -85,25 +83,25 @@ const Works = ({ repos }: WorksProps) => {
                 {repo.description}
               </p>
 
-              <div className="place-self-end mt-5 space-x-5">
+              <div className="flex flex-row place-self-end mt-5 space-x-5">
                 <a
-                  className="transition-all hover:opacity-75"
+                  className="h-8 w-8"
                   href={repo.html_url}
                   target="_blank"
                   rel="noreferrer"
                   aria-label={repo.name + " project repository"}
                 >
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                  <FaGithub className="transition-opacity hover:opacity-75 h-full w-full" />
                 </a>
                 {repo.homepage ? (
                   <a
-                    className="transition-all hover:opacity-75"
+                    className="h-8 w-8"
                     href={repo.homepage}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={repo.name + " project repository"}
                   >
-                    <FontAwesomeIcon icon={faGlobe} size="2x" />
+                    <FaGlobe className="transition-opacity hover:opacity-75 h-full w-full" />
                   </a>
                 ) : (
                   ""
