@@ -91,7 +91,7 @@ const About = () => {
         </p>
       </div>
       <div
-        className="flex flex-col lg:flex-row min-h-screen-1/2 h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0"
+        className="flex flex-col lg:flex-row h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0"
         ref={stagesReference}
       >
         {stages.map((stage, index) => (

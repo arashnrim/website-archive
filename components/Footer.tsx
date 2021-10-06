@@ -5,7 +5,7 @@ import Socials from "./Socials";
 import InlineLink from "./InlineLink";
 
 const Footer = () => (
-  <footer className="justify-center items-center flex flex-col space-y-5 md:space-y-10 min-h-screen-1/3 min-w-screen bg-black text-center rounded-t-3xl">
+  <footer className="justify-center items-center flex flex-col space-y-5 md:space-y-10 min-h-[33vh] min-w-screen bg-black text-center rounded-t-3xl">
     <p className="text-xl">
       Made with <FaHeart className="inline h-[24px]" /> by Arash Nur Iman;{" "}
       <InlineLink link="https://github.com/arashnrim/website" redirect={true}>
