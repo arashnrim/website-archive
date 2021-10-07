@@ -1,6 +1,20 @@
 import React, { ReactElement } from "react";
-import { SiSwift, SiJava, SiKotlin, SiPython } from "react-icons/si";
-import { FaBullhorn, FaGuitar, FaPencilRuler, FaUsers } from "react-icons/fa";
+import {
+  SiSwift,
+  SiJava,
+  SiKotlin,
+  SiPython,
+  SiTypescript,
+  SiJavascript,
+  SiCplusplus,
+  SiXcode,
+  SiVisualstudiocode,
+  SiWebstorm,
+  SiPycharm,
+  SiClion,
+  SiAndroidstudio,
+} from "react-icons/si";
+import { FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -11,64 +25,112 @@ const languages = [
   {
     extended: true,
     color: "red",
+    inProgress: false,
     icon: <SiSwift />,
     title: "Swift",
-    description:
-      "A programming language created by Apple for developing native applications for its platforms of iOS, macOS, iPadOS, tvOS, and watchOS.",
+    year: "2018",
+    tools: [{ name: "Xcode", icon: <SiXcode /> }],
+  },
+  {
+    extended: false,
+    color: "blue",
+    inProgress: true,
+    icon: <SiTypescript />,
+    title: "TypeScript",
+    year: "2021",
+    tools: [
+      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "WebStorm ", icon: <SiWebstorm /> },
+    ],
   },
   {
     extended: false,
     color: "yellow",
-    icon: <SiJava />,
-    title: "Java",
-    description:
-      "A programming language created by Oracle for a variety of purposes; mostly used by me for developing Android applications.",
-  },
-  {
-    extended: false,
-    color: "purple",
-    icon: <SiKotlin />,
-    title: "Kotlin",
-    description:
-      "A programming language creaed by JetBrains for a variety of purposes; mostly used by me for developing Android applications.",
+    inProgress: true,
+    icon: <SiJavascript />,
+    title: "JavaScript",
+    year: "2021",
+    tools: [
+      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "WebStorm ", icon: <SiWebstorm /> },
+    ],
   },
   {
     extended: true,
     color: "blue",
+    inProgress: false,
     icon: <SiPython />,
     title: "Python",
-    description:
-      "A programming language powerful to have and has a wide variety of purposes; mostly used by me in academic learning and program development.",
+    year: "2019",
+    tools: [
+      { name: "IDLE", icon: <SiPython /> },
+      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "PyCharm", icon: <SiPycharm /> },
+    ],
+  },
+  {
+    extended: false,
+    color: "blue",
+    inProgress: true,
+    icon: <SiCplusplus />,
+    title: "C++",
+    year: "2021",
+    tools: [{ name: "CLion", icon: <SiClion /> }],
+  },
+  {
+    extended: false,
+    color: "yellow",
+    inProgress: true,
+    icon: <SiJava />,
+    title: "Java",
+    year: "2019",
+    tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
+  },
+  {
+    extended: false,
+    color: "purple",
+    inProgress: true,
+    icon: <SiKotlin />,
+    title: "Kotlin",
+    year: "2019",
+    tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
   },
 ];
 
 const skills = [
   {
-    icon: <FaUsers />,
-    name: "Leadership",
-  },
-  {
-    icon: <FaGuitar />,
-    name: "Guitar Playing",
-  },
-  {
-    icon: <FaBullhorn />,
-    name: "Presenting",
-  },
-  {
     icon: <FaPencilRuler />,
     name: "UI Design",
   },
+  {
+    icon: <FaFolder />,
+    name: "Organisation",
+  },
+  {
+    icon: <FaUsers />,
+    name: "Collaboration",
+  },
+  {
+    icon: <FaUsers />,
+    name: "Facilitation",
+  },
 ];
+
+interface Tools {
+  name: string;
+  icon: ReactElement;
+}
 
 interface LanguageProps {
   extended: boolean;
   color: string;
+  inProgress: boolean;
   icon: ReactElement;
   title: string;
-  description: string;
+  year: string;
   inView: boolean;
   index: number;
+  tools: Tools[];
 }
 
 interface SkillProps {
@@ -82,24 +144,42 @@ const Language = ({
   extended,
   icon,
   color,
+  inProgress,
   title,
-  description,
+  year,
   inView,
   index,
+  tools,
 }: LanguageProps) => (
   <motion.div
     className={`col-span-1 ${
       extended ? "md:col-span-2" : ""
-    } p-10 h-auto rounded-2xl text-white border-2 border-${color}-400`}
-    initial={{ opacity: 0 }}
-    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+    } p-10 h-auto rounded-2xl text-white border-2 ${
+      inProgress ? "border-dashed border-opacity-50" : "border-opacity-100"
+    } border-${color}-400`}
+    // TODO: Figure out what went wrong with animations
     transition={{ delay: index * 0.2 }}
   >
     <span className="flex justify-center lg:justify-start text-4xl">
       {icon}
     </span>
     <h1 className="mt-2 text-4xl font-bold font-heading">{title}</h1>
-    <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">{description}</p>
+    <p className="mt-2 font-mono">{year}</p>
+    {!tools.length ? (
+      ""
+    ) : (
+      <p className="mt-5 text-sm sm:text-lg 2xl:text-xl font-bold font-heading">
+        Tools used
+      </p>
+    )}
+    <div className="flex justify-center lg:justify-start mt-2 space-x-5">
+      {tools.map((tool) => (
+        <div className="flex flex-col items-center" key={tool.name}>
+          <span className="text-4xl">{tool.icon}</span>
+          <p className="pt-1">{tool.name}</p>
+        </div>
+      ))}
+    </div>
   </motion.div>
 );
 
@@ -154,14 +234,7 @@ const Skills = () => {
           <InlineLink link="https://python.org" redirect={true}>
             Python
           </InlineLink>{" "}
-          sit comfortably in my toolbox, with{" "}
-          <InlineLink link="https://oracle.com/java" redirect={true}>
-            Java
-          </InlineLink>{" "}
-          and{" "}
-          <InlineLink link="https://kotlinlang.org" redirect={true}>
-            Kotlin
-          </InlineLink>{" "}
+          sit comfortably in my toolbox, with a few other tools or languages
           still a work-in-progress.
         </p>
       </div>
@@ -175,11 +248,13 @@ const Skills = () => {
             color={language.color}
             extended={language.extended}
             icon={language.icon}
+            inProgress={language.inProgress}
             title={language.title}
-            description={language.description}
+            year={language.year}
             key={language.title}
             inView={languagesInView}
             index={index}
+            tools={language.tools ? language.tools : []}
           />
         ))}
       </div>
