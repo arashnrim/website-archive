@@ -11,6 +11,12 @@ interface WorksProps {
 }
 
 /**
+ * Use this dictionary to ignore any project names where necessary. The values should be a string of what is
+ * returned from GitHub's API.
+ */
+const projectIgnore = ["arashnrim", "AssignmentParser"];
+
+/**
  * Use this dictionary to override any project names where necessary. The key values should be a string of what is
  * returned from GitHub's API and the value a string of what should be displayed on the website.
  */
@@ -58,7 +64,10 @@ const Works = ({ repos }: WorksProps) => {
       >
         {repos
           .filter(
-            (repo) => !repo.name.includes("archive") && !(repo.language == null) // Filtering for non-code and archive repositories
+            (repo) =>
+              !repo.name.includes("archive") &&
+              !(repo.language == null) &&
+              !projectIgnore.includes(repo.name) // Filtering for non-code and archive repositories
           )
           .map((repo, index) => (
             <motion.div
@@ -79,9 +88,7 @@ const Works = ({ repos }: WorksProps) => {
                 {repo.language}
                 {repo.created_at ? " | " + repo.created_at.substr(0, 4) : ""}
               </p>
-              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-                {repo.description}
-              </p>
+              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">{repo.year}</p>
 
               <div className="flex flex-row place-self-end mt-5 space-x-5">
                 <a
