@@ -7,18 +7,15 @@ import Section from "../Section";
 const stages = [
   {
     name: "Pre-education",
-    description:
-      "As a young child, I’ve always been interested in computers. From exploring the computer laptop to spending free time in kindergarten at the computer station, I was always fascinated an inclined towards computers and seeing how they work in our daily lives.",
+    year: "As a young child, I’ve always been interested in computers. From exploring the computer laptop to spending free time in kindergarten at the computer station, I was always fascinated an inclined towards computers and seeing how they work in our daily lives.",
   },
   {
     name: "Primary school",
-    description:
-      "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
+    year: "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
   },
   {
     name: "Secondary school",
-    description:
-      "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of code, UI design, algorithmic thinking, and much more over my four years in secondary school.",
+    year: "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of code, UI design, algorithmic thinking, and much more over my four years in secondary school.",
   },
 ];
 
@@ -111,9 +108,7 @@ const About = () => {
             />
             <div className="lg:flex lg:flex-col h-full pl-10 lg:pl-0 lg:items-center">
               <h2 className="text-2xl font-heading font-bold">{stage.name}</h2>
-              <p className="text-sm sm:text-lg 2xl:text-xl">
-                {stage.description}
-              </p>
+              <p className="text-sm sm:text-lg 2xl:text-xl">{stage.year}</p>
             </div>
           </motion.div>
         ))}
@@ -124,14 +119,16 @@ const About = () => {
         insight to them, I try my best to ensure the core meaning of a value is
         upheld.
       </p>
-      <div className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10">
+      <div
+        className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10"
+        ref={valuesReference}
+      >
         {values.map((value, index) => {
           return (
             <motion.div
               className={`break-words p-10 col-span-1 ${
                 index > 2 ? "md:col-span-3" : "md:col-span-2" // Manually altering the size of the last two values to even out the spacing
               } lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
-              ref={valuesReference}
               key={value.name}
               initial={{ opacity: 0 }}
               animate={valuesInView ? { opacity: 1 } : { opacity: 0 }}
