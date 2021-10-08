@@ -4,8 +4,8 @@ const Meta = ({
   title = "Arash Nur Iman",
   name = "Arash Nur Iman",
   description = "I'm Arash Nur Iman, a student developer from Singapore passionate about delivering simple, efficient, and easy-to-use creations of technology.",
-  url = "https://arashnrim.me",
-  image = "https://arashnrim.me/seo.jpg",
+  url = "https://arash.codes",
+  image = "https://arash.codes/seo.jpg",
 }) => (
   <Head>
     <title>{title}</title>
