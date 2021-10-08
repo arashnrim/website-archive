@@ -7,7 +7,7 @@ import Section from "../Section";
 const stages = [
   {
     name: "Pre-education",
-    year: "As a young child, I’ve always been interested in computers. From exploring the computer laptop to spending free time in kindergarten at the computer station, I was always fascinated an inclined towards computers and seeing how they work in our daily lives.",
+    year: "As a young child, I’ve always been interested in computers. From exploring the computer laptop to spending free time in kindergarten at the computer station, I was always fascinated and inclined towards computers and seeing how they work in our daily lives.",
   },
   {
     name: "Primary school",
@@ -15,7 +15,7 @@ const stages = [
   },
   {
     name: "Secondary school",
-    year: "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of code, UI design, algorithmic thinking, and much more over my four years in secondary school.",
+    year: "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of coding, UI design, algorithmic thinking, and much more over my four years in secondary school.",
   },
 ];
 
