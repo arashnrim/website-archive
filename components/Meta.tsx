@@ -16,6 +16,7 @@ const Meta = ({
     <meta name="keywords" content="developer, dev, student, Singapore" />
     <meta name="author" content={name} />
     <meta name="url" content={url} />
+    <meta name="theme-color" content="#000000" />
 
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
