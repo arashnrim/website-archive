@@ -88,7 +88,9 @@ const Works = ({ repos }: WorksProps) => {
                 {repo.language}
                 {repo.created_at ? " | " + repo.created_at.substr(0, 4) : ""}
               </p>
-              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">{repo.year}</p>
+              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+                {repo.description}
+              </p>
 
               <div className="flex flex-row place-self-end mt-5 space-x-5">
                 <a
@@ -96,7 +98,8 @@ const Works = ({ repos }: WorksProps) => {
                   href={repo.html_url}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={repo.name + " project repository"}
+                  title={"Go to" + repo.name + "'s project repository"}
+                  aria-label={"Go to" + repo.name + "'s project repository"}
                 >
                   <FaGithub className="transition-opacity hover:opacity-75 h-full w-full" />
                 </a>
@@ -106,7 +109,8 @@ const Works = ({ repos }: WorksProps) => {
                     href={repo.homepage}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label={repo.name + " project repository"}
+                    title={"Go to" + repo.name + "'s project page"}
+                    aria-label={"Go to" + repo.name + "'s project page"}
                   >
                     <FaGlobe className="transition-opacity hover:opacity-75 h-full w-full" />
                   </a>

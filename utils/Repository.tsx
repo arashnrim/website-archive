@@ -1,7 +1,7 @@
 interface Repository {
   id: number;
   name: string;
-  year: string;
+  description: string;
   language?: string;
   created_at: string;
   html_url?: string;
