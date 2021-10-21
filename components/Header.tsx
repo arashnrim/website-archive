@@ -11,9 +11,9 @@ const Header = () => {
       transition={{ ease: "easeInOut", duration: 0.75 }}
     >
       <Link href="/" passHref={true}>
-        <span className="transition bg-opacity-5 p-3 w-min cursor-pointer hover:opacity-75">
-          <span className="font-mono font-bold text-2xl">#</span>
-          <span className="font-sans font-bold text-2xl">A</span>
+        <span className="p-3 w-min bg-opacity-5 transition cursor-pointer hover:opacity-75">
+          <span className="font-mono text-2xl font-bold">#</span>
+          <span className="font-sans text-2xl font-bold">A</span>
         </span>
       </Link>
     </motion.header>

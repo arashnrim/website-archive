@@ -26,7 +26,7 @@ const Section = ({ children }: SectionProps) => {
   return (
     <motion.section
       className={
-        "flex flex-col justify-center items-center min-h-screen h-auto min-w-screen px-10 md:px-12 lg:px-20 pt-20 space-y-10 text-center lg:text-left"
+        "flex flex-col justify-center items-center px-10 pt-20 space-y-10 h-auto min-h-screen text-center min-w-screen md:px-12 lg:px-20 lg:text-left"
       }
       ref={reference}
       variants={
