@@ -24,6 +24,7 @@ const projectOverrides: { [key: string]: string } = {
   Liste: "Listé",
   "balloon-satellite": "Balloon Satellite",
   website: "Website",
+  "whats-next": "What's Next?",
 };
 
 const Works = ({ repos }: WorksProps) => {
