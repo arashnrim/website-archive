@@ -39,7 +39,7 @@ const languages = [
     title: "TypeScript",
     year: "2021",
     tools: [
-      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "VS Code", icon: <SiVisualstudiocode /> },
       { name: "WebStorm ", icon: <SiWebstorm /> },
     ],
   },
@@ -51,7 +51,7 @@ const languages = [
     title: "JavaScript",
     year: "2021",
     tools: [
-      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "VS Code", icon: <SiVisualstudiocode /> },
       { name: "WebStorm ", icon: <SiWebstorm /> },
     ],
   },
@@ -64,7 +64,7 @@ const languages = [
     year: "2019",
     tools: [
       { name: "IDLE", icon: <SiPython /> },
-      { name: "VSCode", icon: <SiVisualstudiocode /> },
+      { name: "VS Code", icon: <SiVisualstudiocode /> },
       { name: "PyCharm", icon: <SiPycharm /> },
     ],
   },
@@ -157,10 +157,11 @@ const Language = ({
     } p-10 h-auto rounded-2xl text-white border-2 ${
       inProgress ? "border-dashed border-opacity-50" : "border-opacity-100"
     } border-${color}-400`}
-    // TODO: Figure out what went wrong with animations
+    initial={{ opacity: 0 }}
+    animate={inView ? { opacity: 1 } : { opacity: 0 }}
     transition={{ delay: index * 0.2 }}
   >
-    <span className="flex justify-center lg:justify-start text-4xl">
+    <span className="flex justify-center text-4xl lg:justify-start">
       {icon}
     </span>
     <h1 className="mt-2 text-4xl font-bold font-heading">{title}</h1>
@@ -168,11 +169,11 @@ const Language = ({
     {!tools.length ? (
       ""
     ) : (
-      <p className="mt-5 text-sm sm:text-lg 2xl:text-xl font-bold font-heading">
+      <p className="mt-5 text-sm font-bold sm:text-lg 2xl:text-xl font-heading">
         Tools used
       </p>
     )}
-    <div className="flex justify-center lg:justify-start mt-2 space-x-5">
+    <div className="flex justify-center mt-2 space-x-5 lg:justify-start">
       {tools.map((tool) => (
         <div className="flex flex-col items-center" key={tool.name}>
           <span className="text-4xl">{tool.icon}</span>
@@ -185,13 +186,13 @@ const Language = ({
 
 const Skill = ({ icon, name, inView, index }: SkillProps) => (
   <motion.div
-    className="flex gap-y-2 items-center flex-col"
+    className="flex flex-col items-center gap-y-2"
     initial={{ opacity: 0 }}
     animate={inView ? { opacity: 1 } : { opacity: 0 }}
     transition={{ delay: index * 0.25 }}
   >
     <span className="text-2xl">{icon}</span>
-    <h2 className="text-center text-2xl font-heading font-bold">{name}</h2>
+    <h2 className="text-2xl font-bold text-center font-heading">{name}</h2>
   </motion.div>
 );
 
@@ -208,12 +209,12 @@ const Skills = () => {
   return (
     <Section>
       <div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           A <span className="text-red-400">learner</span>, a{" "}
           <span className="text-red-400">developer</span>, and an{" "}
           <span className="text-red-400">aspiring student</span>.
         </h1>
-        <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Every opportunity brings something to learn.
         </p>
       </div>
@@ -240,7 +241,7 @@ const Skills = () => {
       </div>
 
       <div
-        className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 mb-10 gap-10"
+        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3"
         ref={languagesReference}
       >
         {languages.map((language, index) => (
@@ -265,7 +266,7 @@ const Skills = () => {
       </p>
 
       <div
-        className="mt-10 mb-10 w-full h-1/2 grid grid-cols-1 md:grid-cols-4 gap-10"
+        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-4"
         ref={skillsReference}
       >
         {skills.map((skill, index) => (
