@@ -101,18 +101,26 @@ const skills = [
   {
     icon: <FaPencilRuler />,
     name: "UI Design",
+    description:
+      "Having tested the waters with front-end development, I've explored the concept of UI design as well. I hone the skills of understanding layouts for a practical user experience, basic understanding of colour use, and designing with the consideration of accessibility.",
   },
   {
     icon: <FaFolder />,
     name: "Organisation",
+    description:
+      "Over the years, I've come to realise the importance of having an organised system for many things — assignments and documents are just a few of these things. I've developed the skill of being able to store and retrieve efficiently through proper organisation over the years.",
   },
   {
     icon: <FaUsers />,
     name: "Collaboration",
+    description:
+      "Especially in secondary school, I've been through the thick and thin of collaborating with people from different backgrounds. While the experience is always different, I hope to bring the best of me into group discussions or when other opportunities for collaboration exists.",
   },
   {
     icon: <FaUsers />,
     name: "Facilitation",
+    description:
+      "Being a student councillor in the later parts of my secondary school education exposed me to multiple opportunities to facilitate classes and discussions during specific events. While this skill I still have yet to reinforce, I have some experience of facilitation during my school years.",
   },
 ];
 
@@ -138,6 +146,7 @@ interface SkillProps {
   name: string;
   inView: boolean;
   index: number;
+  description: string;
 }
 
 const Language = ({
@@ -184,7 +193,7 @@ const Language = ({
   </motion.div>
 );
 
-const Skill = ({ icon, name, inView, index }: SkillProps) => (
+const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
   <motion.div
     className="flex flex-col items-center gap-y-2"
     initial={{ opacity: 0 }}
@@ -193,6 +202,7 @@ const Skill = ({ icon, name, inView, index }: SkillProps) => (
   >
     <span className="text-2xl">{icon}</span>
     <h2 className="text-2xl font-bold text-center font-heading">{name}</h2>
+    <p className="text-lg text-center">{description}</p>
   </motion.div>
 );
 
@@ -276,6 +286,7 @@ const Skills = () => {
             key={skill.name}
             inView={skillsInView}
             index={index}
+            description={skill.description}
           />
         ))}
       </div>
