@@ -64,7 +64,7 @@ const About = () => {
   return (
     <Section>
       <div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           An <span className="text-blue-400">active contributor</span>, a{" "}
           <span className="text-blue-400">life-changer</span>, and a{" "}
           <span className="text-blue-400">friend</span> to all.
@@ -74,7 +74,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
-        <p className="lg:w-2/3 text-sm sm:text-lg 2xl:text-xl">
+        <p className="text-sm lg:w-2/3 sm:text-lg 2xl:text-xl">
           I wish to develop myself into someone who contributes back to society,
           influences the lives of many, and be there for those I’m close with.
           <br />
@@ -88,12 +88,12 @@ const About = () => {
         </p>
       </div>
       <div
-        className="flex flex-col lg:flex-row h-auto w-full text-left lg:text-center lg:space-x-5 space-y-5 lg:space-y-0"
+        className="flex flex-col w-full h-auto space-y-5 text-left lg:flex-row lg:text-center lg:space-x-5 lg:space-y-0"
         ref={stagesReference}
       >
         {stages.map((stage, index) => (
           <motion.div
-            className="flex flex-row lg:flex-col flex-1 justify-center lg:justify-start lg:items-center relative space-x-5 lg:space-x-0 lg:space-y-10"
+            className="relative flex flex-row justify-center flex-1 space-x-5 lg:flex-col lg:justify-start lg:items-center lg:space-x-0 lg:space-y-10"
             key={stage.name}
             initial={{ opacity: 0 }}
             animate={stagesInView ? { opacity: 1 } : { opacity: 0 }}
@@ -106,21 +106,21 @@ const About = () => {
                   : ""
               }`}
             />
-            <div className="lg:flex lg:flex-col h-full pl-10 lg:pl-0 lg:items-center">
-              <h2 className="text-2xl font-heading font-bold">{stage.name}</h2>
+            <div className="h-full pl-10 lg:flex lg:flex-col lg:pl-0 lg:items-center">
+              <h2 className="text-2xl font-bold font-heading">{stage.name}</h2>
               <p className="text-sm sm:text-lg 2xl:text-xl">{stage.year}</p>
             </div>
           </motion.div>
         ))}
       </div>
-      <p className="mt-10 self-start text-sm sm:text-lg 2xl:text-xl lg:w-2/3 h-auto">
+      <p className="self-start h-auto mt-10 text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
         As I grew up, I realised the importance of having core values I can hold
         on to for guidance. While they may subtly change as I gain better
         insight to them, I try my best to ensure the core meaning of a value is
         upheld.
       </p>
       <div
-        className="mt-10 w-full grid justify-center grid-rows-5 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10"
+        className="grid w-full grid-cols-1 mt-10 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10"
         ref={valuesReference}
       >
         {values.map((value, index) => {
@@ -134,7 +134,11 @@ const About = () => {
               animate={valuesInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-              <h1 className="mt-2 text-4xl font-bold font-heading">
+              <h1
+                className={`mt-2 ${
+                  value.name.length > 9 ? "text-xl sm:text-4xl" : "text-4xl"
+                } font-bold font-heading`}
+              >
                 {value.name}
               </h1>
               <p className="font-mono">{value.category}</p>

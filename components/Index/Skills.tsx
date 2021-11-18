@@ -173,7 +173,13 @@ const Language = ({
     <span className="flex justify-center text-4xl lg:justify-start">
       {icon}
     </span>
-    <h1 className="mt-2 text-4xl font-bold font-heading">{title}</h1>
+    <h1
+      className={`mt-2 ${
+        title.length > 7 ? "text-xl md:text-4xl" : "text-4xl"
+      } font-bold font-heading`}
+    >
+      {title}
+    </h1>
     <p className="mt-2 font-mono">{year}</p>
     {!tools.length ? (
       ""
@@ -202,7 +208,7 @@ const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
   >
     <span className="text-2xl">{icon}</span>
     <h2 className="text-2xl font-bold text-center font-heading">{name}</h2>
-    <p className="text-lg text-center">{description}</p>
+    <p className="text-sm text-center sm:text-lg 2xl:text-xl">{description}</p>
   </motion.div>
 );
 
@@ -215,6 +221,9 @@ const Skills = () => {
     threshold: 0.9,
     triggerOnce: true,
   });
+
+  console.info(languagesInView);
+  console.info(skillsInView);
 
   return (
     <Section>
@@ -276,7 +285,7 @@ const Skills = () => {
       </p>
 
       <div
-        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-4"
+        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-4"
         ref={skillsReference}
       >
         {skills.map((skill, index) => (
