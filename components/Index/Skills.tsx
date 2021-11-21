@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import {
   SiSwift,
   SiJava,
@@ -17,6 +17,7 @@ import {
 import { FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useMediaQuery } from "react-responsive";
 
 import Section from "../Section";
 import InlineLink from "../InlineLink";
@@ -213,17 +214,21 @@ const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
 );
 
 const Skills = () => {
-  const [languagesReference, languagesInView] = useInView({
+  var [languagesReference, languagesInView] = useInView({
     threshold: 0.45,
     triggerOnce: true,
   });
-  const [skillsReference, skillsInView] = useInView({
+  var [skillsReference, skillsInView] = useInView({
     threshold: 0.9,
     triggerOnce: true,
   });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  console.info(languagesInView);
-  console.info(skillsInView);
+  // Manual override for smaller devices
+  if (isMobile) {
+    languagesInView = true;
+    skillsInView = true;
+  }
 
   return (
     <Section>
