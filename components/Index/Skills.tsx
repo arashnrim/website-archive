@@ -14,7 +14,7 @@ import {
   SiClion,
   SiAndroidstudio,
 } from "react-icons/si";
-import { FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
+import { FaFolder, FaPencilRuler, FaUsers, FaCode } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
@@ -24,7 +24,7 @@ import InlineLink from "../InlineLink";
 
 const languages = [
   {
-    extended: true,
+    extended: false,
     color: "red",
     inProgress: false,
     icon: <SiSwift />,
@@ -36,13 +36,19 @@ const languages = [
     extended: false,
     color: "blue",
     inProgress: true,
+    icon: <SiSwift />,
+    title: "SwiftUI",
+    year: "2021",
+    tools: [{ name: "Xcode", icon: <SiXcode /> }],
+  },
+  {
+    extended: false,
+    color: "blue",
+    inProgress: false,
     icon: <SiTypescript />,
     title: "TypeScript",
     year: "2021",
-    tools: [
-      { name: "VS Code", icon: <SiVisualstudiocode /> },
-      { name: "WebStorm ", icon: <SiWebstorm /> },
-    ],
+    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
   },
   {
     extended: false,
@@ -51,10 +57,7 @@ const languages = [
     icon: <SiJavascript />,
     title: "JavaScript",
     year: "2021",
-    tools: [
-      { name: "VS Code", icon: <SiVisualstudiocode /> },
-      { name: "WebStorm ", icon: <SiWebstorm /> },
-    ],
+    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
   },
   {
     extended: true,
@@ -66,7 +69,6 @@ const languages = [
     tools: [
       { name: "IDLE", icon: <SiPython /> },
       { name: "VS Code", icon: <SiVisualstudiocode /> },
-      { name: "PyCharm", icon: <SiPycharm /> },
     ],
   },
   {
@@ -76,7 +78,7 @@ const languages = [
     icon: <SiCplusplus />,
     title: "C++",
     year: "2021",
-    tools: [{ name: "CLion", icon: <SiClion /> }],
+    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
   },
   {
     extended: false,
@@ -118,11 +120,18 @@ const skills = [
       "Especially in secondary school, I've been through the thick and thin of collaborating with people from different backgrounds. While the experience is always different, I hope to bring the best of me into group discussions or when other opportunities for collaboration exists.",
   },
   {
-    icon: <FaUsers />,
-    name: "Facilitation",
+    icon: <FaCode />,
+    name: "Computational Thinking",
     description:
-      "Being a student councillor in the later parts of my secondary school education exposed me to multiple opportunities to facilitate classes and discussions during specific events. While this skill I still have yet to reinforce, I have some experience of facilitation during my school years.",
+      "Taught in secondary school, algorithmic thinking prepares me with the skills required not just to improve how I code, but to also sharpen other soft skills like critical thinking. By being able to notice patterns, decompose tough problems, generalise solutions, and plan algorithms, my way of developing is structured.",
   },
+  // Not too confident in this skill yet, unfortunately!
+  // {
+  //   icon: <FaUsers />,
+  //   name: "Facilitation",
+  //   description:
+  //     "Being a student councillor in the later parts of my secondary school education exposed me to multiple opportunities to facilitate classes and discussions during specific events. While this skill I still have yet to reinforce, I have some experience of facilitation during my school years.",
+  // },
 ];
 
 interface Tools {

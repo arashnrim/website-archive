@@ -36,19 +36,19 @@ const Works = ({ repos }: WorksProps) => {
   return (
     <Section>
       <div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold font-heading">
+        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           A <span className="text-indigo-400">tinkerer</span>, an{" "}
           <span className="text-indigo-400">experimenter</span>, and a{" "}
           <span className="text-indigo-400">developer</span>.
         </h1>
-        <p className="mt-5 w-full text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
           Who knew playing around is a good thing?
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
         <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
-          Playing around is a good thing to build up my skills, test out what I
-          know, and learn new things.
+          To build up my skills, test out what I know, and learn new things,
+          experimenting here and there can be greatly beneficial.
           <br />
           <br />
           The result of the tinkering I&#39;ve done is the several projects that
@@ -60,7 +60,7 @@ const Works = ({ repos }: WorksProps) => {
       </div>
 
       <div
-        className="w-full h-1/2 grid grid-cols-1 md:grid-cols-2 gap-10"
+        className="grid w-full grid-cols-1 gap-10 h-1/2 md:grid-cols-2"
         ref={reference}
       >
         {repos
@@ -80,7 +80,7 @@ const Works = ({ repos }: WorksProps) => {
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-              <h1 className="mt-2 text-4xl font-bold font-heading break-words">
+              <h1 className="mt-2 text-4xl font-bold break-words font-heading">
                 {repo.name in projectOverrides
                   ? projectOverrides[repo.name]
                   : repo.name}
@@ -93,27 +93,27 @@ const Works = ({ repos }: WorksProps) => {
                 {repo.description}
               </p>
 
-              <div className="flex flex-row place-self-end mt-5 space-x-5">
+              <div className="flex flex-row mt-5 space-x-5 place-self-end">
                 <a
-                  className="h-8 w-8"
+                  className="w-8 h-8"
                   href={repo.html_url}
                   target="_blank"
                   rel="noreferrer"
                   title={"Go to" + repo.name + "'s project repository"}
                   aria-label={"Go to" + repo.name + "'s project repository"}
                 >
-                  <FaGithub className="transition-opacity hover:opacity-75 h-full w-full" />
+                  <FaGithub className="w-full h-full transition-opacity hover:opacity-75" />
                 </a>
                 {repo.homepage ? (
                   <a
-                    className="h-8 w-8"
+                    className="w-8 h-8"
                     href={repo.homepage}
                     target="_blank"
                     rel="noreferrer"
                     title={"Go to" + repo.name + "'s project page"}
                     aria-label={"Go to" + repo.name + "'s project page"}
                   >
-                    <FaGlobe className="transition-opacity hover:opacity-75 h-full w-full" />
+                    <FaGlobe className="w-full h-full transition-opacity hover:opacity-75" />
                   </a>
                 ) : (
                   ""

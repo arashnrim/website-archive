@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { useInView } from "react-intersection-observer";
 import Section from "../Section";
+import {
+  FaHeart,
+  FaHandshake,
+  FaCalendar,
+  FaMountain,
+  FaCheckDouble,
+} from "react-icons/fa";
 
 const stages = [
   {
     name: "Pre-education",
-    year: "As a young child, I’ve always been interested in computers. From exploring the computer laptop to spending free time in kindergarten at the computer station, I was always fascinated and inclined towards computers and seeing how they work in our daily lives.",
+    year: "As a young child, I’ve always been interested in computers. From exploring the what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
   },
   {
     name: "Primary school",
@@ -22,30 +28,35 @@ const values = [
   {
     name: "Care",
     category: "Personal | Interpersonal",
+    icon: <FaHeart />,
     definition:
       "Having serious attention or consideration applied to doing something; feeling concern or interest.",
   },
   {
     name: "Respect",
     category: "Personal | Interpersonal",
+    icon: <FaHandshake />,
     definition:
       "Having due regard for (someone's feelings, wishes, or rights).",
   },
   {
     name: "Responsibility",
     category: "Personal | Interpersonal",
+    icon: <FaCalendar />,
     definition:
       "Being accountable for something where accountability is due and appropriate.",
   },
   {
     name: "Perseverance",
     category: "Personal",
+    icon: <FaMountain />,
     definition:
       "Persistent in doing something despite difficulty or delay in achieving success.",
   },
   {
     name: "Integrity",
     category: "Personal",
+    icon: <FaCheckDouble />,
     definition: "Being honest and having strong moral principles.",
   },
 ];
@@ -82,8 +93,9 @@ const About = () => {
           think that the many relationships I’ve forged over 16 years of my life
           have allowed me to learn from others as much as others have learned
           from me. Many have known me to be someone friendly, trusted, and
-          responsible, and while its certainty remains uncertain, I hope to
-          continue developing myself on the right track.
+          responsible, and while behaviours, beliefs, and attitudes can always
+          change, I hope to continue developing myself on my &#39;right
+          track&#39;.
         </p>
       </div>
       <div
@@ -133,6 +145,7 @@ const About = () => {
               animate={valuesInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: index * 0.2 }}
             >
+              <span className="text-4xl">{value.icon}</span>
               <h1
                 className={`mt-2 ${
                   value.name.length > 9 ? "text-xl sm:text-4xl" : "text-4xl"
