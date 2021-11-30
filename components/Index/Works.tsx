@@ -102,7 +102,7 @@ const Works = ({ repos }: WorksProps) => {
                   title={"Go to" + repo.name + "'s project repository"}
                   aria-label={"Go to" + repo.name + "'s project repository"}
                 >
-                  <FaGithub className="w-full h-full transition-opacity hover:opacity-75" />
+                  <FaGithub className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
                 </a>
                 {repo.homepage ? (
                   <a
@@ -113,7 +113,7 @@ const Works = ({ repos }: WorksProps) => {
                     title={"Go to" + repo.name + "'s project page"}
                     aria-label={"Go to" + repo.name + "'s project page"}
                   >
-                    <FaGlobe className="w-full h-full transition-opacity hover:opacity-75" />
+                    <FaGlobe className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
                   </a>
                 ) : (
                   ""
