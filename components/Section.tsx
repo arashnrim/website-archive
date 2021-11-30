@@ -4,9 +4,10 @@ import { motion, useReducedMotion } from "framer-motion";
 
 interface SectionProps {
   children: ReactNode;
+  id?: string;
 }
 
-const Section = ({ children }: SectionProps) => {
+const Section = ({ children, id }: SectionProps) => {
   const [reference, isInView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -28,6 +29,7 @@ const Section = ({ children }: SectionProps) => {
       className={
         "flex flex-col justify-center items-center px-10 pt-20 space-y-10 h-auto min-h-screen text-center min-w-screen md:px-12 lg:px-20 lg:text-left"
       }
+      id={id ? id : undefined}
       ref={reference}
       variants={
         usesReducedMotion ? animations.reducedMotion : animations.normalMotion

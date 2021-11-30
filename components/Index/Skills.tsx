@@ -1,26 +1,22 @@
-import React, { ReactElement, useEffect } from "react";
+import { motion } from "framer-motion";
+import { ReactElement } from "react";
+import { FaCode, FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import {
-  SiSwift,
+  SiAndroidstudio,
+  SiCplusplus,
   SiJava,
+  SiJavascript,
   SiKotlin,
   SiPython,
+  SiSwift,
   SiTypescript,
-  SiJavascript,
-  SiCplusplus,
-  SiXcode,
   SiVisualstudiocode,
-  SiWebstorm,
-  SiPycharm,
-  SiClion,
-  SiAndroidstudio,
+  SiXcode,
 } from "react-icons/si";
-import { FaFolder, FaPencilRuler, FaUsers, FaCode } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
-
-import Section from "../Section";
 import InlineLink from "../InlineLink";
+import Section from "../Section";
 
 const languages = [
   {
@@ -240,7 +236,7 @@ const Skills = () => {
   }
 
   return (
-    <Section>
+    <Section id="skills">
       <div>
         <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           A <span className="text-red-400">learner</span>, a{" "}

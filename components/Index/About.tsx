@@ -72,7 +72,7 @@ const About = () => {
   });
 
   return (
-    <Section>
+    <Section id="about">
       <div>
         <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           An <span className="text-blue-400">active contributor</span>, a{" "}

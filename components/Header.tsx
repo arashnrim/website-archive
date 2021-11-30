@@ -1,5 +1,6 @@
-import React from "react";
 import Link from "next/link";
+
+const navLinks = ["about", "skills", "works"];
 
 const Header = () => {
   return (
@@ -10,6 +11,15 @@ const Header = () => {
           <span className="font-sans text-2xl font-bold">A</span>
         </span>
       </Link>
+      <nav className="flex flex-row pl-5 space-x-5">
+        {navLinks.map((item) => (
+          <Link href={`#${item}`} key={item} passHref>
+            <button type="button" className="sm:text-xl font-heading">
+              {item}
+            </button>
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 };

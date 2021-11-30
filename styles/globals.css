@@ -45,6 +45,10 @@
         src: url("../public/fonts/JetBrainsMono-Medium.woff2") format("woff2");
         src: url("../public/fonts/JetBrainsMono-Medium.woff") format("woff");
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 @layer utilities {

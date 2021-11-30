@@ -34,7 +34,7 @@ const Works = ({ repos }: WorksProps) => {
   });
 
   return (
-    <Section>
+    <Section id="works">
       <div>
         <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
           A <span className="text-indigo-400">tinkerer</span>, an{" "}
