@@ -24,6 +24,13 @@ const socials = [
     link: "https://linkedin.com/in/arashnrim",
   },
   {
+    name: "Figma",
+    icon: (
+      <SiFigma className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+    ),
+    link: "https://figma.com/@arashnrim",
+  },
+  {
     name: "email",
     icon: (
       <FaEnvelope className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
