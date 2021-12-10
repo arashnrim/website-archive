@@ -48,7 +48,7 @@ const languages = [
   },
   {
     extended: false,
-    color: "yellow",
+    color: "amber",
     inProgress: true,
     icon: <SiJavascript />,
     title: "JavaScript",
@@ -78,7 +78,7 @@ const languages = [
   },
   {
     extended: false,
-    color: "yellow",
+    color: "amber",
     inProgress: true,
     icon: <SiJava />,
     title: "Java",
@@ -87,7 +87,7 @@ const languages = [
   },
   {
     extended: false,
-    color: "purple",
+    color: "violet",
     inProgress: true,
     icon: <SiKotlin />,
     title: "Kotlin",

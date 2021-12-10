@@ -1,20 +1,17 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: {
-    content: [
-      "./pages/**/*.{js,jsx,ts,tsx}",
-      "./components/**/*.{js,jsx,ts,tsx}",
-    ],
-    safelist: [
-      "border-red-400",
-      "border-yellow-400",
-      "border-purple-400",
-      "border-blue-400",
-    ],
-  },
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  safelist: [
+    "border-red-400",
+    "border-amber-400",
+    "border-violet-400",
+    "border-blue-400",
+  ],
   mode: "jit",
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -23,7 +20,7 @@ module.exports = {
         mono: ["'JetBrains Mono'"],
       },
       colors: {
-        gray: colors.trueGray,
+        gray: colors.neutral,
       },
     },
   },
