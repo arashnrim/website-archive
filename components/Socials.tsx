@@ -1,5 +1,5 @@
-import { FaEnvelope } from "react-icons/fa";
-import { SiFigma, SiGithub, SiLinkedin, SiPolywork } from "react-icons/si";
+import { FaEnvelope, FaBlog } from "react-icons/fa";
+import { SiFigma, SiGithub, SiLinkedin } from "react-icons/si";
 
 const socials = [
   {
@@ -10,11 +10,11 @@ const socials = [
     link: "https://github.com/arashnrim",
   },
   {
-    name: "Polywork",
+    name: "blog",
     icon: (
-      <SiPolywork className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+      <FaBlog className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
     ),
-    link: "https://timeline.arash.codes",
+    link: "https://blog.arash.codes",
   },
   {
     name: "LinkedIn",
@@ -50,11 +50,15 @@ const Socials = () => (
         title={
           social.name === "email"
             ? "Contact via email"
+            : social.name === "blog"
+            ? "Go to blog"
             : `Go to ${social.name} profile`
         }
         aria-label={
           social.name === "email"
             ? "Contact via email"
+            : social.name === "blog"
+            ? "Go to blog"
             : `Go to ${social.name} profile`
         }
         key={social.name}
