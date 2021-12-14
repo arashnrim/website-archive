@@ -145,7 +145,9 @@ const About = () => {
               animate={valuesInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-              <span className="text-4xl">{value.icon}</span>
+              <span className="flex justify-center text-4xl lg:justify-start">
+                {value.icon}
+              </span>
               <h1
                 className={`mt-2 ${
                   value.name.length > 9 ? "text-xl sm:text-4xl" : "text-4xl"
