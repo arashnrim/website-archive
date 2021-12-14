@@ -12,7 +12,7 @@ import {
 const stages = [
   {
     name: "Pre-education",
-    year: "As a young child, I’ve always been interested in computers. From exploring the what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
+    year: "As a young child, I’ve always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
   },
   {
     name: "Primary school",
