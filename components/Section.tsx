@@ -27,7 +27,7 @@ const Section = ({ children, id }: SectionProps) => {
   return (
     <motion.section
       className={
-        "flex flex-col justify-center items-center px-10 pt-20 space-y-10 h-auto min-h-screen text-center min-w-screen md:px-12 lg:px-20 lg:text-left"
+        "flex flex-col justify-center items-center px-10 pt-20 space-y-10 h-auto min-h-screen text-center min-w-screen md:px-12 lg:px-28 lg:text-left"
       }
       id={id ? id : undefined}
       ref={reference}
