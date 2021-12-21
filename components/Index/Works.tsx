@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import { GoStar, GoRepoForked } from "react-icons/go";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -70,57 +71,77 @@ const Works = ({ repos }: WorksProps) => {
               !(repo.language == null) &&
               !projectIgnore.includes(repo.name) // Filtering for non-code and archive repositories
           )
-          .map((repo, index) => (
-            <motion.div
-              className={`flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
-                repo.archived ? "border-opacity-50" : "border-opacity-100"
-              }`}
-              key={repo.id}
-              initial={{ opacity: 0 }}
-              animate={inView ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ delay: index * 0.2 }}
-            >
-              <h1 className="mt-2 text-4xl font-bold break-words font-heading">
-                {repo.name in projectOverrides
-                  ? projectOverrides[repo.name]
-                  : repo.name}
-              </h1>
-              <p className="font-mono">
-                {repo.language}
-                {repo.created_at ? " | " + repo.created_at.substr(0, 4) : ""}
-              </p>
-              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-                {repo.description}
-              </p>
+          .map((repo, index) => {
+            return (
+              <motion.div
+                className={`flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
+                  repo.archived ? "border-opacity-50" : "border-opacity-100"
+                }`}
+                key={repo.id}
+                initial={{ opacity: 0 }}
+                animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ delay: index * 0.2 }}
+              >
+                <h1 className="mt-2 text-4xl font-bold break-words font-heading">
+                  {repo.name in projectOverrides
+                    ? projectOverrides[repo.name]
+                    : repo.name}
+                </h1>
+                <p className="flex items-center font-mono">
+                  {repo.language}
+                  {" | " +
+                    new Date(repo.created_at).toLocaleDateString("en-SG", {
+                      year: "numeric",
+                    })}
+                </p>
+                <p className="flex items-center space-x-3 font-mono">
+                  {repo.stargazers_count > 0 && (
+                    <span className="inline-flex flex-row items-center">
+                      <GoStar />
+                      {repo.stargazers_count}
+                    </span>
+                  )}
+                  {repo.forks_count > 0 && (
+                    <span className="inline-flex flex-row items-center">
+                      <GoRepoForked />
+                      {repo.forks_count}
+                    </span>
+                  )}
+                </p>
 
-              <div className="flex flex-row mt-5 space-x-5 place-self-end">
-                <a
-                  className="w-8 h-8"
-                  href={repo.html_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  title={"Go to" + repo.name + "'s project repository"}
-                  aria-label={"Go to" + repo.name + "'s project repository"}
-                >
-                  <FaGithub className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
-                </a>
-                {repo.homepage ? (
+                <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
+                  {repo.description}
+                </p>
+
+                <div className="flex flex-row mt-5 space-x-5 place-self-end">
                   <a
                     className="w-8 h-8"
-                    href={repo.homepage}
+                    href={repo.html_url}
                     target="_blank"
                     rel="noreferrer"
-                    title={"Go to" + repo.name + "'s project page"}
-                    aria-label={"Go to" + repo.name + "'s project page"}
+                    title={"Go to" + repo.name + "'s project repository"}
+                    aria-label={"Go to" + repo.name + "'s project repository"}
                   >
-                    <FaGlobe className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                    <FaGithub className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
                   </a>
-                ) : (
-                  ""
-                )}
-              </div>
-            </motion.div>
-          ))}
+                  {repo.homepage ? (
+                    <a
+                      className="w-8 h-8"
+                      href={repo.homepage}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={"Go to" + repo.name + "'s project page"}
+                      aria-label={"Go to" + repo.name + "'s project page"}
+                    >
+                      <FaGlobe className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
       </div>
     </Section>
   );
