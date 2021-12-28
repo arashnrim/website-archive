@@ -15,18 +15,7 @@ interface WorksProps {
  * Use this dictionary to ignore any project names where necessary. The values should be a string of what is
  * returned from GitHub's API.
  */
-const projectIgnore = ["arashnrim", "AssignmentParser"];
-
-/**
- * Use this dictionary to override any project names where necessary. The key values should be a string of what is
- * returned from GitHub's API and the value a string of what should be displayed on the website.
- */
-const projectOverrides: { [key: string]: string } = {
-  Liste: "Listé",
-  "balloon-satellite": "Balloon Satellite",
-  website: "Website",
-  "whats-next": "What's Next?",
-};
+const projectIgnore = ["arashnrim", "assignment-parser"];
 
 const Works = ({ repos }: WorksProps) => {
   const [reference, inView] = useInView({
