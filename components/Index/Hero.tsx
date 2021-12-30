@@ -9,14 +9,14 @@ const Hero = () => {
   return (
     <section className="bg-black rounded-b-3xl">
       <motion.div
-        className="flex flex-col lg:flex-row justify-center items-center min-h-screen min-w-screen px-10 md:px-12 lg:px-20 space-y-10 lg:space-y-0 lg:space-x-16"
+        className="flex flex-col items-center justify-center min-h-screen px-10 space-y-10 lg:flex-row min-w-screen md:px-12 lg:px-20 lg:space-y-0 lg:space-x-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
         <object className="w-1/2 max-w-sm">
           <Image
-            className="pointer-events-none rounded-full"
+            className="rounded-full pointer-events-none"
             src={profilePicture}
             alt="Arash Nur Iman"
             layout="responsive"
@@ -34,10 +34,9 @@ const Hero = () => {
           <h1 className="mt-2.5 text-4xl sm:text-6xl 2xl:text-7xl font-heading font-semibold">
             I&#39;m Arash Nur Iman.
           </h1>
-          <p className="mt-5 max-w-3xl sm:text-xl md:text-2xl">
-            I&#39;m a student developer from Singapore passionate about
-            delivering simple, efficient, and easy-to-use creations of
-            technology.
+          <p className="max-w-3xl mt-5 sm:text-xl md:text-2xl">
+            I&#39;m a student developer from Singapore ardent about creating
+            designed, intuitive, and practical products using technology.
           </p>
           <Socials />
         </div>
