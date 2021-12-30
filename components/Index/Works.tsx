@@ -72,9 +72,7 @@ const Works = ({ repos }: WorksProps) => {
                 transition={{ delay: index * 0.2 }}
               >
                 <h1 className="mt-2 text-4xl font-bold break-words font-heading">
-                  {repo.name in projectOverrides
-                    ? projectOverrides[repo.name]
-                    : repo.name}
+                  {repo.name}
                 </h1>
                 <p className="flex items-center font-mono">
                   {repo.language}
