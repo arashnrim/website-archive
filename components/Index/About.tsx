@@ -61,7 +61,11 @@ const values = [
   },
 ];
 
-const About = () => {
+interface AboutProps {
+  yearOfBirth: number;
+}
+
+const About = ({ yearOfBirth }: AboutProps) => {
   const [stagesReference, stagesInView] = useInView({
     threshold: 0.9,
     triggerOnce: true,
@@ -91,14 +95,12 @@ const About = () => {
           <br />
           In a way, I’m already working towards that idealistic goal. I like to
           think that the many relationships I’ve forged over{" "}
-          {process.env.YEAR_OF_BIRTH
-            ? new Date().getFullYear() - parseInt(process.env.YEAR_OF_BIRTH, 10)
-            : "many"}{" "}
-          years of my life have allowed me to learn from others as much as
-          others have learned from me. Many have known me to be someone
-          friendly, trusted, and responsible, and while behaviours, beliefs, and
-          attitudes can always change, I hope to continue developing myself on
-          my &#39;right track&#39;.
+          {yearOfBirth ? new Date().getFullYear() - yearOfBirth : "many"} years
+          of my life have allowed me to learn from others as much as others have
+          learned from me. Many have known me to be someone friendly, trusted,
+          and responsible, and while behaviours, beliefs, and attitudes can
+          always change, I hope to continue developing myself on my &#39;right
+          track&#39;.
         </p>
       </div>
       <div

@@ -11,25 +11,28 @@ import Works from "../components/Index/Works";
 
 interface IndexProps {
   repos: Repository[];
+  YEAR_OF_BIRTH: number;
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const YEAR_OF_BIRTH = process.env.YEAR_OF_BIRTH;
+
   const data = await fetch(
     "https://api.github.com/users/arashnrim/repos?sort=updated"
   );
   const repos = await data.json();
   return {
-    props: { repos },
+    props: { repos, YEAR_OF_BIRTH },
     revalidate: 86400,
   };
 };
 
-const Index = ({ repos }: IndexProps) => (
+const Index = ({ repos, YEAR_OF_BIRTH = 0 }: IndexProps) => (
   <>
     <Meta />
     <Layout className="mb-10 space-y-10 md:space-y-14 md:mb-20">
       <Hero />
-      <About />
+      <About yearOfBirth={YEAR_OF_BIRTH} />
       <Skills />
       <Works repos={repos} />
     </Layout>
