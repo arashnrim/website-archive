@@ -625,6 +625,7 @@ __metadata:
   dependencies:
     "@types/react": ^17.0.19
     autoprefixer: ^10.4.0
+    dotenv: ^11.0.0
     eslint: ^7.32.0
     eslint-config-next: ^11.1.2
     eslint-config-prettier: latest
@@ -1627,6 +1628,13 @@ __metadata:
   version: 1.2.0
   resolution: "domain-browser@npm:1.2.0"
   checksum: 8f1235c7f49326fb762f4675795246a6295e7dd566b4697abec24afdba2460daa7dfbd1a73d31efbf5606b3b7deadb06ce47cf06f0a476e706153d62a4ff2b90
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "dotenv@npm:11.0.0"
+  checksum: 48df9e85ea1d41b3096afc1990b9b1bd966deb6c9e056cd43f14e755f3ef1e5d477c3b05afc7ca651e31320c26a9b7dc375bc3313777352c51e6a2f539ea1ffc
   languageName: node
   linkType: hard
 
