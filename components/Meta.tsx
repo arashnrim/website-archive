@@ -25,6 +25,13 @@ const Meta = ({
     <meta property="og:locale" content="en_GB" />
     <meta property="og:site_name" content={title} />
     <meta property="og:image" content={image} />
+
+    <script
+      async
+      defer
+      data-website-id="1ed8d14c-014c-4bca-a8e7-231b0b583417"
+      src="https://analytics.arash.codes/umami.js"
+    ></script>
   </Head>
 );
 
