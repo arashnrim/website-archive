@@ -2,15 +2,20 @@
 
 # website
 
-Welcome to the repository of my website (accessible at https://arash.codes)! This version is the third iteration, and features code that is written by me from the ground up; this is in contrast to previous iterations where I had relied on a pre-made template.
+Welcome to the repository of my website (accessible at https://arash.codes)! The current version is the third iteration, and features code that is written by me from the ground up; this is in contrast to previous iterations where I had relied on a pre-made template.
 
-The source code features the following tech stack:
+This repository hosts all iterations of my website, from the first to latest. Refer to the [tags](https://github.com/arashnrim/website/tags) or visit the view the source code for the respective iteration.
 
-|               Technology                | Description of use                                                                                                           |
-| :-------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------- |
-|      [Next.js](https://nextjs.org)      | The framework used to power the entire website. Part of the Jamstack architecture, it allows me to easily build the website. |
-| [Tailwind CSS](https://tailwindcss.com) | The CSS framework used to style the website. It allows me to easily style the website while keeping the design standardised. |
-|      [Vercel](https://vercel.com)       | The platform used to deploy the website. It allows me to effortlessly publish live changes to the domain at a single push.   |
+|                            Version                             | Description                                                                                                                                                                                                                    |
+| :------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [v1.0](https://github.com/arashnrim/website/releases/tag/v1.0) | The first iteration of my website. Based on the Story template from [HTML5 UP](https://html5up.net/), I mostly edited the contents and the styling to suit my own preferences.                                                 |
+| [v1.1](https://github.com/arashnrim/website/releases/tag/v1.1) | The first iteration of my website. This version introduces minor design updates to the website.                                                                                                                                |
+| [v1.2](https://github.com/arashnrim/website/releases/tag/v1.2) | The first iteration of my website. This version introduces minor design updates to the website.                                                                                                                                |
+| [v1.3](https://github.com/arashnrim/website/releases/tag/v1.3) | The first iteration of my website. This version introduces minor design updates to the website.                                                                                                                                |
+| [v2.0](https://github.com/arashnrim/website/releases/tag/v2.0) | The second iteration of my website. Still based on the Story template from [HTML5 UP](https://html5up.net/), but styles were heavily revamped to introduce a new design.                                                       |
+| [v2.1](https://github.com/arashnrim/website/releases/tag/v2.1) | The second iteration of my website. This version introduces minor design updates to the website.                                                                                                                               |
+| [v2.2](https://github.com/arashnrim/website/releases/tag/v2.2) | The second iteration of my website. This version introduces a separate projects page based on the Multiverse template from [HTML5 UP].                                                                                         |
+|                              v3.0                              | The third iteration of my website. Written from the ground up initially with [Gatsby](https://gatsbyjs.com) before being ported over to [Next.js](https://nextjs.org), the styling of this website was made with Tailwind CSS. |
 
 ## Motivations
 
