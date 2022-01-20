@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "JetBrains Mono";
+	src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"),
+		url("../webfonts/JetBrainsMono-Bold.woff2") format("woff2"),
+		url("../webfonts/JetBrainsMono-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: local("JetBrains Mono Medium"), local("JetBrainsMono-Medium"),
+		url("JetBrainsMono-Medium.woff2") format("woff2"),
+		url("JetBrainsMono-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: local("Inter Regular"), local("Inter-Regular"),
+		url("../webfonts/Inter-Regular.woff2") format("woff2"),
+		url("../webfonts/Inter-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Graphik";
+	src: local("Graphik Semibold"), local("Graphik-Semibold"),
+		url("../webfonts/Graphik-Semibold.woff2") format("woff2"),
+		url("../webfonts/Graphik-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Graphik";
+	src: local("Graphik Bold"), local("Graphik-Bold"),
+		url("../webfonts/Graphik-Bold.woff2") format("woff2"),
+		url("../webfonts/Graphik-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
