@@ -23,11 +23,13 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -81,6 +83,8 @@ input, select, textarea {
 }
 
 .navbar {
+	position: absolute;
+	z-index: 1000;
 	overflow: hidden;
 	background-color: black;
 	position: fixed;
@@ -99,7 +103,7 @@ input, select, textarea {
 	}
 
 	.navbar a.title {
-		float: right;
+		float: left;
 		font-family: 'Metropolis';
 		font-weight: bold;
 		font-size: larger;
@@ -115,7 +119,7 @@ input, select, textarea {
 	}
   
 .main {
-	margin-top: 30px; /* Add a top margin to avoid content overlay */
+	margin-top: 30px;
 } 
 
 /* Basic */
@@ -209,6 +213,10 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
+	li {
+		font-family: "Open Sans"
+	}
+
 	img {
 		pointer-events: none;
 	}
@@ -257,6 +265,12 @@ input, select, textarea {
 		font-weight: 700;
 		line-height: 1.2;
 	}
+	
+	h1.appname {
+		font-size: 3.25rem;
+		font-weight: 700;
+		line-height: 1.0;
+	}
 
 	h2 {
 		font-size: 2.25rem;
@@ -265,6 +279,7 @@ input, select, textarea {
 
 		h2.minor {
 			font-size: 1.5rem;
+			font-family: "Open Sans";
 		}
 
 	h3 {
@@ -300,8 +315,8 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px;
-		font-style: italic;
+		border-left: solid 4p;
+		font-style: normal;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
@@ -395,13 +410,17 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: rgba(0, 0, 0, 0.2);
+		border-left-color: rgba(255, 255, 255, 1);
 	}
 
 	code {
-		background: rgba(0, 0, 0, 0.05);
+		background: rgba(255, 255, 255, 0.075);
 		border-color: rgba(0, 0, 0, 0.2);
 	}
+
+		code.nobackground {
+			background: rgba(0, 0, 0, 0);
+		}
 
 	hr {
 		border-bottom-color: rgba(0, 0, 0, 0.2);
@@ -2142,7 +2161,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: rgba(0, 0, 0, 0.2);
+		border-color: rgba(255, 255, 255, 0.5);
 	}
 
 /* Button */
@@ -2276,7 +2295,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000;
+			background-color: #222;
 			box-shadow: none;
 			color: #FFF !important;
 		}
@@ -2535,7 +2554,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #000;
+		color: white;
 	}
 
 	input[type="text"],
@@ -2546,8 +2565,21 @@ input, select, textarea {
 	input[type="url"],
 	select,
 	textarea {
-		border-color: rgba(0, 0, 0, 0.2);
+		font-family: "Open Sans";
+		border-color: rgba(255, 255, 255, 0.5);
 	}
+
+		input[type="text"]:hover,
+		input[type="password"]:hover,
+		input[type="email"]:hover,
+		input[type="tel"]:hover,
+		input[type="search"]:hover,
+		input[type="url"]:hover,
+		select:hover,
+		textarea:hover {
+			border-color: rgba(255, 255, 255, 0.75);
+			box-shadow: 0 0 0 1px #333;
+		}
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
@@ -2555,9 +2587,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		input[type="search"]:focus,
 		input[type="url"]:focus,
-		select:focus,
 		textarea:focus {
-			border-color: #333;
+			border-color: white;
 			box-shadow: 0 0 0 1px #333;
 		}
 
@@ -2566,24 +2597,28 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #000;
+			color: white;
 			background: #FFF;
+		}
+
+		select:focus {
+			font-family: "Open Sans", Arial, Helvetica, sans-serif;
 		}
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #000;
+		color: white;
 	}
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: rgba(0, 0, 0, 0.2);
+			border-color: rgba(255, 255, 255, 0.5);
 		}
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
 		background-color: #000;
-		border-color: #000;
+		border-color: white;
 		color: #FFF;
 	}
 
@@ -2754,7 +2789,7 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: disclosure-closed;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 	}
@@ -2960,7 +2995,7 @@ input, select, textarea {
 	header p {
 		position: relative;
 		margin: -0.65rem 0 1.5rem 0;
-		font-style: italic;
+		font-family: 'Metropolis';
 	}
 
 	header h1 + p {
@@ -2982,7 +3017,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: rgba(0, 0, 0, 0.75);
+		color: rgba(255, 255, 255, 0.75);
 	}
 
 /* Table */
@@ -3010,6 +3045,7 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75rem 0.75rem;
+			font-family: "Open Sans";
 		}
 
 		table th {
@@ -3070,7 +3106,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #000;
+		color: white;
 	}
 
 	table thead {
