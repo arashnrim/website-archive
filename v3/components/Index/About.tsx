@@ -78,12 +78,12 @@ const About = ({ yearOfBirth }: AboutProps) => {
   return (
     <Section id="about">
       <div>
-        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
           An <span className="text-blue-400">active contributor</span>, a{" "}
           <span className="text-blue-400">life-changer</span>, and a{" "}
           <span className="text-blue-400">friend</span> to all.
         </h1>
-        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Bold dreams for an individual, but a goal for me.
         </p>
       </div>
@@ -123,7 +123,7 @@ const About = ({ yearOfBirth }: AboutProps) => {
               }`}
             />
             <div className="h-full pl-10 lg:flex lg:flex-col lg:pl-0 lg:items-center">
-              <h2 className="text-2xl font-bold font-heading">{stage.name}</h2>
+              <h2 className="text-2xl">{stage.name}</h2>
               <p className="text-sm sm:text-lg 2xl:text-xl">{stage.year}</p>
             </div>
           </motion.div>
@@ -156,7 +156,7 @@ const About = ({ yearOfBirth }: AboutProps) => {
               <h1
                 className={`mt-2 ${
                   value.name.length > 9 ? "text-xl sm:text-4xl" : "text-4xl"
-                } font-bold font-heading`}
+                }`}
               >
                 {value.name}
               </h1>

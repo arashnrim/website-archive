@@ -26,12 +26,12 @@ const Works = ({ repos }: WorksProps) => {
   return (
     <Section id="works">
       <div>
-        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
           A <span className="text-indigo-400">tinkerer</span>, an{" "}
           <span className="text-indigo-400">experimenter</span>, and a{" "}
           <span className="text-indigo-400">developer</span>.
         </h1>
-        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Who knew playing around is a good thing?
         </p>
       </div>
@@ -71,7 +71,7 @@ const Works = ({ repos }: WorksProps) => {
                 animate={inView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: index * 0.2 }}
               >
-                <h1 className="mt-2 text-4xl font-bold break-words font-heading">
+                <h1 className="mt-2 text-4xl font-extrabold break-words">
                   {repo.name}
                 </h1>
                 <p className="flex items-center font-mono">
@@ -109,7 +109,7 @@ const Works = ({ repos }: WorksProps) => {
                     title={"Go to" + repo.name + "'s project repository"}
                     aria-label={"Go to" + repo.name + "'s project repository"}
                   >
-                    <FaGithub className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                    <FaGithub className="w-full h-full transition-opacity  hover:opacity-75" />
                   </a>
                   {repo.homepage ? (
                     <a
@@ -120,7 +120,7 @@ const Works = ({ repos }: WorksProps) => {
                       title={"Go to" + repo.name + "'s project page"}
                       aria-label={"Go to" + repo.name + "'s project page"}
                     >
-                      <FaGlobe className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                      <FaGlobe className="w-full h-full transition-opacity  hover:opacity-75" />
                     </a>
                   ) : (
                     ""

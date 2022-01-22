@@ -25,13 +25,13 @@ const Hero = () => {
           />
         </object>
         <div className="flex-row text-center lg:text-left">
-          <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-heading">
+          <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
             <span role="img" aria-label="Waving hand">
               👋
             </span>{" "}
             Hello, world!
           </p>
-          <h1 className="mt-2.5 text-4xl sm:text-6xl 2xl:text-7xl font-heading font-semibold">
+          <h1 className="mt-2.5 text-4xl sm:text-6xl 2xl:text-7xl">
             I&#39;m Arash Nur Iman.
           </h1>
           <p className="max-w-3xl mt-5 sm:text-xl md:text-2xl">

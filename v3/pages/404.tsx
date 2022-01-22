@@ -21,14 +21,14 @@ const NotFound = () => {
       <Layout>
         <section className="bg-black">
           <motion.div
-            className="flex flex-col justify-center items-center px-7 min-h-screen text-xl text-center min-w-screen sm:text-2xl"
+            className="flex flex-col items-center justify-center min-h-screen text-xl text-center px-7 min-w-screen sm:text-2xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.5 }}
           >
             <p>{teasers[Math.floor(Math.random() * teasers.length)]}</p>
             <span className="my-10">
-              <h1 className="text-9xl font-bold font-heading">404</h1>
+              <h1 className="text-9xl">404</h1>
               <p className="font-mono">Not Found</p>
             </span>
             <p className="lg:w-2/3">

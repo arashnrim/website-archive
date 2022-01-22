@@ -182,7 +182,7 @@ const Language = ({
     <h1
       className={`mt-2 ${
         title.length > 7 ? "text-xl md:text-4xl" : "text-4xl"
-      } font-bold font-heading`}
+      }`}
     >
       {title}
     </h1>
@@ -190,7 +190,7 @@ const Language = ({
     {!tools.length ? (
       ""
     ) : (
-      <p className="mt-5 text-sm font-bold sm:text-lg 2xl:text-xl font-heading">
+      <p className="mt-5 text-sm font-extrabold sm:text-lg 2xl:text-xl">
         Tools used
       </p>
     )}
@@ -213,7 +213,7 @@ const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
     transition={{ delay: index * 0.25 }}
   >
     <span className="text-2xl">{icon}</span>
-    <h2 className="text-2xl font-bold text-center font-heading">{name}</h2>
+    <h2 className="text-2xl text-center">{name}</h2>
     <p className="text-sm text-center sm:text-lg 2xl:text-xl">{description}</p>
   </motion.div>
 );
@@ -238,12 +238,12 @@ const Skills = () => {
   return (
     <Section id="skills">
       <div>
-        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
           A <span className="text-red-400">learner</span>, a{" "}
           <span className="text-red-400">developer</span>, and an{" "}
           <span className="text-red-400">aspiring student</span>.
         </h1>
-        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Every opportunity brings something to learn.
         </p>
       </div>
