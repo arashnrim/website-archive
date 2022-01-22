@@ -10,7 +10,7 @@
     "build": "next build",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepare": "husky install"
+    "prepare": "cd .. && husky install v3/.husky"
   },
   "lint-staged": {
     "*.{js, jsx, ts, tsx}": "yarn lint:fix"
