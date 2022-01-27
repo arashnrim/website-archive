@@ -36,7 +36,7 @@ const Works = ({ repos }: WorksProps) => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
-        <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+        <p className="lg:w-2/3">
           To build up my skills, test out what I know, and learn new things,
           experimenting here and there can be greatly beneficial.
           <br />
@@ -96,9 +96,7 @@ const Works = ({ repos }: WorksProps) => {
                   )}
                 </p>
 
-                <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-                  {repo.description}
-                </p>
+                <p className="mt-2">{repo.description}</p>
 
                 <div className="flex flex-row mt-5 space-x-5 place-self-end">
                   <a
@@ -109,7 +107,7 @@ const Works = ({ repos }: WorksProps) => {
                     title={"Go to" + repo.name + "'s project repository"}
                     aria-label={"Go to" + repo.name + "'s project repository"}
                   >
-                    <FaGithub className="w-full h-full transition-opacity  hover:opacity-75" />
+                    <FaGithub className="w-full h-full transition-opacity hover:opacity-75" />
                   </a>
                   {repo.homepage ? (
                     <a
@@ -120,7 +118,7 @@ const Works = ({ repos }: WorksProps) => {
                       title={"Go to" + repo.name + "'s project page"}
                       aria-label={"Go to" + repo.name + "'s project page"}
                     >
-                      <FaGlobe className="w-full h-full transition-opacity  hover:opacity-75" />
+                      <FaGlobe className="w-full h-full transition-opacity hover:opacity-75" />
                     </a>
                   ) : (
                     ""
