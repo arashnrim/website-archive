@@ -68,6 +68,6 @@
   }
 
   p {
-    @apply text-xl;
+    @apply md:text-xl;
   }
 }

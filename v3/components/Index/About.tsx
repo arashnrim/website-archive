@@ -12,15 +12,18 @@ import {
 const stages = [
   {
     name: "Pre-education",
-    year: "As a young child, I’ve always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
+    description:
+      "As a young child, I’ve always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
   },
   {
     name: "Primary school",
-    year: "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
+    description:
+      "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
   },
   {
     name: "Secondary school",
-    year: "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of coding, UI design, algorithmic thinking, and much more over my four years in secondary school.",
+    description:
+      "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of coding, UI design, algorithmic thinking, and much more over my four years in secondary school.",
   },
 ];
 
@@ -88,7 +91,7 @@ const About = ({ yearOfBirth }: AboutProps) => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
-        <p className="text-sm lg:w-2/3 sm:text-lg 2xl:text-xl">
+        <p className="lg:w-2/3">
           I wish to develop myself into someone who contributes back to society,
           influences the lives of many, and be there for those I’m close with.
           <br />
@@ -124,12 +127,12 @@ const About = ({ yearOfBirth }: AboutProps) => {
             />
             <div className="h-full pl-10 lg:flex lg:flex-col lg:pl-0 lg:items-center">
               <h2 className="text-2xl">{stage.name}</h2>
-              <p className="text-sm sm:text-lg 2xl:text-xl">{stage.year}</p>
+              <p className="pt-2 lg:px-4">{stage.description}</p>
             </div>
           </motion.div>
         ))}
       </div>
-      <p className="self-start h-auto mt-10 text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+      <p className="self-start h-auto mt-10 lg:w-2/3">
         As I grew up, I realised the importance of having core values I can hold
         on to for guidance. While they may subtly change as I gain better
         insight to them, I try my best to ensure the core meaning of a value is
@@ -161,9 +164,7 @@ const About = ({ yearOfBirth }: AboutProps) => {
                 {value.name}
               </h1>
               <p className="font-mono">{value.category}</p>
-              <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-                {value.definition}
-              </p>
+              <p className="mt-2">{value.definition}</p>
             </motion.div>
           );
         })}
