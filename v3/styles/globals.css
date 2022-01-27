@@ -68,7 +68,7 @@
   }
 
   p {
-    @apply md:text-xl;
+    @apply text-lg sm:text-xl;
   }
 }
 
