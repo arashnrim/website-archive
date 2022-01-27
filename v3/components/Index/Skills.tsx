@@ -214,7 +214,7 @@ const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
   >
     <span className="text-2xl">{icon}</span>
     <h2 className="text-2xl text-center">{name}</h2>
-    <p className="text-sm text-center sm:text-lg 2xl:text-xl">{description}</p>
+    <p className="text-center">{description}</p>
   </motion.div>
 );
 
@@ -248,7 +248,7 @@ const Skills = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
-        <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+        <p className="lg:w-2/3">
           As I continue to develop myself as an individual, I also pick up
           valuable skills that help me become more of a developer as I go on.
           <br />
@@ -289,13 +289,13 @@ const Skills = () => {
         ))}
       </div>
 
-      <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+      <p className="self-start lg:w-2/3">
         Not to mention, I&#39;ve gained some other useful skills beyond the
         scope of programming as well.
       </p>
 
       <div
-        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-4"
+        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2"
         ref={skillsReference}
       >
         {skills.map((skill, index) => (
