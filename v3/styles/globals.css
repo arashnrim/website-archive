@@ -71,3 +71,10 @@
     @apply md:text-xl;
   }
 }
+
+@layer utilities {
+  .vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+}
