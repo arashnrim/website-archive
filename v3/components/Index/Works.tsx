@@ -74,14 +74,14 @@ const Works = ({ repos }: WorksProps) => {
                 <h1 className="mt-2 text-4xl font-extrabold break-words">
                   {repo.name}
                 </h1>
-                <p className="flex items-center font-mono">
+                <p className="flex justify-center font-mono lg:justify-start">
                   {repo.language}
                   {" | " +
                     new Date(repo.created_at).toLocaleDateString("en-SG", {
                       year: "numeric",
                     })}
                 </p>
-                <p className="flex items-center space-x-3 font-mono">
+                <p className="flex justify-center space-x-3 font-mono lg:justify-start">
                   {repo.stargazers_count > 0 && (
                     <span className="inline-flex flex-row items-center">
                       <GoStar />
