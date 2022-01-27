@@ -214,7 +214,7 @@ const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
   >
     <span className="text-2xl">{icon}</span>
     <h2 className="text-2xl text-center">{name}</h2>
-    <p className="text-center">{description}</p>
+    <p className="text-center md:w-2/3">{description}</p>
   </motion.div>
 );
 
