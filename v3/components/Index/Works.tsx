@@ -26,17 +26,17 @@ const Works = ({ repos }: WorksProps) => {
   return (
     <Section id="works">
       <div>
-        <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl 2xl:text-7xl font-heading">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
           A <span className="text-indigo-400">tinkerer</span>, an{" "}
           <span className="text-indigo-400">experimenter</span>, and a{" "}
           <span className="text-indigo-400">developer</span>.
         </h1>
-        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-heading">
+        <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Who knew playing around is a good thing?
         </p>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
-        <p className="text-sm sm:text-lg 2xl:text-xl lg:w-2/3">
+        <p className="lg:w-2/3">
           To build up my skills, test out what I know, and learn new things,
           experimenting here and there can be greatly beneficial.
           <br />
@@ -71,17 +71,17 @@ const Works = ({ repos }: WorksProps) => {
                 animate={inView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ delay: index * 0.2 }}
               >
-                <h1 className="mt-2 text-4xl font-bold break-words font-heading">
+                <h1 className="mt-2 text-4xl font-extrabold break-words">
                   {repo.name}
                 </h1>
-                <p className="flex items-center font-mono">
+                <p className="flex justify-center font-mono lg:justify-start">
                   {repo.language}
                   {" | " +
                     new Date(repo.created_at).toLocaleDateString("en-SG", {
                       year: "numeric",
                     })}
                 </p>
-                <p className="flex items-center space-x-3 font-mono">
+                <p className="flex justify-center space-x-3 font-mono lg:justify-start">
                   {repo.stargazers_count > 0 && (
                     <span className="inline-flex flex-row items-center">
                       <GoStar />
@@ -96,9 +96,7 @@ const Works = ({ repos }: WorksProps) => {
                   )}
                 </p>
 
-                <p className="mt-2 text-sm sm:text-lg 2xl:text-xl">
-                  {repo.description}
-                </p>
+                <p className="mt-2">{repo.description}</p>
 
                 <div className="flex flex-row mt-5 space-x-5 place-self-end">
                   <a
@@ -109,7 +107,7 @@ const Works = ({ repos }: WorksProps) => {
                     title={"Go to" + repo.name + "'s project repository"}
                     aria-label={"Go to" + repo.name + "'s project repository"}
                   >
-                    <FaGithub className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                    <FaGithub className="w-full h-full transition-opacity hover:opacity-75" />
                   </a>
                   {repo.homepage ? (
                     <a
@@ -120,7 +118,7 @@ const Works = ({ repos }: WorksProps) => {
                       title={"Go to" + repo.name + "'s project page"}
                       aria-label={"Go to" + repo.name + "'s project page"}
                     >
-                      <FaGlobe className="w-full h-full transition-opacity duration-200 hover:opacity-75" />
+                      <FaGlobe className="w-full h-full transition-opacity hover:opacity-75" />
                     </a>
                   ) : (
                     ""

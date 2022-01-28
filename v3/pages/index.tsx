@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async () => {
 const Index = ({ repos, YEAR_OF_BIRTH = 0 }: IndexProps) => (
   <>
     <Meta />
-    <Layout className="mb-10 space-y-10 md:space-y-14 md:mb-20">
+    <Layout className="mb-10 md:mb-20">
       <Hero />
       <About yearOfBirth={YEAR_OF_BIRTH} />
       <Skills />

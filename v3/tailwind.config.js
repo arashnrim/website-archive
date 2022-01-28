@@ -15,8 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Clash Display"'],
-        sans: ["Inter"],
+        sans: ["'HK Grotesk'"],
         mono: ["'JetBrains Mono'"],
       },
       colors: {
