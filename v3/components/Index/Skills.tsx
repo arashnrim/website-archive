@@ -2,97 +2,129 @@ import { motion } from "framer-motion";
 import { ReactElement } from "react";
 import { FaCode, FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import {
-  SiAndroidstudio,
   SiCplusplus,
-  SiJava,
-  SiJavascript,
-  SiKotlin,
+  SiGo,
+  SiHtml5,
   SiPython,
   SiSwift,
   SiTypescript,
-  SiVisualstudiocode,
-  SiXcode,
+  SiJavascript,
+  SiNextdotjs,
+  SiCss3,
+  SiTailwindcss,
+  SiGatsby,
 } from "react-icons/si";
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from "react-responsive";
-import InlineLink from "../InlineLink";
 import Section from "../Section";
 
 const languages = [
   {
-    extended: false,
     color: "red",
-    inProgress: false,
-    icon: <SiSwift />,
-    title: "Swift",
-    year: "2018",
-    tools: [{ name: "Xcode", icon: <SiXcode /> }],
-  },
-  {
-    extended: false,
-    color: "blue",
     inProgress: true,
     icon: <SiSwift />,
-    title: "SwiftUI",
-    year: "2021",
-    tools: [{ name: "Xcode", icon: <SiXcode /> }],
+    title: "Swift",
+    year: 2018,
   },
   {
-    extended: false,
     color: "blue",
     inProgress: false,
     icon: <SiTypescript />,
     title: "TypeScript",
-    year: "2021",
-    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
+    year: 2021,
   },
   {
-    extended: false,
+    color: "red",
+    inProgress: false,
+    icon: <SiHtml5 />,
+    title: "HTML*",
+    year: 2019,
+  },
+  {
     color: "amber",
-    inProgress: true,
+    inProgress: false,
     icon: <SiJavascript />,
     title: "JavaScript",
-    year: "2021",
-    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
+    year: 2020,
   },
   {
-    extended: true,
     color: "blue",
     inProgress: false,
     icon: <SiPython />,
     title: "Python",
-    year: "2019",
-    tools: [
-      { name: "IDLE", icon: <SiPython /> },
-      { name: "VS Code", icon: <SiVisualstudiocode /> },
-    ],
+    year: 2019,
   },
   {
-    extended: false,
     color: "blue",
     inProgress: true,
     icon: <SiCplusplus />,
     title: "C++",
-    year: "2021",
-    tools: [{ name: "VS Code", icon: <SiVisualstudiocode /> }],
+    year: 2021,
+  },
+  // {
+  //   extended: false,
+  //   color: "amber",
+  //   inProgress: true,
+  //   icon: <SiJava />,
+  //   title: "Java",
+  //   year: "2019",
+  //   tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
+  // },
+  // {
+  //   extended: false,
+  //   color: "violet",
+  //   inProgress: true,
+  //   icon: <SiKotlin />,
+  //   title: "Kotlin",
+  //   year: "2019",
+  //   tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
+  // },
+  {
+    color: "blue",
+    inProgress: true,
+    icon: <SiGo />,
+    title: "Go",
+    year: 2021,
   },
   {
-    extended: false,
-    color: "amber",
-    inProgress: true,
-    icon: <SiJava />,
-    title: "Java",
-    year: "2019",
-    tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
+    color: "blue",
+    inProgress: false,
+    icon: <SiCss3 />,
+    title: "CSS*",
+    year: 2021,
+  },
+];
+
+const frameworks = [
+  {
+    color: "white",
+    inProgress: false,
+    icon: <SiNextdotjs />,
+    title: "Next.js",
+    year: 2021,
+    languages: [
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+    ],
   },
   {
-    extended: false,
-    color: "violet",
+    color: "indigo",
     inProgress: true,
-    icon: <SiKotlin />,
-    title: "Kotlin",
-    year: "2019",
-    tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
+    icon: <SiGatsby />,
+    title: "Gatsby",
+    year: 2020,
+    languages: [
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+    ],
+  },
+  {
+    color: "blue",
+    inProgress: false,
+    icon: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    year: 2021,
+    languages: [{ name: "CSS", icon: <SiCss3 /> }],
   },
 ];
 
@@ -130,21 +162,20 @@ const skills = [
   // },
 ];
 
-interface Tools {
-  name: string;
+interface Languages {
   icon: ReactElement;
+  name: string;
 }
 
-interface LanguageProps {
-  extended: boolean;
+interface GridItemProps {
   color: string;
   inProgress: boolean;
   icon: ReactElement;
   title: string;
-  year: string;
+  year: number;
   inView: boolean;
   index: number;
-  tools: Tools[];
+  languages?: Languages[];
 }
 
 interface SkillProps {
@@ -155,8 +186,7 @@ interface SkillProps {
   description: string;
 }
 
-const Language = ({
-  extended,
+const GridItem = ({
   icon,
   color,
   inProgress,
@@ -164,14 +194,13 @@ const Language = ({
   year,
   inView,
   index,
-  tools,
-}: LanguageProps) => (
+  languages,
+}: GridItemProps) => (
   <motion.div
-    className={`col-span-1 ${
-      extended ? "md:col-span-2" : ""
-    } p-10 h-auto rounded-2xl text-white border-2 ${
-      inProgress ? "border-dashed border-opacity-50" : "border-opacity-100"
-    } border-${color}-400`}
+    className={`col-span-1
+       p-10 h-auto rounded-2xl text-white border-2 ${
+         inProgress ? "border-dashed border-opacity-50" : "border-opacity-100"
+       } border-${color}-400`}
     initial={{ opacity: 0 }}
     animate={inView ? { opacity: 1 } : { opacity: 0 }}
     transition={{ delay: index * 0.2 }}
@@ -187,21 +216,22 @@ const Language = ({
       {title}
     </h1>
     <p className="mt-2 font-mono">{year}</p>
-    {!tools.length ? (
-      ""
-    ) : (
-      <p className="mt-5 text-sm font-extrabold sm:text-lg 2xl:text-xl">
-        Tools used
-      </p>
-    )}
-    <div className="flex justify-center mt-2 space-x-5 lg:justify-start">
-      {tools.map((tool) => (
-        <div className="flex flex-col items-center" key={tool.name}>
-          <span className="text-4xl">{tool.icon}</span>
-          <p className="pt-1">{tool.name}</p>
+    {languages && (
+      <>
+        <p className="mt-5 text-sm font-extrabold sm:text-lg 2xl:text-xl">
+          Written with
+        </p>
+
+        <div className="flex justify-center mt-2 space-x-5 lg:justify-start">
+          {languages &&
+            languages.map((languages) => (
+              <div className="flex flex-col items-center" key={languages.name}>
+                <span className="text-4xl">{languages.icon}</span>
+              </div>
+            ))}
         </div>
-      ))}
-    </div>
+      </>
+    )}
   </motion.div>
 );
 
@@ -223,6 +253,10 @@ const Skills = () => {
     threshold: 0.45,
     triggerOnce: true,
   });
+  var [frameworksReference, frameworksInView] = useInView({
+    threshold: 0.45,
+    triggerOnce: true,
+  });
   var [skillsReference, skillsInView] = useInView({
     threshold: 0.9,
     triggerOnce: true,
@@ -232,6 +266,7 @@ const Skills = () => {
   // Manual override for smaller devices
   if (isMobile) {
     languagesInView = true;
+    frameworksInView = true;
     skillsInView = true;
   }
 
@@ -239,9 +274,9 @@ const Skills = () => {
     <Section id="skills">
       <div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          A <span className="text-red-400">learner</span>, a{" "}
-          <span className="text-red-400">developer</span>, and an{" "}
-          <span className="text-red-400">aspiring student</span>.
+          A <span className="text-red-400">developer</span>, a{" "}
+          <span className="text-red-400">self-directed learner</span>, and a{" "}
+          <span className="text-red-400">student</span>.
         </h1>
         <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Every opportunity brings something to learn.
@@ -253,19 +288,12 @@ const Skills = () => {
           valuable skills that help me become more of a developer as I go on.
           <br />
           <br />
-          It started in 2018 when I picked up{" "}
-          <InlineLink link="https://swift.org" redirect={true}>
-            Swift
-          </InlineLink>
-          , my first programming language. I had no prior introduction to the
-          world of code, but my passion for technology further fuelled as I
-          grasped more concepts, participated in more events, and expanded my
-          knowledge. Thus far, the skills of Swift and{" "}
-          <InlineLink link="https://python.org" redirect={true}>
-            Python
-          </InlineLink>{" "}
-          sit comfortably in my toolbox, with a few other tools or languages
-          still a work-in-progress.
+          My programming journey started ~{new Date().getFullYear() - 2018}{" "}
+          years ago. Since then, I&apos;ve explored several frontiers in the
+          world of code — beginning from app development and now exploring front
+          end development. I still have a long way to go from where I am now. No
+          matter, over the years, I&apos;ve become introduced to an array of
+          languages; some of them that I use now includes the ones below.
         </p>
       </div>
 
@@ -273,25 +301,61 @@ const Skills = () => {
         className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3"
         ref={languagesReference}
       >
-        {languages.map((language, index) => (
-          <Language
-            color={language.color}
-            extended={language.extended}
-            icon={language.icon}
-            inProgress={language.inProgress}
-            title={language.title}
-            year={language.year}
-            key={language.title}
-            inView={languagesInView}
-            index={index}
-            tools={language.tools ? language.tools : []}
-          />
-        ))}
+        {languages
+          .sort((a, b) => b.year - a.year)
+          .map((language, index) => (
+            <GridItem
+              color={language.color}
+              icon={language.icon}
+              inProgress={language.inProgress}
+              title={language.title}
+              year={language.year}
+              key={language.title}
+              inView={languagesInView}
+              index={index}
+            />
+          ))}
+      </div>
+
+      <small className="self-start">
+        *Of course, these aren&apos;t really programming languages like the rest
+        in the list!
+      </small>
+
+      <p className="self-start lg:w-2/3">
+        Frameworks are fascinating snippets of languages that I employ for
+        specific uses. I&apos;ve come across a few interesting ones that I hope
+        to continue growing my knowledge about — I hope to be proficient enough
+        to be able to comfortably use it in the context of real-world
+        applications!{" "}
+      </p>
+
+      <div
+        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3"
+        ref={frameworksReference}
+      >
+        {frameworks
+          .sort((a, b) => b.year - a.year)
+          .map((framework, index) => (
+            <GridItem
+              color={framework.color}
+              icon={framework.icon}
+              inProgress={framework.inProgress}
+              title={framework.title}
+              year={framework.year}
+              key={framework.title}
+              inView={frameworksInView}
+              index={index}
+              languages={framework.languages}
+            />
+          ))}
       </div>
 
       <p className="self-start lg:w-2/3">
-        Not to mention, I&#39;ve gained some other useful skills beyond the
-        scope of programming as well.
+        I hope to develop myself in a holistic and all-rounded way. That&apos;s
+        why I&apos;ve also placed the importance of picking up skills beyond
+        just coding. While some of these skills may be employed as I code, I
+        like to think of separate skills applicable beyond code too.
       </p>
 
       <div

@@ -46,6 +46,10 @@ const Works = ({ repos }: WorksProps) => {
           project, I make it an effort to give everything I do my best shot.
           Doing so allows me to learn what I do best and showcase the quality of
           work I offer at the same time.
+          <br />
+          <br />
+          Here are the projects that I have made open source. Each one of them
+          can be found as their own standalone repository.
         </p>
       </div>
 

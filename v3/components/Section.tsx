@@ -9,7 +9,7 @@ interface SectionProps {
 
 const Section = ({ children, id }: SectionProps) => {
   const [reference, isInView] = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
     triggerOnce: true,
   });
   const usesReducedMotion = useReducedMotion();

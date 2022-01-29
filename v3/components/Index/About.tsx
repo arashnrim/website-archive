@@ -13,54 +13,17 @@ const stages = [
   {
     name: "Pre-education",
     description:
-      "As a young child, I’ve always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
+      "As a young child, I&apos;ve always been interested in computers. From exploring what&apos;s on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
   },
   {
     name: "Primary school",
     description:
-      "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
+      "My passion was fuelled further when I joined the school&apos;s ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
   },
   {
     name: "Secondary school",
     description:
       "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of coding, UI design, algorithmic thinking, and much more over my four years in secondary school.",
-  },
-];
-
-const values = [
-  {
-    name: "Care",
-    category: "Personal | Interpersonal",
-    icon: <FaHeart />,
-    definition:
-      "Having serious attention or consideration applied to doing something; feeling concern or interest.",
-  },
-  {
-    name: "Respect",
-    category: "Personal | Interpersonal",
-    icon: <FaHandshake />,
-    definition:
-      "Having due regard for (someone's feelings, wishes, or rights).",
-  },
-  {
-    name: "Responsibility",
-    category: "Personal | Interpersonal",
-    icon: <FaCalendar />,
-    definition:
-      "Being accountable for something where accountability is due and appropriate.",
-  },
-  {
-    name: "Perseverance",
-    category: "Personal",
-    icon: <FaMountain />,
-    definition:
-      "Persistent in doing something despite difficulty or delay in achieving success.",
-  },
-  {
-    name: "Integrity",
-    category: "Personal",
-    icon: <FaCheckDouble />,
-    definition: "Being honest and having strong moral principles.",
   },
 ];
 
@@ -73,18 +36,14 @@ const About = ({ yearOfBirth }: AboutProps) => {
     threshold: 0.9,
     triggerOnce: true,
   });
-  const [valuesReference, valuesInView] = useInView({
-    threshold: 0.45,
-    triggerOnce: true,
-  });
 
   return (
     <Section id="about">
       <div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          An <span className="text-blue-400">active contributor</span>, a{" "}
-          <span className="text-blue-400">life-changer</span>, and a{" "}
-          <span className="text-blue-400">friend</span> to all.
+          A <span className="text-blue-400">value-adder</span>, a{" "}
+          <span className="text-blue-400">motivator</span>, and a{" "}
+          <span className="text-blue-400">friend</span> to many.
         </h1>
         <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Bold dreams for an individual, but a goal for me.
@@ -93,11 +52,14 @@ const About = ({ yearOfBirth }: AboutProps) => {
       <div className="flex flex-col lg:flex-row lg:space-x-5">
         <p className="lg:w-2/3">
           I wish to develop myself into someone who contributes back to society,
-          influences the lives of many, and be there for those I’m close with.
+          influences the lives of many, and be there for those I&apos;m close
+          with. Granted, I believe that I still have quite a long way to go
+          before I might be able to do such things with a large impact.
+          Regardless, I hope to keep trying at every opportunity I get.
           <br />
           <br />
-          In a way, I’m already working towards that idealistic goal. I like to
-          think that the many relationships I’ve forged over{" "}
+          In a way, I&apos;m already working towards that idealistic goal. I
+          like to think that the many relationships I&apos;ve forged over the{" "}
           {yearOfBirth ? new Date().getFullYear() - yearOfBirth : "many"} years
           of my life have allowed me to learn from others as much as others have
           learned from me. Many have known me to be someone friendly, trusted,
@@ -107,27 +69,26 @@ const About = ({ yearOfBirth }: AboutProps) => {
         </p>
       </div>
       <div
-        className="flex flex-col w-full h-auto space-y-5 text-left lg:flex-row lg:text-center lg:space-x-5 lg:space-y-0"
+        className="flex flex-col w-full h-auto space-y-5 text-left xl:flex-row xl:space-x-5 xl:space-y-0"
         ref={stagesReference}
       >
         {stages.map((stage, index) => (
           <motion.div
-            className="relative flex flex-row justify-center flex-1 space-x-5 lg:flex-col lg:justify-start lg:items-center lg:space-x-0 lg:space-y-10"
+            className="relative flex flex-row justify-center flex-1 space-x-5 text-left xl:flex-col xl:space-x-0 xl:space-y-10"
             key={stage.name}
             initial={{ opacity: 0 }}
             animate={stagesInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: index * 0.25 }}
           >
             <div
-              className={`h-full lg:h-2 w-2 lg:w-full absolute left-0 lg:top-0 bg-blue-400 ${
-                index === 0
-                  ? "rounded-t-full lg:rounded-t-none lg:rounded-l-full"
-                  : ""
+              className={`h-full xl:h-2 w-2 xl:w-full absolute left-0 lg:top-0 bg-blue-400 ${
+                index === 0 &&
+                "rounded-t-full xl:rounded-t-none xl:rounded-l-full"
               }`}
             />
-            <div className="h-full pl-10 lg:flex lg:flex-col lg:pl-0 lg:items-center">
+            <div className="h-full pl-10 xl:flex xl:flex-col xl:px-5">
               <h2 className="text-2xl">{stage.name}</h2>
-              <p className="pt-2 lg:px-4">{stage.description}</p>
+              <p className="pt-2">{stage.description}</p>
             </div>
           </motion.div>
         ))}
@@ -136,39 +97,13 @@ const About = ({ yearOfBirth }: AboutProps) => {
         As I grew up, I realised the importance of having core values I can hold
         on to for guidance. While they may subtly change as I gain better
         insight to them, I try my best to ensure the core meaning of a value is
-        upheld.
+        upheld. In general, I like to believe that I guide myself with{" "}
+        <b>care</b>, <b>respect</b>, <b>responsibility</b>, <b>perseverance</b>{" "}
+        and <b>integrity</b>. I hope to continually be concerned about myself,
+        the people I know, and the things I work on, conform to what is right,
+        owe up to mistakes, show resistance to giving up, and be transparent and
+        truthful in what I do.
       </p>
-      <div
-        className="grid w-full grid-cols-1 mt-10 md:grid-rows-3 lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-6 lg:gap-x-10 gap-y-10"
-        ref={valuesReference}
-      >
-        {values.map((value, index) => {
-          return (
-            <motion.div
-              className={`break-words p-10 col-span-1 ${
-                index > 2 ? "md:col-span-3" : "md:col-span-2" // Manually altering the size of the last two values to even out the spacing
-              } lg:row-span-1 h-auto rounded-2xl border-2 border-blue-400`}
-              key={value.name}
-              initial={{ opacity: 0 }}
-              animate={valuesInView ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ delay: index * 0.2 }}
-            >
-              <span className="flex justify-center text-4xl lg:justify-start">
-                {value.icon}
-              </span>
-              <h1
-                className={`mt-2 ${
-                  value.name.length > 9 ? "text-xl sm:text-4xl" : "text-4xl"
-                }`}
-              >
-                {value.name}
-              </h1>
-              <p className="font-mono">{value.category}</p>
-              <p className="mt-2">{value.definition}</p>
-            </motion.div>
-          );
-        })}
-      </div>
     </Section>
   );
 };
