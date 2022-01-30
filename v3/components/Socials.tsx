@@ -5,35 +5,35 @@ const socials = [
   {
     name: "GitHub",
     icon: (
-      <SiGithub className="w-full h-full transition-opacity  hover:opacity-75" />
+      <SiGithub className="w-full h-full transition-opacity hover:opacity-75" />
     ),
     link: "https://github.com/arashnrim",
   },
   {
     name: "blog",
     icon: (
-      <FaBlog className="w-full h-full transition-opacity  hover:opacity-75" />
+      <FaBlog className="w-full h-full transition-opacity hover:opacity-75" />
     ),
     link: "https://blog.arash.codes",
   },
   {
     name: "LinkedIn",
     icon: (
-      <SiLinkedin className="w-full h-full transition-opacity  hover:opacity-75" />
+      <SiLinkedin className="w-full h-full transition-opacity hover:opacity-75" />
     ),
     link: "https://linkedin.com/in/arashnrim",
   },
   {
     name: "Figma",
     icon: (
-      <SiFigma className="w-full h-full transition-opacity  hover:opacity-75" />
+      <SiFigma className="w-full h-full transition-opacity hover:opacity-75" />
     ),
     link: "https://figma.com/@arashnrim",
   },
   {
     name: "email",
     icon: (
-      <FaEnvelope className="w-full h-full transition-opacity  hover:opacity-75" />
+      <FaEnvelope className="w-full h-full transition-opacity hover:opacity-75" />
     ),
     link: "mailto:hello@arashnrim.me",
   },
@@ -46,7 +46,6 @@ const Socials = () => (
         href={social.link}
         target="_blank"
         rel="noreferrer"
-        className="w-8 h-8 md:w-10 sm:h-10"
         title={
           social.name === "email"
             ? "Contact via email"
@@ -63,7 +62,7 @@ const Socials = () => (
         }
         key={social.name}
       >
-        {social.icon}
+        <p>{social.name.toLowerCase()}</p>
       </a>
     ))}
   </nav>
