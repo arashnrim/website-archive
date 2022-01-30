@@ -1,24 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Section from "../Section";
-import {
-  FaHeart,
-  FaHandshake,
-  FaCalendar,
-  FaMountain,
-  FaCheckDouble,
-} from "react-icons/fa";
 
 const stages = [
   {
     name: "Pre-education",
     description:
-      "As a young child, I&apos;ve always been interested in computers. From exploring what&apos;s on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
+      "As a young child, I've always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
   },
   {
     name: "Primary school",
     description:
-      "My passion was fuelled further when I joined the school&apos;s ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
+      "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
   },
   {
     name: "Secondary school",
@@ -64,8 +57,8 @@ const About = ({ yearOfBirth }: AboutProps) => {
           of my life have allowed me to learn from others as much as others have
           learned from me. Many have known me to be someone friendly, trusted,
           and responsible, and while behaviours, beliefs, and attitudes can
-          always change, I hope to continue developing myself on my &#39;right
-          track&#39;.
+          always change, I hope to continue developing myself on my &apos;right
+          track&apos;.
         </p>
       </div>
       <div

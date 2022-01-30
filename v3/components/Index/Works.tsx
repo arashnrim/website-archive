@@ -41,8 +41,8 @@ const Works = ({ repos }: WorksProps) => {
           experimenting here and there can be greatly beneficial.
           <br />
           <br />
-          The result of the tinkering I&#39;ve done is the several projects that
-          I have been a part of. No matter a school project or a personal
+          The result of the tinkering I&apos;ve done is the several projects
+          that I have been a part of. No matter a school project or a personal
           project, I make it an effort to give everything I do my best shot.
           Doing so allows me to learn what I do best and showcase the quality of
           work I offer at the same time.
@@ -108,10 +108,10 @@ const Works = ({ repos }: WorksProps) => {
                     href={repo.html_url}
                     target="_blank"
                     rel="noreferrer"
-                    title={"Go to" + repo.name + "'s project repository"}
-                    aria-label={"Go to" + repo.name + "'s project repository"}
+                    title={"Go to " + repo.name + "'s project repository"}
+                    aria-label={"Go to " + repo.name + "'s project repository"}
                   >
-                    <FaGithub className="w-full h-full transition-opacity hover:opacity-75" />
+                    <FaGithub className="w-full h-full" />
                   </a>
                   {repo.homepage ? (
                     <a
@@ -119,10 +119,10 @@ const Works = ({ repos }: WorksProps) => {
                       href={repo.homepage}
                       target="_blank"
                       rel="noreferrer"
-                      title={"Go to" + repo.name + "'s project page"}
-                      aria-label={"Go to" + repo.name + "'s project page"}
+                      title={"Go to " + repo.name + "'s project page"}
+                      aria-label={"Go to " + repo.name + "'s project page"}
                     >
-                      <FaGlobe className="w-full h-full transition-opacity hover:opacity-75" />
+                      <FaGlobe className="w-full h-full" />
                     </a>
                   ) : (
                     ""

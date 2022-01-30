@@ -25,10 +25,10 @@ const Hero = () => {
             Hello, world!
           </p>
           <h1 className="mt-2.5 text-4xl md:text-6xl xl:text-7xl">
-            I&#39;m Arash Nur Iman.
+            I&apos;m Arash Nur Iman.
           </h1>
           <p className="max-w-4xl mt-5 text-xl md:text-2xl">
-            I&#39;m a student developer from Singapore ardent about creating
+            I&apos;m a student developer from Singapore ardent about creating
             designed, intuitive, and practical products using technology.
           </p>
           <Socials />

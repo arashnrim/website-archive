@@ -35,7 +35,7 @@ const NotFound = () => {
             </span>
             <p className="lg:w-2/3">
               Nothing was found at the requested page. For a single-page
-              website, anyway, there shouldn&#39;t be anything else accessible
+              website, anyway, there shouldn&apos;t be anything else accessible
               but the root page!
             </p>
             <Link href="/" passHref={true}>
