@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Section from "../Section";
 
 const stages = [
@@ -25,11 +23,6 @@ interface AboutProps {
 }
 
 const About = ({ yearOfBirth }: AboutProps) => {
-  const [stagesReference, stagesInView] = useInView({
-    threshold: 0.9,
-    triggerOnce: true,
-  });
-
   return (
     <Section id="about">
       <div>
@@ -61,17 +54,11 @@ const About = ({ yearOfBirth }: AboutProps) => {
           track&apos;.
         </p>
       </div>
-      <div
-        className="flex flex-col w-full h-auto space-y-5 text-left xl:flex-row xl:space-x-5 xl:space-y-0"
-        ref={stagesReference}
-      >
+      <div className="flex flex-col w-full h-auto space-y-5 text-left xl:flex-row xl:space-x-5 xl:space-y-0">
         {stages.map((stage, index) => (
-          <motion.div
+          <div
             className="relative flex flex-row justify-center flex-1 space-x-5 text-left xl:flex-col xl:space-x-0 xl:space-y-10"
             key={stage.name}
-            initial={{ opacity: 0 }}
-            animate={stagesInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ delay: index * 0.25 }}
           >
             <div
               className={`h-full xl:h-2 w-2 xl:w-full absolute left-0 lg:top-0 bg-blue-400 ${
@@ -83,7 +70,7 @@ const About = ({ yearOfBirth }: AboutProps) => {
               <h2 className="text-2xl">{stage.name}</h2>
               <p className="pt-2">{stage.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
       <p className="self-start h-auto mt-10 lg:w-2/3">

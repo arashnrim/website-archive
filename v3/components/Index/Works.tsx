@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { GoStar, GoRepoForked } from "react-icons/go";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import Repository from "../../utils/Repository";
@@ -66,14 +65,11 @@ const Works = ({ repos }: WorksProps) => {
           )
           .map((repo, index) => {
             return (
-              <motion.div
+              <div
                 className={`flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-indigo-400 ${
                   repo.archived ? "border-opacity-50" : "border-opacity-100"
                 }`}
                 key={repo.id}
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ delay: index * 0.2 }}
               >
                 <h1 className="mt-2 text-4xl font-extrabold break-words">
                   {repo.name}
@@ -128,7 +124,7 @@ const Works = ({ repos }: WorksProps) => {
                     ""
                   )}
                 </div>
-              </motion.div>
+              </div>
             );
           })}
       </div>

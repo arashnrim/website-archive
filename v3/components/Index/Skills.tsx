@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { ReactElement } from "react";
+import { ReactElement, useRef } from "react";
 import { FaCode, FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -14,8 +13,6 @@ import {
   SiTailwindcss,
   SiGatsby,
 } from "react-icons/si";
-import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "react-responsive";
 import Section from "../Section";
 
 const languages = [
@@ -173,15 +170,12 @@ interface GridItemProps {
   icon: ReactElement;
   title: string;
   year: number;
-  inView: boolean;
-  index: number;
   languages?: Languages[];
 }
 
 interface SkillProps {
   icon: ReactElement;
   name: string;
-  inView: boolean;
   index: number;
   description: string;
 }
@@ -192,18 +186,13 @@ const GridItem = ({
   inProgress,
   title,
   year,
-  inView,
-  index,
   languages,
 }: GridItemProps) => (
-  <motion.div
+  <div
     className={`col-span-1
        p-10 h-auto rounded-2xl text-white border-2 ${
          inProgress ? "border-dashed border-opacity-50" : "border-opacity-100"
        } border-${color}-400`}
-    initial={{ opacity: 0 }}
-    animate={inView ? { opacity: 1 } : { opacity: 0 }}
-    transition={{ delay: index * 0.2 }}
   >
     <span className="flex justify-center text-4xl lg:justify-start">
       {icon}
@@ -232,44 +221,18 @@ const GridItem = ({
         </div>
       </>
     )}
-  </motion.div>
+  </div>
 );
 
-const Skill = ({ icon, name, inView, index, description }: SkillProps) => (
-  <motion.div
-    className="flex flex-col items-center gap-y-2"
-    initial={{ opacity: 0 }}
-    animate={inView ? { opacity: 1 } : { opacity: 0 }}
-    transition={{ delay: index * 0.25 }}
-  >
+const Skill = ({ icon, name, index, description }: SkillProps) => (
+  <div className="flex flex-col items-center gap-y-2">
     <span className="text-2xl">{icon}</span>
     <h2 className="text-2xl text-center">{name}</h2>
     <p className="text-center md:w-2/3">{description}</p>
-  </motion.div>
+  </div>
 );
 
 const Skills = () => {
-  var [languagesReference, languagesInView] = useInView({
-    threshold: 0.45,
-    triggerOnce: true,
-  });
-  var [frameworksReference, frameworksInView] = useInView({
-    threshold: 0.45,
-    triggerOnce: true,
-  });
-  var [skillsReference, skillsInView] = useInView({
-    threshold: 0.9,
-    triggerOnce: true,
-  });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
-  // Manual override for smaller devices
-  if (isMobile) {
-    languagesInView = true;
-    frameworksInView = true;
-    skillsInView = true;
-  }
-
   return (
     <Section id="skills">
       <div>
@@ -297,10 +260,7 @@ const Skills = () => {
         </p>
       </div>
 
-      <div
-        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3"
-        ref={languagesReference}
-      >
+      <div className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3">
         {languages
           .sort((a, b) => b.year - a.year)
           .map((language, index) => (
@@ -311,8 +271,6 @@ const Skills = () => {
               title={language.title}
               year={language.year}
               key={language.title}
-              inView={languagesInView}
-              index={index}
             />
           ))}
       </div>
@@ -330,10 +288,7 @@ const Skills = () => {
         applications!{" "}
       </p>
 
-      <div
-        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3"
-        ref={frameworksReference}
-      >
+      <div className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2 lg:grid-cols-3">
         {frameworks
           .sort((a, b) => b.year - a.year)
           .map((framework, index) => (
@@ -344,8 +299,6 @@ const Skills = () => {
               title={framework.title}
               year={framework.year}
               key={framework.title}
-              inView={frameworksInView}
-              index={index}
               languages={framework.languages}
             />
           ))}
@@ -358,16 +311,12 @@ const Skills = () => {
         like to think of separate skills applicable beyond code too.
       </p>
 
-      <div
-        className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2"
-        ref={skillsReference}
-      >
+      <div className="grid w-full grid-cols-1 gap-10 mt-10 mb-10 h-1/2 md:grid-cols-2">
         {skills.map((skill, index) => (
           <Skill
             icon={skill.icon}
             name={skill.name}
             key={skill.name}
-            inView={skillsInView}
             index={index}
             description={skill.description}
           />
