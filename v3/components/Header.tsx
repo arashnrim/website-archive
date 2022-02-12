@@ -19,10 +19,10 @@ const Header = () => {
           />
         </button>
       </Link>
-      <nav className="flex flex-row justify-center pl-5 space-x-5 lg:flex-col lg:pl-0 lg:space-x-0 lg:space-y-8 lg:w-full">
+      <nav className="flex flex-row justify-center pl-5 space-x-5 lg:items-center lg:flex-col lg:pl-0 lg:space-x-0 lg:space-y-8 lg:w-full">
         {navLinks.map((item) => (
           <Link href={`#${item}`} key={item} passHref>
-            <a className="text-xl underline-offset-0 lg:vertical-text">
+            <a className="text-xl text-center underline-offset-0 lg:vertical-text">
               {item}
             </a>
           </Link>
