@@ -26,9 +26,9 @@ const Works = ({ repos }: WorksProps) => {
     <Section id="works">
       <div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          A <span className="text-indigo-400">tinkerer</span>, an{" "}
-          <span className="text-indigo-400">experimenter</span>, and a{" "}
-          <span className="text-indigo-400">developer</span>.
+          A <span className="text-indigo-400">collaborative</span>,{" "}
+          <span className="text-indigo-400">open-minded</span>, and{" "}
+          <span className="text-indigo-400">practical</span> tinkerer.
         </h1>
         <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Who knew playing around is a good thing?
@@ -46,9 +46,19 @@ const Works = ({ repos }: WorksProps) => {
           Doing so allows me to learn what I do best and showcase the quality of
           work I offer at the same time.
           <br />
-          <br />
-          Here are the projects that I have made open source. Each one of them
-          can be found as their own standalone repository.
+          <br />I am a huge fan of open source after learning more about the
+          concept of learning in public. To share what I know, I strive to make
+          most, if not all, of my personal projects open-source. Here are some
+          of them (the most recently updated!); for more, feel free to take a
+          look at my{" "}
+          <a
+            href="https://github.com/arashnrim"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub profile
+          </a>
+          !
         </p>
       </div>
 

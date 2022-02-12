@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const YEAR_OF_BIRTH = process.env.YEAR_OF_BIRTH;
 
   const data = await fetch(
-    "https://api.github.com/users/arashnrim/repos?sort=updated"
+    "https://api.github.com/users/arashnrim/repos?sort=updated&per_page=8"
   );
   const repos = await data.json();
   return {
