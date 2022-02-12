@@ -4,17 +4,17 @@ const stages = [
   {
     name: "Pre-education",
     description:
-      "As a young child, I've always been interested in computers. From exploring what's on my family computer to spending free time in kindergarten at the computer station, I can be described as being inclined towards computers and was fascinated at how they work in our daily lives.",
+      "As a young child, I was fond of how computers worked and constantly explored the things around me. I frequently played around with the people around me, which eventually planted my passion for tech.",
   },
   {
     name: "Primary school",
     description:
-      "My passion was fuelled further when I joined the school's ICT Club. As someone quick to grasp technology, I managed to pick up essential skills — like using the Office suite of apps and media creation — and put them to use.",
+      "My passion was fuelled further when I joined the school's ICT Club. On the other hand, I began to develop myself holistically and got the opportunity to serve as a prefect under the school's Prefectorial Board.",
   },
   {
     name: "Secondary school",
     description:
-      "Secondary school was where I gained my first-hand experience with code, and it certainly was the most impactful in terms of exposing me to the world of technology. I gained the skill of coding, UI design, algorithmic thinking, and much more over my four years in secondary school.",
+      "Secondary school was where I gained first-hand experience with code and many more things. Whether it's writing my first program or my first volunteering activity, secondary school introduced me to many first-times that I'm grateful for.",
   },
 ];
 
@@ -27,8 +27,8 @@ const About = ({ yearOfBirth }: AboutProps) => {
     <Section id="about">
       <div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          A <span className="text-blue-400">value-adder</span>, a{" "}
-          <span className="text-blue-400">motivator</span>, and a{" "}
+          A <span className="text-blue-400">growing individual</span>, a{" "}
+          <span className="text-blue-400">helpful guide</span>, and a{" "}
           <span className="text-blue-400">friend</span> to many.
         </h1>
         <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
