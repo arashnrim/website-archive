@@ -237,9 +237,9 @@ const Skills = () => {
     <Section id="skills">
       <div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl">
-          A <span className="text-red-400">developer</span>, a{" "}
-          <span className="text-red-400">self-directed learner</span>, and a{" "}
-          <span className="text-red-400">student</span>.
+          An <span className="text-red-400">aspiring developer</span> and{" "}
+          <span className="text-red-400">self-directed learner</span> with a{" "}
+          <span className="text-red-400">diverse skillset</span>.
         </h1>
         <p className="w-full mt-5 text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl">
           Every opportunity brings something to learn.
