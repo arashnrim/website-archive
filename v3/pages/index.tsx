@@ -8,6 +8,7 @@ import Hero from "../components/Index/Hero";
 import About from "../components/Index/About";
 import Skills from "../components/Index/Skills";
 import Works from "../components/Index/Works";
+import Contact from "../components/Index/Contact";
 
 interface IndexProps {
   repos: Repository[];
@@ -35,6 +36,7 @@ const Index = ({ repos, YEAR_OF_BIRTH = 0 }: IndexProps) => (
       <About yearOfBirth={YEAR_OF_BIRTH} />
       <Skills />
       <Works repos={repos} />
+      <Contact />
     </Layout>
   </>
 );
