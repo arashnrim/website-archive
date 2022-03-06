@@ -42,14 +42,14 @@ const Contact = ({ posts }: ContactProps) => {
         {posts.slice(0, 4).map((post) => (
           <div
             className={
-              "flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-green-400 space-y-2"
+              "flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-green-400 space-y-2 justify-center md:justify-start"
             }
             key={post.title}
           >
             <h1 className="text-4xl font-extrabold break-words">
               {post.title}
             </h1>
-            <p className="flex justify-center font-mono lg:justify-start">
+            <p className="flex justify-center font-mono md:justify-start">
               {post.date && (
                 <span className="flex flex-row items-center space-x-5">
                   {post.date}
@@ -57,12 +57,14 @@ const Contact = ({ posts }: ContactProps) => {
               )}
             </p>
             <p>{post.description}</p>
-            <a
-              href={"https://blog.arash.codes" + post.slug}
-              className="text-lg sm:text-xl w-fit"
-            >
-              Read the blog post
-            </a>
+            <div>
+              <a
+                href={"https://blog.arash.codes" + post.slug}
+                className="text-lg sm:text-xl w-fit"
+              >
+                Read the blog post
+              </a>
+            </div>
           </div>
         ))}
       </div>
