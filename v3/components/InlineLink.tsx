@@ -11,7 +11,7 @@ const InlineLink = ({ link, redirect, children }: InlineLinkProps) => (
     href={link}
     target={redirect ? "_blank" : ""}
     rel="noreferrer"
-    className="transition dotted hover:opacity-75"
+    className="transition dotted"
   >
     {children}
   </a>

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Meta from "../components/Meta";
 import Layout from "../components/Layout";
+import InlineLink from "../components/InlineLink";
 
 const teasers = [
   "Uh oh.",
@@ -27,16 +28,14 @@ const NotFound = () => {
               <h1 className="text-9xl">404</h1>
               <p className="font-mono">Not Found</p>
             </span>
-            <p className="lg:w-2/3">
+            <p className="mb-5 lg:w-2/3">
               Nothing was found at the requested page. For a single-page
               website, anyway, there shouldn&apos;t be anything else accessible
               but the root page!
             </p>
-            <Link href="/" passHref={true}>
-              <span className="mt-5 transition cursor-pointer dotted hover:opacity-75">
-                Need help going to the root page?
-              </span>
-            </Link>
+            <InlineLink link="/" redirect={false}>
+              Need help going to the root page?
+            </InlineLink>
           </div>
         </section>
       </Layout>
