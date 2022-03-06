@@ -1,6 +1,11 @@
+import Frontmatter from "../../utils/Posts";
 import Section from "../Section";
 
-const Contact = () => {
+interface ContactProps {
+  posts: Frontmatter[];
+}
+
+const Contact = ({ posts }: ContactProps) => {
   return (
     <Section>
       <div>
@@ -28,8 +33,38 @@ const Contact = () => {
             take a look at my blog
           </a>
           , too. I still have a long way to go in everything, but I hope to
-          document my journey getting there on my blog!
+          document my journey getting there on my blog! Here&apos;s a sneak peak
+          at some of my latest posts.
         </p>
+      </div>
+
+      <div className="grid w-full grid-cols-1 gap-10 h-1/2 md:grid-cols-2">
+        {posts.slice(0, 4).map((post) => (
+          <div
+            className={
+              "flex flex-col col-span-1 p-10 h-auto rounded-2xl text-white border-2 border-green-400 space-y-2"
+            }
+            key={post.title}
+          >
+            <h1 className="text-4xl font-extrabold break-words">
+              {post.title}
+            </h1>
+            <p className="flex justify-center font-mono lg:justify-start">
+              {post.date && (
+                <span className="flex flex-row items-center space-x-5">
+                  {post.date}
+                </span>
+              )}
+            </p>
+            <p>{post.description}</p>
+            <a
+              href={"https://blog.arash.codes" + post.slug}
+              className="text-lg sm:text-xl w-fit"
+            >
+              Read the blog post
+            </a>
+          </div>
+        ))}
       </div>
     </Section>
   );
