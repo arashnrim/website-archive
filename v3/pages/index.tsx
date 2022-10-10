@@ -23,7 +23,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const reposData = await fetch(
     "https://api.github.com/users/arashnrim/repos?sort=updated&per_page=8"
   );
-  const postsData = await fetch("https://blog.arash.codes/api/posts");
+  const postsData = await fetch("https://blog.arashnrim.me/api/posts");
   const repos = await reposData.json();
   const posts = await postsData.json();
   return {

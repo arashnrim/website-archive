@@ -29,7 +29,7 @@ const Contact = ({ posts }: ContactProps) => {
           <br />
           <br />
           While you&apos;re at it, feel free to{" "}
-          <a href="https://blog.arash.codes" target="_blank" rel="noreferrer">
+          <a href="https://blog.arashnrim.me" target="_blank" rel="noreferrer">
             take a look at my blog
           </a>
           , too. I still have a long way to go in everything, but I hope to
@@ -59,7 +59,7 @@ const Contact = ({ posts }: ContactProps) => {
             <p>{post.description}</p>
             <div>
               <a
-                href={"https://blog.arash.codes" + post.slug}
+                href={"https://blog.arashnrim.me" + post.slug}
                 className="text-lg sm:text-xl w-fit"
               >
                 Read the blog post
