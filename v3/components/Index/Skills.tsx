@@ -1,28 +1,20 @@
-import { ReactElement, useRef } from "react";
+import { ReactElement } from "react";
 import { FaCode, FaFolder, FaPencilRuler, FaUsers } from "react-icons/fa";
 import {
-  SiCplusplus,
-  SiGo,
+  SiCsharp,
+  SiCss3,
+  SiGatsby,
   SiHtml5,
-  SiPython,
-  SiSwift,
-  SiTypescript,
   SiJavascript,
   SiNextdotjs,
-  SiCss3,
+  SiPython,
+  SiSvelte,
   SiTailwindcss,
-  SiGatsby,
+  SiTypescript,
 } from "react-icons/si";
 import Section from "../Section";
 
 const languages = [
-  {
-    color: "red",
-    inProgress: true,
-    icon: <SiSwift />,
-    title: "Swift",
-    year: 2018,
-  },
   {
     color: "blue",
     inProgress: false,
@@ -53,63 +45,41 @@ const languages = [
   },
   {
     color: "blue",
-    inProgress: true,
-    icon: <SiCplusplus />,
-    title: "C++",
-    year: 2021,
-  },
-  // {
-  //   extended: false,
-  //   color: "amber",
-  //   inProgress: true,
-  //   icon: <SiJava />,
-  //   title: "Java",
-  //   year: "2019",
-  //   tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
-  // },
-  // {
-  //   extended: false,
-  //   color: "violet",
-  //   inProgress: true,
-  //   icon: <SiKotlin />,
-  //   title: "Kotlin",
-  //   year: "2019",
-  //   tools: [{ name: "Android Studio", icon: <SiAndroidstudio /> }],
-  // },
-  {
-    color: "blue",
-    inProgress: true,
-    icon: <SiGo />,
-    title: "Go",
-    year: 2021,
-  },
-  {
-    color: "blue",
     inProgress: false,
     icon: <SiCss3 />,
     title: "CSS*",
     year: 2021,
   },
+  {
+    color: "green",
+    inProgress: true,
+    icon: <SiCsharp />,
+    title: "C#",
+    year: 2022,
+  },
+  {
+    color: "white",
+    inProgress: true,
+    icon: <span className="h-9"></span>,
+    title: "SQL*",
+    year: 2022,
+  },
 ];
 
 const frameworks = [
+  {
+    color: "red",
+    inProgress: true,
+    icon: <SiSvelte />,
+    title: "Svelte",
+    year: 2022,
+  },
   {
     color: "white",
     inProgress: false,
     icon: <SiNextdotjs />,
     title: "Next.js",
     year: 2021,
-    languages: [
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
-    ],
-  },
-  {
-    color: "indigo",
-    inProgress: true,
-    icon: <SiGatsby />,
-    title: "Gatsby",
-    year: 2020,
     languages: [
       { name: "TypeScript", icon: <SiTypescript /> },
       { name: "JavaScript", icon: <SiJavascript /> },
