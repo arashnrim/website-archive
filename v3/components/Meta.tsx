@@ -27,10 +27,9 @@ const Meta = ({
     <meta property="og:image" content={image} />
 
     <script
-      async
       defer
-      data-website-id="1ed8d14c-014c-4bca-a8e7-231b0b583417"
-      src="https://analytics.arashnrim.me/umami.js"
+      data-domain="arashnrim.me"
+      src="https://analytics.arashnrim.me/js/script.js"
     ></script>
   </Head>
 );
